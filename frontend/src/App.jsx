@@ -461,11 +461,14 @@ function App() {
   const negOffset = posStroke + neuStroke;
 
   const suggestedQuestions = [
+    "Top 5 issues raised by the community",
+    "Compare sentiment across Birmingham, Leicester, and Coventry",
     "What are the main complaints about Holi 2026?",
     "What are upcoming Diwali activities in Leicester?",
     "Consolidate feedback on Coventry Garba.",
     "Which platform has the most negative posts?",
     "Who praised Vaisakhi Langar in Birmingham?",
+    "What are the top trending terms?",
   ];
 
   return (
@@ -739,7 +742,13 @@ function App() {
         {/* TAB 2: INSIGHTS */}
         {activeTab === "insights" && (
           <div className="tab-content insights-tab fade-in">
-            <InsightsTab analytics={analytics} />
+            <InsightsTab
+              analytics={analytics}
+              onTrendClick={(term) => {
+                setSearchQuery(term);
+                setActiveTab("explorer");
+              }}
+            />
           </div>
         )}
 
@@ -974,7 +983,7 @@ function PlatformBar({ label, count, total, color }) {
   );
 }
 
-function InsightsTab({ analytics }) {
+function InsightsTab({ analytics, onTrendClick }) {
   if (!analytics) {
     return (
       <div className="insights-loading">
@@ -995,6 +1004,7 @@ function InsightsTab({ analytics }) {
   const citySentiment = analytics.citySentiment || {};
   const positivePosts = analytics.topPositivePosts || [];
   const negativePosts = analytics.topNegativePosts || [];
+  const sentimentByDate = analytics.sentimentByDate || {};
 
   const maxTrend = Math.max(...trending.map((t) => t.count), 1);
 
@@ -1004,9 +1014,22 @@ function InsightsTab({ analytics }) {
         <div className="banner-top">
           <span className="banner-badge">COMMUNITY ANALYTICS</span>
           <span className="banner-emoji">📊</span>
+          <button className="print-report-btn" onClick={() => window.print()} title="Print report">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="6 9 6 2 18 2 18 9" />
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+              <rect x="6" y="14" width="12" height="8" />
+            </svg>
+            Print Report
+          </button>
         </div>
         <h2>What the diaspora is talking about</h2>
         <p>{analytics.executiveSummary}</p>
+      </section>
+
+      <section className="metrics-card">
+        <h3>Sentiment Timeline</h3>
+        <SentimentTimeline data={sentimentByDate} />
       </section>
 
       <div className="insights-grid-2">
@@ -1055,7 +1078,8 @@ function InsightsTab({ analytics }) {
           {trending.map((t, idx) => (
             <div
               key={idx}
-              className="trend-pill"
+              className="trend-pill clickable"
+              onClick={() => onTrendClick?.(t.term)}
               style={{
                 fontSize: `${0.85 + (t.count / maxTrend) * 0.7}rem`,
                 opacity: 0.7 + (t.count / maxTrend) * 0.3,
@@ -1143,6 +1167,65 @@ function InsightsTab({ analytics }) {
             </blockquote>
           ))}
         </section>
+      </div>
+    </div>
+  );
+}
+
+function SentimentTimeline({ data }) {
+  const entries = Object.entries(data)
+    .map(([date, values]) => ({ date, ...values }))
+    .sort((a, b) => a.date.localeCompare(b.date));
+
+  if (entries.length === 0) {
+    return <p className="empty-insight">No timeline data available.</p>;
+  }
+
+  const maxTotal = Math.max(...entries.map((e) => e.Positive + e.Neutral + e.Negative), 1);
+
+  return (
+    <div className="sentiment-timeline">
+      <div className="timeline-legend">
+        <span className="legend-dot" style={{ backgroundColor: "var(--color-positive)" }} /> Positive
+        <span className="legend-dot" style={{ backgroundColor: "var(--color-neutral)" }} /> Neutral
+        <span className="legend-dot" style={{ backgroundColor: "var(--color-negative)" }} /> Negative
+      </div>
+      <div className="timeline-chart">
+        {entries.map((entry, idx) => {
+          const total = entry.Positive + entry.Neutral + entry.Negative;
+          return (
+            <div key={idx} className="timeline-row">
+              <span className="timeline-date">{entry.date}</span>
+              <div className="timeline-bar-track">
+                <div
+                  className="timeline-bar-segment"
+                  style={{
+                    width: `${(entry.Positive / maxTotal) * 100}%`,
+                    backgroundColor: "var(--color-positive)",
+                  }}
+                  title={`Positive: ${entry.Positive}`}
+                />
+                <div
+                  className="timeline-bar-segment"
+                  style={{
+                    width: `${(entry.Neutral / maxTotal) * 100}%`,
+                    backgroundColor: "var(--color-neutral)",
+                  }}
+                  title={`Neutral: ${entry.Neutral}`}
+                />
+                <div
+                  className="timeline-bar-segment"
+                  style={{
+                    width: `${(entry.Negative / maxTotal) * 100}%`,
+                    backgroundColor: "var(--color-negative)",
+                  }}
+                  title={`Negative: ${entry.Negative}`}
+                />
+              </div>
+              <span className="timeline-total">{total}</span>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
