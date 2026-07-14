@@ -1,58 +1,25 @@
 {
-  "exportedAt": "2026-07-14T14:48:36.866931Z",
-  "totalFeedbackCount": 128,
+  "exportedAt": "2026-07-14T20:48:50.198841Z",
+  "totalFeedbackCount": 119,
   "sentimentPercentages": {
-    "Positive": 18.75,
-    "Neutral": 38.28,
-    "Negative": 42.97
+    "Positive": 19.33,
+    "Neutral": 36.97,
+    "Negative": 43.7
   },
   "platformCounts": {
-    "Twitter": 119,
+    "Twitter": 110,
     "Facebook": 5,
     "Quora": 4
   },
   "cityCounts": {
-    "Coventry": 8,
+    "Coventry": 5,
     "Leicester": 6,
-    "Birmingham": 113,
+    "Birmingham": 107,
     "Nottingham": 1
   },
   "items": [
     {
-      "id": "manual_1cc11c0a",
-      "platform": "Twitter",
-      "author": "@SarahBrum",
-      "date": "2026-07-14",
-      "event": "Community Event",
-      "text": "Extremely excited for Coventry Garba 2026. The new massive venue is going to accommodate the growing community so well!",
-      "sentiment": "Neutral",
-      "city": "Coventry",
-      "isUpcoming": false
-    },
-    {
-      "id": "manual_3ea13692",
-      "platform": "Twitter",
-      "author": "@SarahBrum",
-      "date": "2026-07-14",
-      "event": "Community Event",
-      "text": "Extremely excited for Coventry Garba 2026. The new massive venue is going to accommodate the growing community so well!",
-      "sentiment": "Neutral",
-      "city": "Coventry",
-      "isUpcoming": false
-    },
-    {
       "id": "manual_432016a9",
-      "platform": "Twitter",
-      "author": "@SarahBrum",
-      "date": "2026-07-14",
-      "event": "Coventry Navratri Garba 2026",
-      "text": "Extremely excited for Coventry Navratri Garba 2026. The new massive venue is going to accommodate the growing community so well!",
-      "sentiment": "Positive",
-      "city": "Coventry",
-      "isUpcoming": true
-    },
-    {
-      "id": "manual_48a47573",
       "platform": "Twitter",
       "author": "@SarahBrum",
       "date": "2026-07-14",
@@ -382,12 +349,12 @@
       "isUpcoming": false
     },
     {
-      "id": "twitter_2076974730452848933",
+      "id": "twitter_2076876332932481475",
       "platform": "Twitter",
       "author": "@uggar29",
       "date": "2026-07-14",
-      "event": "General Community Feedback 2026",
-      "text": "@TRobinsonNewEra A controversial \"Englistan\" billboard was put up in Whitechapel, London. Whitechapel is one of London's most culturally vibrant and historically diverse districts.\n\nApproximately 56.3% of residents identify as Asian, with the British Bangladeshi community alone accounting for https://t.co/oGjsdWkVJ3",
+      "event": "Englistan Billboard Controversy 2026",
+      "text": "@Rightanglenews A controversial \"Englistan\" billboard was put up in Whitechapel, London. Whitechapel is one of London's most culturally vibrant and historically diverse districts.\n\nApproximately 56.3% of residents identify as Asian, with the British Bangladeshi community alone accounting for https://t.co/ceRlMgQjng",
       "sentiment": "Neutral",
       "city": "Birmingham",
       "isUpcoming": false
@@ -400,39 +367,6 @@
       "event": "General Community Feedback 2026",
       "text": "@captive_dreamer The prosecutor at the ICC is a british pakistani who raped his coworker, then issued an arrest warrant against Bibi Netanyahu and told her if she tells on him for raping her it will her the Palestinians.\n\nHis brother is also a judge in the UK.\nAnd also a rapist.",
       "sentiment": "Negative",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076877396171719081",
-      "platform": "Twitter",
-      "author": "@uggar29",
-      "date": "2026-07-14",
-      "event": "Community Event",
-      "text": "@Rightanglenews A controversial \"Englistan\" billboard was put up in Whitechapel, London. Whitechapel is one of London's most culturally vibrant and historically diverse districts.\n\nApproximately 56.3% of residents identify as Asian, with the British Bangladeshi community alone accounting for https://t.co/LXzqeyAinn",
-      "sentiment": "Neutral",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076876332932481475",
-      "platform": "Twitter",
-      "author": "@uggar29",
-      "date": "2026-07-14",
-      "event": "Englistan Billboard Controversy 2026",
-      "text": "@Rightanglenews A controversial \"Englistan\" billboard was put up in Whitechapel, London. Whitechapel is one of London's most culturally vibrant and historically diverse districts.\n\nApproximately 56.3% of residents identify as Asian, with the British Bangladeshi community alone accounting for https://t.co/ceRlMgQjng",
-      "sentiment": "Neutral",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076845473730855197",
-      "platform": "Twitter",
-      "author": "@uggar29",
-      "date": "2026-07-14",
-      "event": "General Community Feedback 2026",
-      "text": "@WallStreetApes A controversial \"Englistan\" billboard was put up in Whitechapel, London. Whitechapel is one of London's most culturally vibrant and historically diverse districts.\n\nApproximately 56.3% of residents identify as Asian, with the British Bangladeshi community alone accounting for https://t.co/TkfsaEr6FA",
-      "sentiment": "Neutral",
       "city": "Birmingham",
       "isUpcoming": false
     },
@@ -493,17 +427,6 @@
     },
     {
       "id": "twitter_2076590578398023764",
-      "platform": "Twitter",
-      "author": "@skilfuldotcom",
-      "date": "2026-07-13",
-      "event": "General Community Feedback 2026",
-      "text": "@DailyMail NHS+Tories+Labour KNOW mass immigration destroys NHS:\n\n\"outdated health and care services designed for white British patients\"\n\n\"south Asian heritage in UK higher risk of heart disease, stroke, diabetes, dementia to increase 600% in the next three decades\"\nhttps://t.co/yBfHJa8jku",
-      "sentiment": "Negative",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076587540467904705",
       "platform": "Twitter",
       "author": "@skilfuldotcom",
       "date": "2026-07-13",
@@ -630,28 +553,6 @@
       "date": "2026-07-12",
       "event": "General Community Feedback 2026",
       "text": "@LizaRosen0000 This is what multiculturalism has done to London.\nPakistani Muslims turning out to harass and intimidate Hindus celebrating Diwali because it’s “haram.”\nA London street that now looks like Pakistan.\nLondon’s local government leaders who no longer look British.\nKhalistani Sikhs",
-      "sentiment": "Negative",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076430637339230715",
-      "platform": "Twitter",
-      "author": "@EclipeByDeath",
-      "date": "2026-07-12",
-      "event": "General Community Feedback 2026",
-      "text": "@LizaRosen0000 This is what multiculturalism has done to London.\nPakistani Muslims turning out to harass and intimidate Hindus celebrating Diwali because it’s “haram.”\nA London street that now looks like Pakistan.\nLondon’s local government leaders who no longer look British.\nAnd Khalistani",
-      "sentiment": "Negative",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076429498913067111",
-      "platform": "Twitter",
-      "author": "@EclipeByDeath",
-      "date": "2026-07-12",
-      "event": "General Community Feedback 2026",
-      "text": "@LizaRosen0000 This is what multiculturalism has done to London.\nPakistani Muslims turning out to harass and intimidate Hindus celebrating Diwali because it’s “haram.”\nA London street that now looks like Pakistan.\nAnd London’s local government leaders who no longer look British.\nThis isn’t",
       "sentiment": "Negative",
       "city": "Birmingham",
       "isUpcoming": false

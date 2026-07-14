@@ -1,12 +1,16 @@
 import os
 import asyncio
 import json
+import sqlite3
 from datetime import datetime
 from twikit import Client
 import httpx
 from dotenv import load_dotenv
 
-from backend.supabase_store import store
+DB_PATH = os.path.join(os.path.dirname(__file__), "diaspora.db")
+
+# Official accounts to ingest tweets from directly
+OFFICIAL_ACCOUNTS = ["MEAIndia", "HCI_London"]
 
 # Load environment
 load_dotenv(dotenv_path="../.env")
@@ -52,7 +56,7 @@ def analyze_tweet_with_gemini(text: str) -> dict:
             "event": "Community Event"
         }
         
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={api_key}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key={api_key}"
     
     prompt = f"""
     Analyze the following social media post regarding Indian diaspora community events in the UK Midlands.
@@ -97,6 +101,34 @@ def analyze_tweet_with_gemini(text: str) -> dict:
         "isUpcoming": False,
         "event": "Community Event"
     }
+
+# Local SQLite upsert
+def upsert_feedback_local(item):
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS feedback_items (
+            id TEXT PRIMARY KEY,
+            platform TEXT,
+            author TEXT,
+            date TEXT,
+            event TEXT,
+            text TEXT,
+            sentiment TEXT,
+            city TEXT,
+            isUpcoming INTEGER
+        )
+    """)
+    cursor.execute("""
+        INSERT OR REPLACE INTO feedback_items (id, platform, author, date, event, text, sentiment, city, isUpcoming)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    """, (
+        item["id"], item["platform"], item["author"], item["date"],
+        item["event"], item["text"], item["sentiment"], item["city"],
+        1 if item.get("isUpcoming") else 0
+    ))
+    conn.commit()
+    conn.close()
 
 # Fast UK relevance gate — checks tweet text for at least one UK location/context keyword.
 # Runs before the Gemini API call to save quota on irrelevant international content.
@@ -180,7 +212,7 @@ async def run_official_api_scraper(bearer_token: str):
                         "city": analysis.get("city", "Birmingham"),
                         "isUpcoming": bool(analysis.get("isUpcoming")),
                     }
-                    store.upsert_feedback(new_item)
+                    upsert_feedback_local(new_item)
                     total_added += 1
                     print(f"[SUCCESS] Added tweet: {tweet['id']}")
             except Exception as e:
@@ -293,7 +325,7 @@ async def run_twikit_scraper():
                         "city": analysis.get("city", "Birmingham"),
                         "isUpcoming": bool(analysis.get("isUpcoming")),
                     }
-                    store.upsert_feedback(new_item)
+                    upsert_feedback_local(new_item)
                     total_added += 1
                     print(f"[SUCCESS] Added tweet: {tweet.id}")
                     
@@ -306,7 +338,107 @@ async def run_twikit_scraper():
             
         await asyncio.sleep(5)
         
-    print(f"\nIngestion complete! Processed {total_added} items in Supabase.")
+    print(f"\nIngestion complete! Processed {total_added} items in local DB.")
+
+# Scraper method 3: Fetch tweets from specific official accounts
+async def run_account_scraper():
+    """Fetch recent tweets from official accounts like @MEAIndia and @HCI_London."""
+    username = os.getenv("TWITTER_USERNAME")
+    email = os.getenv("TWITTER_EMAIL")
+    password = os.getenv("TWITTER_PASSWORD")
+
+    cookies_file = "cookies.json"
+    cookies_loaded = False
+
+    if os.path.exists(cookies_file):
+        try:
+            with open(cookies_file, 'r') as f:
+                cookies_data = json.load(f)
+            if isinstance(cookies_data, list):
+                cookies_dict = {c["name"]: c["value"] for c in cookies_data if "name" in c and "value" in c}
+                client.set_cookies(cookies_dict)
+                cookies_loaded = True
+            elif isinstance(cookies_data, dict):
+                if "ct0" in cookies_data or "auth_token" in cookies_data:
+                    client.set_cookies(cookies_data)
+                    cookies_loaded = True
+            if cookies_loaded:
+                print("Loaded session cookies from cookies.json successfully.")
+        except Exception as e:
+            print(f"Failed to load cookies.json: {e}")
+
+    if not cookies_loaded:
+        if not username or username == "your_username":
+            print("[WARNING] X credentials missing. Skipping official account scraping.")
+            return
+        print(f"Authenticating with X account: {username}...")
+        try:
+            await client.login(auth_info_1=username, auth_info_2=email, password=password)
+            client.save_cookies(cookies_file)
+            print("Successfully authenticated.")
+        except Exception as e:
+            print(f"[ERROR] Authentication failed: {e}")
+            return
+
+    total_added = 0
+    for account in OFFICIAL_ACCOUNTS:
+        print(f"\n--- Fetching tweets from @{account} ---")
+        try:
+            user = await client.get_user_by_screen_name(account)
+            if not user:
+                print(f"[WARN] Could not find user @{account}")
+                continue
+
+            tweets = await client.get_user_tweets(user.id, tweet_type='Tweets')
+            if not tweets:
+                print(f"[INFO] No recent tweets found for @{account}")
+                continue
+
+            for tweet in tweets:
+                try:
+                    tweet_id = f"twitter_{tweet.id}"
+
+                    # Relaxed UK filter for official accounts — they post about India-UK matters
+                    # but may not always mention UK keywords explicitly
+                    if not is_uk_relevant(tweet.text):
+                        # Still include if the account is HCI_London (always UK-relevant)
+                        if account != "HCI_London":
+                            print(f"[SKIP] Non-UK content from @{account}")
+                            continue
+
+                    analysis = analyze_tweet_with_gemini(tweet.text)
+
+                    try:
+                        if isinstance(tweet.created_at, str):
+                            dt = datetime.strptime(tweet.created_at, "%a %b %d %H:%M:%S %z %Y")
+                            date_str = dt.strftime("%Y-%m-%d")
+                        else:
+                            date_str = tweet.created_at.strftime("%Y-%m-%d")
+                    except:
+                        date_str = datetime.now().strftime("%Y-%m-%d")
+
+                    new_item = {
+                        "id": tweet_id,
+                        "platform": "Twitter",
+                        "author": f"@{account}",
+                        "date": date_str,
+                        "event": analysis.get("event", "General Community Feedback 2026"),
+                        "text": tweet.text,
+                        "sentiment": analysis.get("sentiment", "Neutral"),
+                        "city": analysis.get("city", "London"),
+                        "isUpcoming": bool(analysis.get("isUpcoming")),
+                    }
+                    upsert_feedback_local(new_item)
+                    total_added += 1
+                    print(f"[SUCCESS] Added tweet from @{account}: {tweet.id}")
+                except Exception as tweet_err:
+                    print(f"[WARN] Skipping tweet: {str(tweet_err).encode('ascii','ignore').decode()}")
+                    continue
+        except Exception as e:
+            print(f"Error fetching @{account}: {str(e).encode('ascii','ignore').decode()}")
+        await asyncio.sleep(3)
+
+    print(f"\nOfficial account ingestion complete! Processed {total_added} items.")
 
 async def run_scraper():
     bearer_token = os.getenv("TWITTER_BEARER_TOKEN")
@@ -314,6 +446,9 @@ async def run_scraper():
         await run_official_api_scraper(bearer_token)
     else:
         await run_twikit_scraper()
+
+    # Also fetch from official accounts (@MEAIndia, @HCI_London)
+    await run_account_scraper()
 
 if __name__ == "__main__":
     asyncio.run(run_scraper())
