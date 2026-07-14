@@ -1,20 +1,20 @@
 {
-  "exportedAt": "2026-07-14T22:27:26.236051Z",
-  "totalFeedbackCount": 235,
+  "exportedAt": "2026-07-14T22:44:11.254477Z",
+  "totalFeedbackCount": 201,
   "sentimentPercentages": {
-    "Positive": 23.4,
-    "Neutral": 46.81,
-    "Negative": 29.79
+    "Positive": 24.38,
+    "Neutral": 41.79,
+    "Negative": 33.83
   },
   "platformCounts": {
     "Twitter": 169,
-    "Facebook": 62,
+    "Facebook": 28,
     "Quora": 4
   },
   "cityCounts": {
     "Coventry": 5,
-    "Leicester": 50,
-    "Birmingham": 178,
+    "Leicester": 25,
+    "Birmingham": 169,
     "Wolverhampton": 1,
     "Nottingham": 1
   },
@@ -592,28 +592,6 @@
       "isUpcoming": true
     },
     {
-      "id": "facebook_AISfestival_85391af9ef14",
-      "platform": "Facebook",
-      "author": "AISfestival",
-      "date": "2026-07-14",
-      "event": "Indian Summer at Summer On The Square",
-      "text": "An Indian Summer takes over Summer On The Square! I… See more",
-      "sentiment": "Positive",
-      "city": "Leicester",
-      "isUpcoming": true
-    },
-    {
-      "id": "facebook_AISfestival_1b357f8f71bd",
-      "platform": "Facebook",
-      "author": "AISfestival",
-      "date": "2026-07-14",
-      "event": "Indian Summer at Summer On The Square",
-      "text": "An Indian Summer takes over Summer On The Square!",
-      "sentiment": "Positive",
-      "city": "Leicester",
-      "isUpcoming": true
-    },
-    {
       "id": "twitter_2077138687016460338",
       "platform": "Twitter",
       "author": "@HCI_London",
@@ -680,28 +658,6 @@
       "isUpcoming": true
     },
     {
-      "id": "facebook_AISfestival_122d557f1c69",
-      "platform": "Facebook",
-      "author": "AISfestival",
-      "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "eoSondtrpsicg08i3g0u8 8959M41tu9e6Lc8rurgl0uientcc0uio3aa61m",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_AISfestival_fa20276b013e",
-      "platform": "Facebook",
-      "author": "AISfestival",
-      "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "eZj4MmkUZeMHRAgejvWzncNXOmsOqYGo4uCg9p1nsLKLorVqopfHGfLIXe4H6PXfx",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
       "id": "twitter_2077044235774148939",
       "platform": "Twitter",
       "author": "@HCI_London",
@@ -724,17 +680,6 @@
       "isUpcoming": false
     },
     {
-      "id": "facebook_AISfestival_b8c275ddeda8",
-      "platform": "Facebook",
-      "author": "AISfestival",
-      "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "nStedorpose52ol5a57iu5La 369rh9u44ina9a7fh1ti809050tgMgeifar",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
       "id": "twitter_2077044207735193951",
       "platform": "Twitter",
       "author": "@HCI_London",
@@ -743,17 +688,6 @@
       "text": "RT @DoC_GoI: The India–UK Comprehensive Economic and Trade Agreement (CETA) goes beyond traditional tariff reductions, covering 30 chapters…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_AISfestival_878feff0e086",
-      "platform": "Facebook",
-      "author": "AISfestival",
-      "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "AZGNNxcjdB2Ph10vnLYO4cM8IWn1iG4MaQmiLoja3sp40tAIeeUadc",
-      "sentiment": "Neutral",
-      "city": "Leicester",
       "isUpcoming": false
     },
     {
@@ -922,105 +856,6 @@
       "isUpcoming": true
     },
     {
-      "id": "facebook_ShivamEvents_76ad0cd8d9d4",
-      "platform": "Facebook",
-      "author": "ShivamEvents",
-      "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "NQve8AdIVTW2FQYXEAqUm8rYP5OFlfkgvK6uYUM",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_ShivamEvents_011aabe2ba89",
-      "platform": "Facebook",
-      "author": "ShivamEvents",
-      "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "eSdtorpons6c8nl0al694717lr5 Mt1e28rh0c3teLumaof6g212iuitct65",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_ShivamEvents_74e91925e3bd",
-      "platform": "Facebook",
-      "author": "ShivamEvents",
-      "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "adNL4DAVEimO8tL0q291U09gaowsYvTK0nESz8VzDlb5zHf7lDNeANge5zjgUcSZo8E3",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_ShivamEvents_40e47126a7e1",
-      "platform": "Facebook",
-      "author": "ShivamEvents",
-      "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "dSonspretom8na5th2rM10cfr18m93972otf01t0if4mle9lcifLfet8169",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_ShivamEvents_0d1d1c22ffe5",
-      "platform": "Facebook",
-      "author": "ShivamEvents",
-      "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "mt0XlmhJPUO3rrgZoPBrEolIZLkMECXTTlrO7As1A8vqBYwEDa",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_ShivamEvents_cf1c605dc28e",
-      "platform": "Facebook",
-      "author": "ShivamEvents",
-      "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "udMJzyBiEPLv24cwe7hfihfoUTMmdKXWlUD4pa0Y4t2smGplAhls1rTQKd1jpgExq3ejcD8tGZa",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_CentralStageCrew_ac989d4fa5a7",
-      "platform": "Facebook",
-      "author": "CentralStageCrew",
-      "date": "2026-07-14",
-      "event": "General social media post",
-      "text": "pSnodtreos8961ev20l324884l3hbc0lNi 9 c16gteru0,g0c1c1g6oa3mhShared with Public",
-      "sentiment": "Neutral",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_CentralStageCrew_45363cf8afa8",
-      "platform": "Facebook",
-      "author": "CentralStageCrew",
-      "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "eoStodrsnp3eo58mumf8h4c2r54M94a6fl45t0 e05faf60gctlfl1Lr0nh3",
-      "sentiment": "Neutral",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_AISfestival_00b266a9179d",
-      "platform": "Facebook",
-      "author": "AISfestival",
-      "date": "2026-07-14",
-      "event": "An Indian Summer 2026",
-      "text": "An Indian Summer 2026 Is this week! … See more",
-      "sentiment": "Positive",
-      "city": "Leicester",
-      "isUpcoming": true
-    },
-    {
       "id": "facebook_AISfestival_d3608096f99d",
       "platform": "Facebook",
       "author": "AISfestival",
@@ -1032,13 +867,24 @@
       "isUpcoming": false
     },
     {
-      "id": "facebook_AISfestival_9e73c08bcdf7",
+      "id": "facebook_AISfestival_e83777c183be",
       "platform": "Facebook",
       "author": "AISfestival",
       "date": "2026-07-14",
-      "event": "Social media platform information",
-      "text": "Information about Page Insights Data  · Privacy  · Terms  · Advertising  · Ad Choices   · Cookies  · More",
+      "event": "Phoenix Square location",
+      "text": "Phoenix Square, 4 Midland Street, Leicester, United Kingdom, LE1 1TG",
       "sentiment": "Neutral",
+      "city": "Leicester",
+      "isUpcoming": false
+    },
+    {
+      "id": "facebook_AISfestival_8cd8b206f44d",
+      "platform": "Facebook",
+      "author": "AISfestival",
+      "date": "2026-07-14",
+      "event": "An Indian Summer Festival",
+      "text": "Day 2 of An Indian Summer Festival … See more",
+      "sentiment": "Positive",
       "city": "Leicester",
       "isUpcoming": false
     },
@@ -1054,199 +900,45 @@
       "isUpcoming": false
     },
     {
-      "id": "facebook_AISfestival_eb172fb29d41",
+      "id": "facebook_AISfestival_d4dba7373306",
       "platform": "Facebook",
       "author": "AISfestival",
       "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "AS5BeVVSkTIDn1BlX1GU51TKmCCdU30KZ5xX",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_AISfestival_ed412ec4ae9a",
-      "platform": "Facebook",
-      "author": "AISfestival",
-      "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "epStndorosMf43htf2730a4c90o ea798232n7977g0et0ucihLi9gm6tr1r",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_AISfestival_3093b22f751a",
-      "platform": "Facebook",
-      "author": "AISfestival",
-      "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "srpdSeoton7h0u1nh0rfh07oaf f0a70r20004g692g34lL0a1Mte7fh70ue",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_AISfestival_db34290a422a",
-      "platform": "Facebook",
-      "author": "AISfestival",
-      "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "fSXXipAdiopyKVQVDJopxuWVK5reKIVltptRrhkrP0Ugsr0zBjv3KkU9k1pLBkdk3tryA6LUnbW",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_ShivamEvents_b6de37b624c5",
-      "platform": "Facebook",
-      "author": "ShivamEvents",
-      "date": "2026-07-14",
-      "event": "Wedding canapé hour at Moor Hall Hotel",
-      "text": "Our bride enjoying canapé hour with her friends Event at @moorhallhotel … See more",
+      "event": "Indian Summer Festival",
+      "text": "An Indian Summer Festival Begins Today … See more",
       "sentiment": "Positive",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_SriBardai_9e73c08bcdf7",
-      "platform": "Facebook",
-      "author": "SriBardai",
-      "date": "2026-07-14",
-      "event": "Social media platform footer information",
-      "text": "Information about Page Insights Data  · Privacy  · Terms  · Advertising  · Ad Choices   · Cookies  · More",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_ShivamEvents_3e91ae729f81",
-      "platform": "Facebook",
-      "author": "ShivamEvents",
-      "date": "2026-07-14",
-      "event": "Wedding canapé hour",
-      "text": "Our bride enjoying canapé hour with her friends",
-      "sentiment": "Positive",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_ShivamEvents_bdb3fb2d3669",
-      "platform": "Facebook",
-      "author": "ShivamEvents",
-      "date": "2026-07-14",
-      "event": "Event at Moor Hall Hotel",
-      "text": "Event at @moorhallhotel … See more",
-      "sentiment": "Neutral",
       "city": "Leicester",
       "isUpcoming": true
     },
     {
-      "id": "facebook_SriBardai_64786da1e35b",
+      "id": "facebook_AISfestival_e11eb17f01de",
       "platform": "Facebook",
-      "author": "SriBardai",
+      "author": "AISfestival",
       "date": "2026-07-14",
-      "event": "None",
-      "text": "notSpdosret6tr lh8hMha865lf1ce03ce9854tc71t1n607195rL7o1567m",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_ShivamEvents_cc19da08807f",
-      "platform": "Facebook",
-      "author": "ShivamEvents",
-      "date": "2026-07-14",
-      "event": "Canapé hour at diaspora community event",
-      "text": "This is how we start every event  with flavour, warmth,and a little bit of wow. Our canapé hour is always one of… See more",
+      "event": "Indian Summer Festival: Cycles and Circles Evening Raag",
+      "text": "An Indian Summer Festival Begins Today Our festival begins with @sitarmusicsociety's event, Cycles and Circles Evening Raag from 7:30pm - 9:30pm. Immerse yourself in an enchanting evening of Indian classical music that traces the enduring beauty of circles and cycles—echoing through rāg, rhythm, and resonance. This special performance explores the continuous flow of musical patterns, where beginnings dissolve into endings and return again, much like the cycles of nature and life itself. Renowned",
       "sentiment": "Positive",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": true
     },
     {
-      "id": "facebook_ShivamEvents_629ce18a400f",
+      "id": "facebook_AISfestival_00b266a9179d",
       "platform": "Facebook",
-      "author": "ShivamEvents",
+      "author": "AISfestival",
       "date": "2026-07-14",
-      "event": "General community event introduction",
-      "text": "This is how we start every event  with flavour, warmth,",
+      "event": "An Indian Summer 2026",
+      "text": "An Indian Summer 2026 Is this week! … See more",
       "sentiment": "Positive",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": true
     },
     {
-      "id": "facebook_SriBardai_9f0e19f9be5b",
-      "platform": "Facebook",
-      "author": "SriBardai",
-      "date": "2026-07-14",
-      "event": "Experience management platform promotion",
-      "text": "The most powerful, simple and trusted way to gather experience data. Start your journey to experience management and try a free account today.",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_ShivamEvents_756ae1860d3f",
+      "id": "facebook_ShivamEvents_4b976c8731e6",
       "platform": "Facebook",
       "author": "ShivamEvents",
       "date": "2026-07-14",
-      "event": "Canapé hour",
-      "text": "and a little bit of wow. Our canapé hour is always one of… See more",
-      "sentiment": "Positive",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_SriBardai_675b35b5ad53",
-      "platform": "Facebook",
-      "author": "SriBardai",
-      "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "drnoptseoScnfMti173L34i6ae0fmil8rt091uef21o0 0gmu60r4fh9a482",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_ShivamEvents_12531aba9709",
-      "platform": "Facebook",
-      "author": "ShivamEvents",
-      "date": "2026-07-14",
-      "event": "Indian diaspora community event reflection",
-      "text": "Moments like these are exactly why we do what we do S… See more",
-      "sentiment": "Positive",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_ShivamEvents_8b2b7e05e406",
-      "platform": "Facebook",
-      "author": "ShivamEvents",
-      "date": "2026-07-14",
-      "event": "Indian diaspora community event",
-      "text": "Moments like these are exactly why we do what we do",
-      "sentiment": "Positive",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_SriBardai_4de6b392673f",
-      "platform": "Facebook",
-      "author": "SriBardai",
-      "date": "2026-07-14",
-      "event": "Condolence message for a community member",
-      "text": "We have received the following sad news: Our Condolences and Deepest Sympathies go to the family. Please pass this information to all our friends and relat…",
-      "sentiment": "Negative",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_ShivamEvents_9e73c08bcdf7",
-      "platform": "Facebook",
-      "author": "ShivamEvents",
-      "date": "2026-07-14",
-      "event": "Social media platform information",
-      "text": "Information about Page Insights Data  · Privacy  · Terms  · Advertising  · Ad Choices   · Cookies  · More",
+      "event": "Location address in Leicester",
+      "text": "Barkby Road, Leicester, United Kingdom, LE4 9LG",
       "sentiment": "Neutral",
       "city": "Leicester",
       "isUpcoming": false
@@ -1274,157 +966,69 @@
       "isUpcoming": false
     },
     {
-      "id": "facebook_ShivamEvents_2bdfc70fab51",
-      "platform": "Facebook",
-      "author": "ShivamEvents",
-      "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "jrWxwtjJcqPdNTdswGrpmPG9Eeawe0lStG3Qa5F1a9VMpyVv61ih",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_ShivamEvents_60d7bd47cd24",
-      "platform": "Facebook",
-      "author": "ShivamEvents",
-      "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "tedoopsSnra6uii0Me3366f59ira4l80 glu01e0L091g6ncr82999og1cl1",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_ShivamEvents_4cf96516a364",
-      "platform": "Facebook",
-      "author": "ShivamEvents",
-      "date": "2026-07-14",
-      "event": "Unspecified",
-      "text": "rsdSpnooet6fh6utcto2Ml310urL3h1424c28gni443a741leti31u6r1e g",
-      "sentiment": "Neutral",
-      "city": "Leicester",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_CentralStageCrew_e44589b04781",
+      "id": "facebook_CentralStageCrew_79645115d6ef",
       "platform": "Facebook",
       "author": "CentralStageCrew",
       "date": "2026-07-14",
-      "event": "Ashanti - Sean Paul concert change over",
-      "text": "The Ashanti - Sean Paul change over in Cardiff.This was a difficult change over. Which we smashed in record time.… See more",
+      "event": "Events Crew services coverage",
+      "text": "Events Crew in Birmingham + Covering Nottingham, Coventry, Leicester, All Midlands, London, & Uk.",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "facebook_CentralStageCrew_162a80279cd2",
+      "platform": "Facebook",
+      "author": "CentralStageCrew",
+      "date": "2026-07-14",
+      "event": "Central Stage Crew monthly performance achievement",
+      "text": "We hit a new personal best this month. \"107 Jobs in a month\". Our previous best being 60... Thanks to the CSC team for your hard work & determination.💯🔥 #centralstagecrew #bestcrew #crewboss #events #snowballing #allthework #TeamCSC #DontStandBy #topcrew #crewlife #midlands #squadgoals #CSC",
       "sentiment": "Positive",
       "city": "Birmingham",
       "isUpcoming": false
     },
     {
-      "id": "facebook_CentralStageCrew_92d0b6cd7dd1",
+      "id": "facebook_CentralStageCrew_2f8a5685c49e",
       "platform": "Facebook",
       "author": "CentralStageCrew",
       "date": "2026-07-14",
-      "event": "Ashanti and Sean Paul performance change over",
-      "text": "The Ashanti - Sean Paul change over in Cardiff.",
+      "event": "Central Stage Crew",
+      "text": "You should always check it's clear. #centralstagecrew",
       "sentiment": "Neutral",
       "city": "Birmingham",
       "isUpcoming": false
     },
     {
-      "id": "facebook_CentralStageCrew_0416b3f0a1d0",
+      "id": "facebook_CentralStageCrew_9c836e363c23",
       "platform": "Facebook",
       "author": "CentralStageCrew",
       "date": "2026-07-14",
-      "event": "System or process changeover",
-      "text": "This was a difficult change over. Which we smashed in record time.… See more",
-      "sentiment": "Positive",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_CentralStageCrew_fda9bdf65836",
-      "platform": "Facebook",
-      "author": "CentralStageCrew",
-      "date": "2026-07-14",
-      "event": "Van Morrison concert setup",
-      "text": "Setting up for Van Morrison.… See more",
+      "event": "Do You Understand Me? Official Trailer 2025",
+      "text": "Do You Understand Me? Official Trailer 2025 Through dance, projection and art installation, ‘Do You Understand Me?’ follows the journey of someone with dementia navigating an ever changing world and the new limits they face. Exploring the 5 main symptoms of the condition; memory loss, sequencing, spatial awareness/depth perception and audio & visual hallucinations, we see how their environments change, the relationship with their loved ones change and how two sisters try to find a new way of und",
       "sentiment": "Neutral",
       "city": "Birmingham",
       "isUpcoming": true
     },
     {
-      "id": "facebook_CentralStageCrew_849083c20703",
+      "id": "facebook_SriBardai_d768c7897be7",
       "platform": "Facebook",
-      "author": "CentralStageCrew",
+      "author": "SriBardai",
       "date": "2026-07-14",
-      "event": "Central Stage Crew team activity",
-      "text": "Guess That Gig?#CSC #centralstagecrew #squadgoals #crewboss #topcrew #DontStandBy #snowballing #CSC #crewlife #teamwork",
+      "event": "Sri Bardai Brahmin Samaj community profile",
+      "text": "Bardaionline - Sri Bardai Brahmin Samaj (Leicester) UK",
       "sentiment": "Neutral",
-      "city": "Birmingham",
+      "city": "Leicester",
       "isUpcoming": false
     },
     {
-      "id": "facebook_CentralStageCrew_ee9a680f7f3b",
+      "id": "facebook_SriBardai_17e9fc1c775e",
       "platform": "Facebook",
-      "author": "CentralStageCrew",
+      "author": "SriBardai",
       "date": "2026-07-14",
-      "event": "Central Stage Crew team activity",
-      "text": "#CSC #centralstagecrew #squadgoals #crewboss #topcrew #DontStandBy #snowballing #CSC #crewlife #teamwork",
+      "event": "Sri Bardai Brahmin Samaj community page",
+      "text": "Connecting Bardai Brahmins Worldwide. Welcome to the Facebook Page of the Sri Bardai Brahmin Samaj (",
       "sentiment": "Neutral",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_CentralStageCrew_a92028cfc4d1",
-      "platform": "Facebook",
-      "author": "CentralStageCrew",
-      "date": "2026-07-14",
-      "event": "Contact information for Central Stage Crew",
-      "text": "centralstagecrew.contact@gmail.com",
-      "sentiment": "Neutral",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_CentralStageCrew_9e73c08bcdf7",
-      "platform": "Facebook",
-      "author": "CentralStageCrew",
-      "date": "2026-07-14",
-      "event": "Social media platform footer information",
-      "text": "Information about Page Insights Data  · Privacy  · Terms  · Advertising  · Ad Choices   · Cookies  · More",
-      "sentiment": "Neutral",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_CentralStageCrew_b9f3a2d0c4a6",
-      "platform": "Facebook",
-      "author": "CentralStageCrew",
-      "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "Soesrnotpdog1f6aai00Nga3v173bfe2f 22g68u16,213rc gte9uf1llmaShared with Public",
-      "sentiment": "Neutral",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_CentralStageCrew_c2cee7492b32",
-      "platform": "Facebook",
-      "author": "CentralStageCrew",
-      "date": "2026-07-14",
-      "event": "Van Morrison concert setup",
-      "text": "Setting up for Van Morrison. #centralstagecrew #squadgoals #crewboss #topcrew #CSC #crewlife #teamwork",
-      "sentiment": "Neutral",
-      "city": "Birmingham",
-      "isUpcoming": true
-    },
-    {
-      "id": "facebook_CentralStageCrew_217ff081b8a1",
-      "platform": "Facebook",
-      "author": "CentralStageCrew",
-      "date": "2026-07-14",
-      "event": "Unknown",
-      "text": "rSonoptsedtalrogu4lMmig4ui4ineLtf193ie449r8ia 4952f0mm4mc2l3",
-      "sentiment": "Neutral",
-      "city": "Birmingham",
+      "city": "Leicester",
       "isUpcoming": false
     },
     {
@@ -1439,34 +1043,45 @@
       "isUpcoming": true
     },
     {
-      "id": "facebook_SriBardai_8248a58ced0b",
+      "id": "facebook_SriBardai_2d046e569c53",
       "platform": "Facebook",
       "author": "SriBardai",
       "date": "2026-07-14",
-      "event": "Jai Shree Satya Narayan Dev prayer",
-      "text": "Jai shree Satya narayan dev ni",
+      "event": "Satyanarayan Katha",
+      "text": "Looking forward to seeing you all tomorrow for the Satyanarayan Katha Please do not worry if you have not had the opportunity to RSVP, as you are still more than welcome to join us on the day The deadline to participate as a Yajman has now passed, so walk-ins will be unable to register for this. Further details including location are in your official email invite We would love to see as many of you there as possible! #bardaibrahminsamaj #leicestersamaj #satyanarayankatha #samaj #brahminsamaj",
       "sentiment": "Positive",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": true
     },
     {
-      "id": "facebook_SriBardai_e18911052e5e",
+      "id": "facebook_SriBardai_1bbac840c3bf",
       "platform": "Facebook",
       "author": "SriBardai",
       "date": "2026-07-14",
-      "event": "Sad news announcement",
-      "text": "https://www.bardaionline.com/.../sad-news.../2026/05/14/",
-      "sentiment": "Negative",
+      "event": "Masters study survey on British Hindu Community",
+      "text": "Help Disha with this survey for her Masters study about British Hindu Community… See more",
+      "sentiment": "Neutral",
+      "city": "Leicester",
+      "isUpcoming": true
+    },
+    {
+      "id": "facebook_SriBardai_1bdf6ff01d00",
+      "platform": "Facebook",
+      "author": "SriBardai",
+      "date": "2026-07-14",
+      "event": "British Hindu Community Attitudes",
+      "text": "British Hindu Community Attitudes",
+      "sentiment": "Neutral",
       "city": "Leicester",
       "isUpcoming": false
     },
     {
-      "id": "facebook_SriBardai_ffc502115bbf",
+      "id": "facebook_SriBardai_f595811a6d51",
       "platform": "Facebook",
       "author": "SriBardai",
       "date": "2026-07-14",
-      "event": "Condolence message",
-      "text": "So sorry to hear for your loss. Our deepest condolences to you and your family. Our thoughts and prayers are with you. Om Shanti Shanti",
+      "event": "Sad News: Passing of Ramagauri Mohanlal Thanki",
+      "text": "Family Announcements » Sad News – Ramagauri Mohanlal Thanki, Leicester, UK. » SBBSLeics",
       "sentiment": "Negative",
       "city": "Leicester",
       "isUpcoming": false
@@ -1478,6 +1093,17 @@
       "date": "2026-07-14",
       "event": "Patotsav",
       "text": "Looking forward to seeing you at tomorrow’s Patotsav! … See more",
+      "sentiment": "Positive",
+      "city": "Leicester",
+      "isUpcoming": true
+    },
+    {
+      "id": "facebook_SriBardai_8943dc4c5eec",
+      "platform": "Facebook",
+      "author": "SriBardai",
+      "date": "2026-07-14",
+      "event": "Patotsav",
+      "text": "Looking forward to seeing you at tomorrow’s Patotsav! Don’t worry if you haven’t had a chance to RSVP yet, as you are still more than welcome to join us on the day Location details are in your official email invite! #bardaibrahminsamaj #brahminsamaj #leicestersamaj #leicesterbrahminsamaj #patotsav",
       "sentiment": "Positive",
       "city": "Leicester",
       "isUpcoming": true

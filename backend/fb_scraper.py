@@ -1,6 +1,7 @@
 """Standalone Facebook scraper using Playwright. Run as a separate process to avoid asyncio conflicts."""
 import os
 import sys
+import re
 import json
 import sqlite3
 from datetime import datetime
@@ -31,24 +32,64 @@ NOISE_PREFIXES = ("unread", "you have a new friend suggestion", "commented on",
                   "posted a memory", "shared a new reel", "shared", "was at",
                   "posted in")
 
+NOISE_SUBSTRINGS = (
+    "page insights data", "privacy · terms", "ad choices · cookies",
+    "information about page insights data", "advertising · ad choices",
+    "centralstagecrew.contact@gmail.com",
+)
+
+PAGE_KEYWORDS = {
+    "AISfestival": ["indian summer", "summer on the square", "festival", "leicester"],
+    "ShivamEvents": ["shivam", "events", "leicester", "garba", "diwali"],
+    "CentralStageCrew": ["central stage crew", "csc", "crew", "events", "midlands", "birmingham"],
+    "SriBardai": ["sri bardai", "bardai", "brahmin", "samaj", "leicester", "katha", "patotsav"],
+    "ShreePrajapatiAssociationLeicester": ["prajapati", "leicester", "samaj", "community"],
+}
+
 def is_noisy(text):
     lower = text.lower()
-    return lower.startswith(NOISE_PREFIXES) or "posted a memory" in lower or "friend suggestion" in lower
+    if lower.startswith(NOISE_PREFIXES):
+        return True
+    if "posted a memory" in lower or "friend suggestion" in lower:
+        return True
+    if any(n in lower for n in NOISE_SUBSTRINGS):
+        return True
+    return False
+
+def is_gibberish(text):
+    """Reject Facebook obfuscated React text nodes and random base64-like strings."""
+    if not text:
+        return True
+    tokens = [w for w in re.split(r'\s+', text) if w]
+    # Real posts are made of readable words
+    if not tokens:
+        return True
+    # No real word separators -> random encoded string
+    if ' ' not in text and '\n' not in text and '\t' not in text and len(tokens) == 1:
+        return True
+    long_words = [w for w in tokens if len(w) > 1]
+    if len(long_words) < 3:
+        return True
+    # Too many single-character tokens (vertical obfuscated text)
+    single_char_ratio = sum(1 for w in tokens if len(w) == 1) / len(tokens)
+    if single_char_ratio > 0.4:
+        return True
+    return False
 
 def is_uk_relevant(text, page):
-    """Posts from curated Midlands Indian community pages are assumed relevant.
-       Otherwise check for UK/Midlands/Indian community keywords."""
-    if page in PAGE_CITIES:
-        return True
+    """Check for Midlands / Indian diaspora keywords and page-specific terms."""
+    text_lower = text.lower()
     uk_keywords = [
         "midlands", "birmingham", "leicester", "coventry", "nottingham",
         "wolverhampton", "derby", "walsall", "solihull", "uk", "united kingdom",
         "england", "indian community", "diaspora", "garba", "navratri", "diwali",
         "hindu", "sikh", "gujarati", "punjabi", "bollywood", "samaj", "mandir",
         "temple", "festival", "community event", "cultural", "katha", "patotsav",
-        "satsang", "puja", "havan", "british hindu"
+        "satsang", "puja", "havan", "british hindu", "crew", "events", "stage",
+        "central", "shivam", "bardai", "summer", "square", "leicester"
     ]
-    text_lower = text.lower()
+    if page in PAGE_KEYWORDS:
+        uk_keywords = list(set(uk_keywords + PAGE_KEYWORDS[page]))
     return any(kw in text_lower for kw in uk_keywords)
 
 def analyze_with_gemini(text):
@@ -159,28 +200,19 @@ def main():
                     page.evaluate("window.scrollBy(0, 1000)")
                     page.wait_for_timeout(2000)
 
-                # Extract post text using JavaScript — broad approach to find post content
+                # Extract visible post text from all dir="auto" elements inside the main content area
                 raw_posts = page.evaluate("""() => {
                     const posts = [];
-                    // Get all div[dir="auto"] elements with substantial text
-                    const textDivs = document.querySelectorAll('div[dir="auto"]');
                     const seen = new Set();
-                    for (const div of textDivs) {
-                        const text = div.textContent.trim();
-                        if (text.length < 30 || seen.has(text)) continue;
-                        // Skip if this text is a child of another div we already captured
-                        seen.add(text);
-                        // Skip UI elements
-                        if (text.match(/^(Like|Comment|Share|Follow|See more|View more)/)) continue;
-                        posts.push(text);
-                    }
-                    // Also check for span elements with post text
-                    const spans = document.querySelectorAll('span[dir="auto"]');
-                    for (const span of spans) {
-                        const text = span.textContent.trim();
+                    const main = document.querySelector('[role="main"]') || document.body;
+                    const selectors = main.querySelectorAll('div[dir="auto"], span[dir="auto"]');
+                    for (const el of selectors) {
+                        const style = window.getComputedStyle(el);
+                        if (style.display === 'none' || style.visibility === 'hidden' || style.opacity === '0') continue;
+                        const text = (el.innerText || '').trim();
                         if (text.length < 30 || seen.has(text)) continue;
                         seen.add(text);
-                        if (text.match(/^(Like|Comment|Share|Follow|See more|View more)/)) continue;
+                        if (text.match(/^(Like|Comment|Share|Follow|See more|View more|All reactions)/)) continue;
                         posts.push(text);
                     }
                     return posts;
@@ -205,7 +237,7 @@ def main():
 
                     if not post_text or len(post_text) < 30:
                         continue
-                    if is_noisy(post_text):
+                    if is_noisy(post_text) or is_gibberish(post_text):
                         continue
 
                     # Use stable content hash to avoid duplicates across runs
@@ -222,6 +254,10 @@ def main():
                         post_id = f"facebook_{fb_page}_{text_hash}"
                         analysis = analyze_with_gemini(post_text[:500])
 
+                        event = analysis.get("event", "General Community Feedback 2026")
+                        if not event or event.lower() == "unknown":
+                            event = "General Community Feedback 2026"
+
                         # Trust page-city mapping, fall back to Gemini
                         city = PAGE_CITIES.get(fb_page, analysis.get("city", "Birmingham"))
 
@@ -230,7 +266,7 @@ def main():
                             "platform": "Facebook",
                             "author": fb_page,
                             "date": datetime.now().strftime("%Y-%m-%d"),
-                            "event": analysis.get("event", "General Community Feedback 2026"),
+                            "event": event,
                             "text": post_text[:500],
                             "sentiment": analysis.get("sentiment", "Neutral"),
                             "city": city,
