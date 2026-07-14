@@ -1,20 +1,21 @@
 {
-  "exportedAt": "2026-07-14T21:12:23.028873Z",
-  "totalFeedbackCount": 142,
+  "exportedAt": "2026-07-14T21:18:13.103544Z",
+  "totalFeedbackCount": 176,
   "sentimentPercentages": {
-    "Positive": 21.13,
-    "Neutral": 42.25,
-    "Negative": 36.62
+    "Positive": 21.02,
+    "Neutral": 42.05,
+    "Negative": 36.93
   },
   "platformCounts": {
-    "Twitter": 133,
+    "Twitter": 167,
     "Facebook": 5,
     "Quora": 4
   },
   "cityCounts": {
     "Coventry": 5,
     "Leicester": 6,
-    "Birmingham": 130,
+    "Birmingham": 163,
+    "Wolverhampton": 1,
     "Nottingham": 1
   },
   "items": [
@@ -63,138 +64,6 @@
       "isUpcoming": false
     },
     {
-      "id": "twitter_2077026476415689073",
-      "platform": "Twitter",
-      "author": "@blabblabai",
-      "date": "2026-07-14",
-      "event": "General Community Feedback 2026",
-      "text": "@James525765 @nikhilu38489288 @RanaBharatiye @RupertLowe10 If this happened in india, it would be seen as colonisation. Even though i am south asian myself (not indian) i hate what has happened to the UK",
-      "sentiment": "Negative",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2077022684274213203",
-      "platform": "Twitter",
-      "author": "@Dante1568690257",
-      "date": "2026-07-14",
-      "event": "General Community Feedback 2026",
-      "text": "@Aaronal16 Most of these passport holding emigrants who leave each year are of African and South Asian origin mostly moving to France &amp; the UK with a minority returning home. These trend is also increasing in number.",
-      "sentiment": "Neutral",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2077010883914670131",
-      "platform": "Twitter",
-      "author": "@24hourmingi",
-      "date": "2026-07-14",
-      "event": "General Community Feedback 2026",
-      "text": "@Whatshalli16854 he is literally a UK citizen, but you don’t consider him as such because he’s ethnically south asian, and then you say you’re not racist, make it make sense lmaooo",
-      "sentiment": "Negative",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2077000157162250500",
-      "platform": "Twitter",
-      "author": "@TheNatPulse",
-      "date": "2026-07-14",
-      "event": "General Community Feedback 2026",
-      "text": "UK Govt Claims It May Restrict Visas for Pakistan Over Refusal to Take Back Grooming Gang Leader.\n\nThe British government claims to be considering visa restrictions on the Islamic Republic of Pakistan if it refuses to take back Shabir Ahmed, a convicted grooming gang leader, https://t.co/nW3doo2yPB",
-      "sentiment": "Negative",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076994167402533301",
-      "platform": "Twitter",
-      "author": "@TheLadyGarvin",
-      "date": "2026-07-14",
-      "event": "General Community Feedback 2026",
-      "text": "Our current attorney General has made a career fighting for the rights of law abiding citizens.\n\nHARMER &amp; STARMER joined the Gravy train bringing the CHAGOS loophole where British &amp; Indian Civil Servants and lawyers fighting for a share of UK £45BILLION PAYMENT to undermine",
-      "sentiment": "Negative",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076985564423705071",
-      "platform": "Twitter",
-      "author": "@TChugster",
-      "date": "2026-07-14",
-      "event": "General Community Feedback 2026",
-      "text": "@benonwine No reparations should ever be paid. \n\nAre they asking reparations from other European empires from the time, some like Spain, France and Portugal had more slaves the Britain ever did?\n\nAre they asking for reparations from the African nations, that had a culture of slavery that https://t.co/rZCJMRRSc0",
-      "sentiment": "Negative",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076982798293045522",
-      "platform": "Twitter",
-      "author": "@J99Chad",
-      "date": "2026-07-14",
-      "event": "General Community Feedback 2026",
-      "text": "@totalindiadeath When I was young, I wished to travel to Canada and the UK for sightseeing and experiencing European culture. But now those plans have changed because it's not what it used to be, it's just South Asian bioweapons.",
-      "sentiment": "Negative",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076977861865746786",
-      "platform": "Twitter",
-      "author": "@YethroYeth156",
-      "date": "2026-07-14",
-      "event": "General Community Feedback 2026",
-      "text": "@LauraKirkh95756 Im a non religious one but from asia. White girls chose pakis or muslims or fell into their victim hood traps. I saw them in clubs social meetings etc. you see their fate! I dont live in the uk but back where i born but never frust muslim south asian men. Most are frauds",
-      "sentiment": "Negative",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076971872462455085",
-      "platform": "Twitter",
-      "author": "@CanadaFreedom0",
-      "date": "2026-07-14",
-      "event": "Community Event",
-      "text": "UK West Midlands Police arrested 4 South Asian men who were armed at the time of the arrest.\n\nGurwinder Singh, 25, of Ealing, London, admitted possession of a firearm, ammunition and five swords, and was jailed for five years and 11 months.\n\nHarpandeep Singh, 23, of Hackney, https://t.co/zavIbHMVVH",
-      "sentiment": "Neutral",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076965763991433325",
-      "platform": "Twitter",
-      "author": "@Dino_Pterota12",
-      "date": "2026-07-14",
-      "event": "General Community Feedback 2026",
-      "text": "Ah yes, The South Asian subcontinent, The Irish and scots will support \"England\"",
-      "sentiment": "Neutral",
-      "city": "Birmingham",
-      "isUpcoming": true
-    },
-    {
-      "id": "twitter_2076957786861187400",
-      "platform": "Twitter",
-      "author": "@OFBJPUK",
-      "date": "2026-07-14",
-      "event": "OFBJP UK Meeting With Shishir Bajoriya 2026",
-      "text": "It was a pleasure meeting Shri Shishir Bajoriya Ji during his short visit to London.\n\nAs a Core Committee Member of the BJP’s Foreign Affairs Department and Overseas Friends of BJP (OFBJP), he shared valuable guidance and direction with the OFBJP UK team on strengthening our https://t.co/mIkIkweNfl",
-      "sentiment": "Positive",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076932501654692268",
-      "platform": "Twitter",
-      "author": "@eggsauceyy",
-      "date": "2026-07-14",
-      "event": "General Community Feedback 2026",
-      "text": "@rko78280 most muslims are of south Asian descent in the uk and they’re not really the demographic that make it pro. Most large diasporas where there’s a 50/50 population split between Muslims and Christian like Nigeria &amp; Sierra Leone most of the players come from Christian families. https://t.co/Z4p4OYE1bp",
-      "sentiment": "Neutral",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
       "id": "twitter_2076927793451954381",
       "platform": "Twitter",
       "author": "@saranstm",
@@ -202,17 +71,6 @@
       "event": "General Community Feedback 2026",
       "text": "The claim that Gandhi's fasts brought the British Empire to its knees doesn't hold up in the internet age. \n\nBy the end of World War II, Britain was exhausted economically and politically. The Atlantic Charter (1941), signed by Churchill and Roosevelt, proclaimed the principle of",
       "sentiment": "Neutral",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076918956049264955",
-      "platform": "Twitter",
-      "author": "@skilfuldotcom",
-      "date": "2026-07-14",
-      "event": "General Community Feedback 2026",
-      "text": "@jmcsms @Independent NHS+Tories+Labour KNOW mass immigration destroys NHS:\n\n\"outdated health and care services designed for white British patients\"\n\n\"south Asian heritage in UK higher risk of heart disease, stroke, diabetes, dementia to increase 600% in the next three decades\"\nhttps://t.co/yBfHJa8jku",
-      "sentiment": "Negative",
       "city": "Birmingham",
       "isUpcoming": false
     },
@@ -261,13 +119,332 @@
       "isUpcoming": false
     },
     {
+      "id": "twitter_2076876332932481475",
+      "platform": "Twitter",
+      "author": "@uggar29",
+      "date": "2026-07-14",
+      "event": "Englistan Billboard Controversy 2026",
+      "text": "@Rightanglenews A controversial \"Englistan\" billboard was put up in Whitechapel, London. Whitechapel is one of London's most culturally vibrant and historically diverse districts.\n\nApproximately 56.3% of residents identify as Asian, with the British Bangladeshi community alone accounting for https://t.co/ceRlMgQjng",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076961238098084164",
+      "platform": "Twitter",
+      "author": "@EZPZresurrected",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@captive_dreamer The prosecutor at the ICC is a british pakistani who raped his coworker, then issued an arrest warrant against Bibi Netanyahu and told her if she tells on him for raping her it will her the Palestinians.\n\nHis brother is also a judge in the UK.\nAnd also a rapist.",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077104853860364776",
+      "platform": "Twitter",
+      "author": "@ItsAndyRyan",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@QueenMab87 But Britain has lots of Caribbean, East Asian, South Asian, African immigrants, and others, and yes, they eat their own ethnic food.\n\nIf you don't like fried tomatoes, mushrooms, bacon, sausage etc for breakfast then that's fine, but it comes down to your own personal taste...",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077041584751739113",
+      "platform": "Twitter",
+      "author": "@Akrambtw",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@onchainmurderer Have you seen the amount of begs in the UK wearing the Morocco jersey, and they you have the south asian twinks talking on tiktok ab how north african food is meady wallah they wouldnt say this typa shit to a moroccans face",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077026476415689073",
+      "platform": "Twitter",
+      "author": "@blabblabai",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@James525765 @nikhilu38489288 @RanaBharatiye @RupertLowe10 If this happened in india, it would be seen as colonisation. Even though i am south asian myself (not indian) i hate what has happened to the UK",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077022684274213203",
+      "platform": "Twitter",
+      "author": "@Dante1568690257",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@Aaronal16 Most of these passport holding emigrants who leave each year are of African and South Asian origin mostly moving to France &amp; the UK with a minority returning home. These trend is also increasing in number.",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077010883914670131",
+      "platform": "Twitter",
+      "author": "@24hourmingi",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@Whatshalli16854 he is literally a UK citizen, but you don’t consider him as such because he’s ethnically south asian, and then you say you’re not racist, make it make sense lmaooo",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077000157162250500",
+      "platform": "Twitter",
+      "author": "@TheNatPulse",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "UK Govt Claims It May Restrict Visas for Pakistan Over Refusal to Take Back Grooming Gang Leader.\n\nThe British government claims to be considering visa restrictions on the Islamic Republic of Pakistan if it refuses to take back Shabir Ahmed, a convicted grooming gang leader, https://t.co/nW3doo2yPB",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076985564423705071",
+      "platform": "Twitter",
+      "author": "@TChugster",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@benonwine No reparations should ever be paid. \n\nAre they asking reparations from other European empires from the time, some like Spain, France and Portugal had more slaves the Britain ever did?\n\nAre they asking for reparations from the African nations, that had a culture of slavery that https://t.co/rZCJMRRSc0",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076982798293045522",
+      "platform": "Twitter",
+      "author": "@J99Chad",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@totalindiadeath When I was young, I wished to travel to Canada and the UK for sightseeing and experiencing European culture. But now those plans have changed because it's not what it used to be, it's just South Asian bioweapons.",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076977861865746786",
+      "platform": "Twitter",
+      "author": "@YethroYeth156",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@LauraKirkh95756 Im a non religious one but from asia. White girls chose pakis or muslims or fell into their victim hood traps. I saw them in clubs social meetings etc. you see their fate! I dont live in the uk but back where i born but never frust muslim south asian men. Most are frauds",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076965763991433325",
+      "platform": "Twitter",
+      "author": "@Dino_Pterota12",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "Ah yes, The South Asian subcontinent, The Irish and scots will support \"England\"",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076957786861187400",
+      "platform": "Twitter",
+      "author": "@OFBJPUK",
+      "date": "2026-07-14",
+      "event": "OFBJP UK Leadership Meeting",
+      "text": "It was a pleasure meeting Shri Shishir Bajoriya Ji during his short visit to London.\n\nAs a Core Committee Member of the BJP’s Foreign Affairs Department and Overseas Friends of BJP (OFBJP), he shared valuable guidance and direction with the OFBJP UK team on strengthening our https://t.co/mIkIkweNfl",
+      "sentiment": "Positive",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076932501654692268",
+      "platform": "Twitter",
+      "author": "@eggsauceyy",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@rko78280 most muslims are of south Asian descent in the uk and they’re not really the demographic that make it pro. Most large diasporas where there’s a 50/50 population split between Muslims and Christian like Nigeria &amp; Sierra Leone most of the players come from Christian families. https://t.co/Z4p4OYE1bp",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077094039090786787",
+      "platform": "Twitter",
+      "author": "@dad_who7541",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@GeorgeUK Which means when Christmas comes, all those lights will be a hazard too!!\nHow many more examples do you need!! There are too many examples of things like this against England. \nBut I wonder if any Diwali decorations will be taken down?",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077044915561771037",
+      "platform": "Twitter",
+      "author": "@hhzqfckdgh_page",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@LouFrance75 ❌ The video in the post shows a bearded imam preaching in English about applying historical Islamic rules (citing Prophet Muhammad and Imam Malik) in a future UK Islamic state, including forcing non-Muslims to wear distinctive/humiliating markers like mismatched shoes, a red",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
       "id": "twitter_2076997823204089921",
       "platform": "Twitter",
       "author": "@MomentMag",
       "date": "2026-07-14",
-      "event": "Community Event",
+      "event": "International Indian Dance Festival",
       "text": "Peterborough. 31st July. Something extraordinary.\n\nThe International Indian Dance Festival lands at The Cresset – Bharatnatyam, Kathak, Garba, Odissi and more, performed by artists from across the UK.\n\nRead the full article here: https://t.co/bAtmUT8nGv\n\n#IndianDanceFestival https://t.co/Qi6rucfNUn",
+      "sentiment": "Positive",
+      "city": "Birmingham",
+      "isUpcoming": true
+    },
+    {
+      "id": "twitter_2076971872462455085",
+      "platform": "Twitter",
+      "author": "@CanadaFreedom0",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "UK West Midlands Police arrested 4 South Asian men who were armed at the time of the arrest.\n\nGurwinder Singh, 25, of Ealing, London, admitted possession of a firearm, ammunition and five swords, and was jailed for five years and 11 months.\n\nHarpandeep Singh, 23, of Hackney, https://t.co/zavIbHMVVH",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076918956049264955",
+      "platform": "Twitter",
+      "author": "@skilfuldotcom",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@jmcsms @Independent NHS+Tories+Labour KNOW mass immigration destroys NHS:\n\n\"outdated health and care services designed for white British patients\"\n\n\"south Asian heritage in UK higher risk of heart disease, stroke, diabetes, dementia to increase 600% in the next three decades\"\nhttps://t.co/yBfHJa8jku",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077135494924599512",
+      "platform": "Twitter",
+      "author": "@ChezHigher",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@jordanbpeterson I think it's supposed to refer to Mother Mirian of @thejourney15  type converts.\n\nLike in the UK a British Indian is someone with a British and Indian parent.\n\nLike with woman we are in the tower of Babel.",
       "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077130456202629141",
+      "platform": "Twitter",
+      "author": "@BritIndianVoice",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "Critical things happening\nin Britain right now:\n\n🏛️ Andy Burnham confirmed\nas new Labour leader —\n349 of 403 MPs backing him.\n\nBritain’s next Prime Minister,\nfor all practical purposes,\nis now decided.\n\n⚡ UK industrial electricity\nprices — 45% above the\nG7 median. \n\n4 in 10",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077119232144224363",
+      "platform": "Twitter",
+      "author": "@Huhimagine",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@Fwoggie @BobCrauford @USWPColby No, I did not get my information from X or Fox News, I got them through these published reports.. 👇🏻👇🏻👇🏻\nHere is a list of key official UK reports and inquiries into group-based child sexual exploitation (“grooming gangs”):\n•  Jay Report (2014) – Independent Inquiry into Child",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077115330984305103",
+      "platform": "Twitter",
+      "author": "@elrat",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2025",
+      "text": "@WHITEONLYPLANET @seumasabheinn @Victor_Coates82 Bollox! \n\nAs of 2025, Muslims make up approximately 6.5% of the population in England &amp; Wales. This demographic represents one of the fastest-growing and youngest groups in the country, with nearly half of the British Muslim population under the age of 25. That’s over 4 million!!",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077110328341467197",
+      "platform": "Twitter",
+      "author": "@__K4I__",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@JohnCleese 3rd gen British pakistani here. \n\nGo to Lidget Green Bradford and tell me how \"diverse\" it is. My lot has made the lives of non Muslims hell since the 60's. Now that entire postcode might as well be occupied land.\n\nThe UK didn't import cheap labour, it imported islamic mafias.",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077103728838979802",
+      "platform": "Twitter",
+      "author": "@los_parceros2",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@FNSWAY Theres no such thing as British Pakistani.\nHes a Pakistani probably leeching benefits in England",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077083486075146609",
+      "platform": "Twitter",
+      "author": "@law71419",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@shaynewiskin There's no such person as a British Muslim, there are however Muslim Islamists who live in Britain.",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077068690097349073",
+      "platform": "Twitter",
+      "author": "@AbdiAhmed786",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@SJG99 @gjquartermaine @georgegalloway Hows she english you donut? Shes a british Pakistani, English are an ethnic white group indigenous native to England",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077062165480001905",
+      "platform": "Twitter",
+      "author": "@dr_rita39",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "The UK has always had a serious problem with child abuse/sexual exploitation whether it was Jimmy Saville or the Church.Its grooming gang issue is a product of lack of accountability for decades.Our ex British Indian PM(friend of BJP) ensured Pakistanis were specifically targeted",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077049602981650501",
+      "platform": "Twitter",
+      "author": "@lightupthespark",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@ApsanaBegumMP @KNFMHBV Apsana, we cannot end honor-based abuse without addressing one of its root causes: Sharia councils in the UK. These courts, which must be banned, routinely dismiss physical, emotional, and psychological abuse. Countless women are pressured by these institutions and their",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077045828296773878",
+      "platform": "Twitter",
+      "author": "@TheMarketPupil",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@RestoreBritain @RupertLowe10 - here you go, a British Indian pushing an idea to make  Britain great again",
+      "sentiment": "Positive",
       "city": "Birmingham",
       "isUpcoming": false
     },
@@ -305,6 +482,17 @@
       "isUpcoming": false
     },
     {
+      "id": "twitter_2076994167402533301",
+      "platform": "Twitter",
+      "author": "@TheLadyGarvin",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "Our current attorney General has made a career fighting for the rights of law abiding citizens.\n\nHARMER &amp; STARMER joined the Gravy train bringing the CHAGOS loophole where British &amp; Indian Civil Servants and lawyers fighting for a share of UK £45BILLION PAYMENT to undermine",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
       "id": "twitter_2076987976605643043",
       "platform": "Twitter",
       "author": "@CustardCream007",
@@ -331,7 +519,7 @@
       "platform": "Twitter",
       "author": "@BMuslimTrust",
       "date": "2026-07-14",
-      "event": "UK Ijtima Event",
+      "event": "UK Ijtima Event Security Incident",
       "text": "Responding to the #terror arrests in relation to threats to an Islamic event in #Suffolk, British Muslim Trust CEO @AkeelaAhmed said,\n\n\"The arrests in relation to an alleged terror threat to the UK Ijtima event at Shrubland Hall are a frightening reminder of where anti-Muslim",
       "sentiment": "Negative",
       "city": "Birmingham",
@@ -344,28 +532,6 @@
       "date": "2026-07-14",
       "event": "General Community Feedback 2026",
       "text": "@georgegalloway England woman dont talk shit she a british Pakistani  woman",
-      "sentiment": "Negative",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076876332932481475",
-      "platform": "Twitter",
-      "author": "@uggar29",
-      "date": "2026-07-14",
-      "event": "Englistan Billboard Controversy 2026",
-      "text": "@Rightanglenews A controversial \"Englistan\" billboard was put up in Whitechapel, London. Whitechapel is one of London's most culturally vibrant and historically diverse districts.\n\nApproximately 56.3% of residents identify as Asian, with the British Bangladeshi community alone accounting for https://t.co/ceRlMgQjng",
-      "sentiment": "Neutral",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076961238098084164",
-      "platform": "Twitter",
-      "author": "@EZPZresurrected",
-      "date": "2026-07-14",
-      "event": "General Community Feedback 2026",
-      "text": "@captive_dreamer The prosecutor at the ICC is a british pakistani who raped his coworker, then issued an arrest warrant against Bibi Netanyahu and told her if she tells on him for raping her it will her the Palestinians.\n\nHis brother is also a judge in the UK.\nAnd also a rapist.",
       "sentiment": "Negative",
       "city": "Birmingham",
       "isUpcoming": false
@@ -402,6 +568,204 @@
       "sentiment": "Neutral",
       "city": "Birmingham",
       "isUpcoming": true
+    },
+    {
+      "id": "twitter_2077138687016460338",
+      "platform": "Twitter",
+      "author": "@HCI_London",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "RT @DrSJaishankar: Pleased to call on President of the European Council @antoniolscosta alongside CIM @PiyushGoyal, MoS MEITY @JitinPrasada…",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077128052954345712",
+      "platform": "Twitter",
+      "author": "@HCI_London",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "RT @DrSJaishankar: Started my visit to Brussels, meeting with EU HRVP @kajakallas. \n\nHad useful discussions on West Asia and the need to en…",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077085323436134726",
+      "platform": "Twitter",
+      "author": "@HCI_London",
+      "date": "2026-07-14",
+      "event": "India-UK CETA Implementation",
+      "text": "RT @DoC_GoI: Ahead of the entry into force of the India–UK Comprehensive Economic and Trade Agreement (CETA) on 15 July, Commerce Secretary…",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": true
+    },
+    {
+      "id": "twitter_2077065630172279170",
+      "platform": "Twitter",
+      "author": "@HCI_London",
+      "date": "2026-07-14",
+      "event": "India-UK Partnership Implementation 2026",
+      "text": "RT @IndiaInScotland: 🇮🇳🤝🇬🇧 A new chapter in the India–UK partnership begins from tomorrow, 15 July 2026 with the implementation of the Comp…",
+      "sentiment": "Positive",
+      "city": "Birmingham",
+      "isUpcoming": true
+    },
+    {
+      "id": "twitter_2077065533724172689",
+      "platform": "Twitter",
+      "author": "@HCI_London",
+      "date": "2026-07-14",
+      "event": "India-UK Comprehensive Economic and Trade Agreement",
+      "text": "RT @DoC_GoI: The India–UK Comprehensive Economic and Trade Agreement (CETA) comes into force on 15 July 2026, marking a new milestone in th…",
+      "sentiment": "Positive",
+      "city": "Birmingham",
+      "isUpcoming": true
+    },
+    {
+      "id": "twitter_2077050975207010752",
+      "platform": "Twitter",
+      "author": "@HCI_London",
+      "date": "2026-07-14",
+      "event": "2026 Commonwealth Games Artistic Gymnastics",
+      "text": "RT @WeAreTeamIndia: Flip, stick, shine. ✨🇮🇳\n\nएक टीम। एक सपना। एक भारत। 💪🏼\n\nThe Artistic Gymnastics squad is all set for the 2026 Commonweal…",
+      "sentiment": "Positive",
+      "city": "Birmingham",
+      "isUpcoming": true
+    },
+    {
+      "id": "twitter_2077044235774148939",
+      "platform": "Twitter",
+      "author": "@HCI_London",
+      "date": "2026-07-14",
+      "event": "India-UK Comprehensive Economic And Trade Agreement 2026",
+      "text": "RT @DoC_GoI: The India–UK Comprehensive Economic and Trade Agreement (CETA), entering into force on 15 July 2026, creates new opportunities…",
+      "sentiment": "Positive",
+      "city": "Birmingham",
+      "isUpcoming": true
+    },
+    {
+      "id": "twitter_2077044220611707238",
+      "platform": "Twitter",
+      "author": "@HCI_London",
+      "date": "2026-07-14",
+      "event": "Double Contribution Convention",
+      "text": "RT @DoC_GoI: The Double Contribution Convention (DCC) under the India–UK partnership is a major step forward for India’s services sector an…",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077044207735193951",
+      "platform": "Twitter",
+      "author": "@HCI_London",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "RT @DoC_GoI: The India–UK Comprehensive Economic and Trade Agreement (CETA) goes beyond traditional tariff reductions, covering 30 chapters…",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077044150352932984",
+      "platform": "Twitter",
+      "author": "@HCI_London",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "RT @DoC_GoI: The entry into force of the India–UK Comprehensive Economic and Trade Agreement (CETA) and Double Contribution Convention (DCC…",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077041974016610577",
+      "platform": "Twitter",
+      "author": "@HCI_London",
+      "date": "2026-07-14",
+      "event": "India-UK Comprehensive Economic And Trade Agreement 2026",
+      "text": "RT @DoC_GoI: The India–UK Comprehensive Economic and Trade Agreement (CETA), entering into force on 15 July 2026, strengthens trade facilit…",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": true
+    },
+    {
+      "id": "twitter_2077036982807478594",
+      "platform": "Twitter",
+      "author": "@HCI_London",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "RT @IndPerspectives: One monsoon. Countless stories. Across India, every raindrop paints the landscape a little differently. Which destinat…",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077036649213579338",
+      "platform": "Twitter",
+      "author": "@HCI_London",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "RT @DDNewslive: #WATCH | We issued a statement after summoning the Deputy Chief of Mission of Iran. We conveyed to them our deepest concern…",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077031482892153194",
+      "platform": "Twitter",
+      "author": "@HCI_London",
+      "date": "2026-07-14",
+      "event": "BRICS Trade Union Forum Summit",
+      "text": "RT @mansukhmandviya: Building Future of Work through Tripartite Partnership!\n\nAddressed the BRICS Trade Union Forum Summit in Hyderabad. Hi…",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077020490720333892",
+      "platform": "Twitter",
+      "author": "@HCI_London",
+      "date": "2026-07-14",
+      "event": "India-UK CETA Implementation 2026",
+      "text": "RT @CGIBelfast: India–UK CETA | Effective 15 July 2026\n@HCI_London @DoC_GoI @biztradegovuk @InvestNI @retail_ni @ManufacturingNI @Economy_N…",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": true
+    },
+    {
+      "id": "twitter_2077020009059029133",
+      "platform": "Twitter",
+      "author": "@HCI_London",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "High Commissioner P. Kumaran held an introductory meeting with Chinese Ambassador Zheng Zeguang yesterday. The meeting offered an opportunity to exchange views on matters of mutual interest and reaffirm the value of continued diplomatic engagement.\n\n@MEAIndia @IndianDiplomacy https://t.co/397mWHh1kP",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077000960807665994",
+      "platform": "Twitter",
+      "author": "@HCI_London",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "A vision rooted in #SHANTI and a commitment to a stronger, more representative world order.\n#UNSC #UNSecurityCouncil #SecurityCouncil #GlobalSouth #SHANTI #UNSC #IndiaAtUN #Multilateralism #Peacekeeping #MaritimeSecurity #CounterTerrorism #ResponsibleAI\n\n@MEAIndia https://t.co/cur16Yy8qj",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076998643584786870",
+      "platform": "Twitter",
+      "author": "@HCI_London",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "A stronger voice for the Global South. \nA reformed multilateral order.\nFuture-ready peacekeeping. \nResponsible AI. \nFree, open and rules-based maritime order. \nZero tolerance for terrorism.\nFor a reformed, representative and results-driven Security Council.\n#SHANTI #UNSC",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
     },
     {
       "id": "twitter_2076981905220628744",
@@ -481,61 +845,6 @@
       "isUpcoming": true
     },
     {
-      "id": "twitter_2076658781023539674",
-      "platform": "Twitter",
-      "author": "@academic1131166",
-      "date": "2026-07-13",
-      "event": "Educational Loan Mela 2026",
-      "text": "EDUCATIONAL LOAN MELA 2026* \nDo not miss it! \n @AbideEdu\n#abideedu #studyabroad #uk #france🇫🇷 #germany https://t.co/1g3mQfzyyG",
-      "sentiment": "Positive",
-      "city": "Birmingham",
-      "isUpcoming": true
-    },
-    {
-      "id": "twitter_2076657813510590611",
-      "platform": "Twitter",
-      "author": "@Nesbithardacre",
-      "date": "2026-07-13",
-      "event": "General Community Feedback 2026",
-      "text": "@Rosiewr50 @andrewc44104127 He made a message for Eid &amp; not for Easter. He’s meant to be Supreme Leader of the Church of England.",
-      "sentiment": "Negative",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076537173499924755",
-      "platform": "Twitter",
-      "author": "@MrManojShetty",
-      "date": "2026-07-13",
-      "event": "General Community Feedback 2026",
-      "text": "@visegrad24 First they come for Saturday people, then Sunday, and now they started attacking Hindu festivals in London (holi) and now this. Everyone else should unite or else UK is doomed!",
-      "sentiment": "Negative",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076457442410369150",
-      "platform": "Twitter",
-      "author": "@EclipeByDeath",
-      "date": "2026-07-13",
-      "event": "General Community Feedback 2026",
-      "text": "@LizaRosen0000 This is what multiculturalism has done to Britain — and the supremacist mindset is on full display.\nOver 250,000 British girls systematically raped, tortured, and in some cases murdered by grooming gangs.\n87 to 95% of the rape gang members were Muslims — predominantly Pakistani",
-      "sentiment": "Negative",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076590578398023764",
-      "platform": "Twitter",
-      "author": "@skilfuldotcom",
-      "date": "2026-07-13",
-      "event": "General Community Feedback 2026",
-      "text": "@DailyMail NHS+Tories+Labour KNOW mass immigration destroys NHS:\n\n\"outdated health and care services designed for white British patients\"\n\n\"south Asian heritage in UK higher risk of heart disease, stroke, diabetes, dementia to increase 600% in the next three decades\"\nhttps://t.co/yBfHJa8jku",
-      "sentiment": "Negative",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
       "id": "twitter_2076800599069278537",
       "platform": "Twitter",
       "author": "@Empireaesth",
@@ -591,6 +900,61 @@
       "isUpcoming": false
     },
     {
+      "id": "twitter_2076658781023539674",
+      "platform": "Twitter",
+      "author": "@academic1131166",
+      "date": "2026-07-13",
+      "event": "Educational Loan Mela 2026",
+      "text": "EDUCATIONAL LOAN MELA 2026* \nDo not miss it! \n @AbideEdu\n#abideedu #studyabroad #uk #france🇫🇷 #germany https://t.co/1g3mQfzyyG",
+      "sentiment": "Positive",
+      "city": "Birmingham",
+      "isUpcoming": true
+    },
+    {
+      "id": "twitter_2076657813510590611",
+      "platform": "Twitter",
+      "author": "@Nesbithardacre",
+      "date": "2026-07-13",
+      "event": "General Community Feedback 2026",
+      "text": "@Rosiewr50 @andrewc44104127 He made a message for Eid &amp; not for Easter. He’s meant to be Supreme Leader of the Church of England.",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076537173499924755",
+      "platform": "Twitter",
+      "author": "@MrManojShetty",
+      "date": "2026-07-13",
+      "event": "General Community Feedback 2026",
+      "text": "@visegrad24 First they come for Saturday people, then Sunday, and now they started attacking Hindu festivals in London (holi) and now this. Everyone else should unite or else UK is doomed!",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076457442410369150",
+      "platform": "Twitter",
+      "author": "@EclipeByDeath",
+      "date": "2026-07-13",
+      "event": "General Community Feedback 2026",
+      "text": "@LizaRosen0000 This is what multiculturalism has done to Britain — and the supremacist mindset is on full display.\nOver 250,000 British girls systematically raped, tortured, and in some cases murdered by grooming gangs.\n87 to 95% of the rape gang members were Muslims — predominantly Pakistani",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076590578398023764",
+      "platform": "Twitter",
+      "author": "@skilfuldotcom",
+      "date": "2026-07-13",
+      "event": "General Community Feedback 2026",
+      "text": "@DailyMail NHS+Tories+Labour KNOW mass immigration destroys NHS:\n\n\"outdated health and care services designed for white British patients\"\n\n\"south Asian heritage in UK higher risk of heart disease, stroke, diabetes, dementia to increase 600% in the next three decades\"\nhttps://t.co/yBfHJa8jku",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
       "id": "twitter_2076763515772436925",
       "platform": "Twitter",
       "author": "@MEAIndia",
@@ -622,6 +986,17 @@
       "sentiment": "Neutral",
       "city": "Leicester",
       "isUpcoming": true
+    },
+    {
+      "id": "twitter_2076182611181916598",
+      "platform": "Twitter",
+      "author": "@LoriBeth0911",
+      "date": "2026-07-12",
+      "event": "General Community Feedback 2026",
+      "text": "@PatrickByrne It had to do with George Soros manifesto open border open society. Hillary Clinton brought him into our government in 1993 about the same time he broke the Bank of England and we all know it holds the Monarch’s money, govt of England, all banking cartels are tied, and all the 12",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
     },
     {
       "id": "twitter_2076434133564244095",
@@ -716,7 +1091,7 @@
       "platform": "Twitter",
       "author": "@Michaeach3",
       "date": "2026-07-12",
-      "event": "London Diwali Celebration 2019",
+      "event": "General Community Feedback 2026",
       "text": "Katie Hopkins completely destroyed the diversity myth in one viral video.\n\nIn 2019, she confronted a mob of Pakistani Muslims in London who showed up specifically to intimidate and shut down a Hindu Diwali celebration.\n\nWhy? Because in their eyes, it was “haram” and",
       "sentiment": "Negative",
       "city": "Birmingham",
@@ -729,17 +1104,6 @@
       "date": "2026-07-12",
       "event": "General Community Feedback 2026",
       "text": "Will there be any posts from the traitors of the UK?\n\n@RoyalFamily @Keir_Starmer @YvetteCooperMP @bphillipsonMP @darrenpjones @MikeTappTweets @churchofengland @EdwardJDavey \n\nYou all claim to be proud of the UK but as usual it’s not eid so it’ll not be important.",
-      "sentiment": "Negative",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "twitter_2076182611181916598",
-      "platform": "Twitter",
-      "author": "@LoriBeth0911",
-      "date": "2026-07-12",
-      "event": "General Community Feedback 2026",
-      "text": "@PatrickByrne It had to do with George Soros manifesto open border open society. Hillary Clinton brought him into our government in 1993 about the same time he broke the Bank of England and we all know it holds the Monarch’s money, govt of England, all banking cartels are tied, and all the 12",
       "sentiment": "Negative",
       "city": "Birmingham",
       "isUpcoming": false
@@ -828,7 +1192,7 @@
       "date": "2026-07-10",
       "event": "General Community Feedback 2026",
       "text": "Indian Independence was a disaster for India and Britain.\n\nThat is a fascinating alternate-history scenario. I’ll assume that after 1945 Britain does not leave India, but instead makes the whole subcontinent a fully equal part of the United Kingdom—something like a “fifth home",
-      "sentiment": "Neutral",
+      "sentiment": "Negative",
       "city": "Birmingham",
       "isUpcoming": false
     },
@@ -837,10 +1201,10 @@
       "platform": "Twitter",
       "author": "@WolvesMayor",
       "date": "2026-07-09",
-      "event": "Community Event",
+      "event": "South Asian Heritage Month Celebration",
       "text": "A pleasure to join colleagues &amp; guests at New Cross Hospital to celebrate South Asian Heritage Month. Thank you for hosting such a meaningful event, recognising the rich cultures, contributions and achievements of our South Asian communities across #Wolverhampton and in the NHS! https://t.co/cnMpa0fXnB",
-      "sentiment": "Neutral",
-      "city": "Birmingham",
+      "sentiment": "Positive",
+      "city": "Wolverhampton",
       "isUpcoming": false
     },
     {
@@ -848,7 +1212,7 @@
       "platform": "Twitter",
       "author": "@1886Joey92",
       "date": "2026-07-08",
-      "event": "Joe Rogan Experience Rupert Lowe Interview 2026",
+      "event": "General Community Feedback 2026",
       "text": "Rupert Lowe on Joe Rogan Experience JUST DROPPED!\n\nThe Joe Rogan Experience #2524 with Rupert Lowe (British MP for Great Yarmouth, leader of Restore Britain) is a ~2-hour conversation released on July 8, 2026. It covers UK politics, immigration, grooming gangs, free speech,",
       "sentiment": "Neutral",
       "city": "Birmingham",
@@ -925,11 +1289,11 @@
       "platform": "Twitter",
       "author": "@NIHRresearch",
       "date": "2026-07-06",
-      "event": "Cultural Bereavement Support Research",
+      "event": "General Community Feedback 2026",
       "text": "When NHS consultant Sabrina lost her brother, she found that professional bereavement services didn’t meet the communal and cultural needs of her Pakistani family's grief.\n\nSabrina turned her personal tragedy into action. She and her team applied for funding to research the issue https://t.co/YLh33PiiON",
-      "sentiment": "Positive",
+      "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": false
     },
     {
       "id": "twitter_2074095592381288554",
@@ -1576,6 +1940,17 @@
       "date": "2025-10-24",
       "event": "Circle of Celebrations Against Hate: Diwali Luncheon",
       "text": "It was wonderful to see such unity last week as our Birmingham branch hosted their first Circle of Celebrations Against Hate: Diwali Luncheon! 🌟🙏 Thank you to everyone who joined and to @Damascena_uk for their kind support. #DialogueInAction #CommunityHarmony https://t.co/8ucArK94Xj",
+      "sentiment": "Positive",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_1977690005305753792",
+      "platform": "Twitter",
+      "author": "@HCI_London",
+      "date": "2025-10-13",
+      "event": "General Community Feedback 2026",
+      "text": "Following UK PM @Keir_Starmer's visit to India with the largest-ever UK trade delegation, take a look at what business leaders have to say about the India–UK CETA being a game-changer! From textiles to technology, consumables to automobiles— it promises to multiply trade, deepen https://t.co/mgNiwROQRG",
       "sentiment": "Positive",
       "city": "Birmingham",
       "isUpcoming": false
