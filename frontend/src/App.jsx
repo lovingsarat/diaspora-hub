@@ -1,7 +1,173 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
 
-const API_BASE = "http://localhost:8000/api";
+const FEEDBACK_ITEMS = [
+  {
+    id: "1",
+    platform: "Twitter",
+    author: "@AmitBrum",
+    date: "2026-03-22",
+    event: "Midlands Holi Festival 2026",
+    text: "The Birmingham Holi Festival 2026 was absolutely spectacular! Incredible colors, lively dhol players, and such an amazing atmosphere at Ward End Park. The Midlands diaspora really showed up today! 🇮🇳✨",
+    sentiment: "Positive",
+    city: "Birmingham",
+    isUpcoming: false
+  },
+  {
+    id: "2",
+    platform: "Facebook",
+    author: "Preeti Patel",
+    date: "2026-03-23",
+    event: "Midlands Holi Festival 2026",
+    text: "Extremely frustrated with the ticket prices for the Midlands Holi event. £25 per person is way too steep for families. Also, the queue for the food stalls was over an hour long! Kids were starving.",
+    sentiment: "Negative",
+    city: "Birmingham",
+    isUpcoming: false
+  },
+  {
+    id: "3",
+    platform: "Quora",
+    author: "Rajan Sharma",
+    date: "2026-03-24",
+    event: "Midlands Holi Festival 2026",
+    text: "Attended the Holi festival in Birmingham last weekend. While the cultural performances were top-notch and the community spirit was strong, the parking situation was a total mess and there weren't enough washroom facilities for the crowd.",
+    sentiment: "Neutral",
+    city: "Birmingham",
+    isUpcoming: false
+  },
+  {
+    id: "4",
+    platform: "Twitter",
+    author: "@Leicester_Sunita",
+    date: "2026-04-19",
+    event: "Birmingham Vaisakhi Mela 2026",
+    text: "So glad we made the trip from Leicester to Handsworth Park for Vaisakhi Mela 2026! The Langar (free kitchen) was served with so much love, and the energetic Bhangra acts had everyone dancing. Wonderful community engagement!",
+    sentiment: "Positive",
+    city: "Birmingham",
+    isUpcoming: false
+  },
+  {
+    id: "5",
+    platform: "Facebook",
+    author: "Gurpreet Singh",
+    date: "2026-04-20",
+    event: "Birmingham Vaisakhi Mela 2026",
+    text: "The crowd management at the Handsworth Park Vaisakhi event was quite poor. It felt unsafe at times around the main stage area, and there was litter everywhere by 4 PM. We really need more waste bins and volunteers next year.",
+    sentiment: "Negative",
+    city: "Birmingham",
+    isUpcoming: false
+  },
+  {
+    id: "6",
+    platform: "Twitter",
+    author: "@MidlandsIndSoc",
+    date: "2026-06-14",
+    event: "Midlands Indian Sports Day 2026",
+    text: "Huge congratulations to the organizers of the Indian Sports Day in Leicester! Seeing the youngsters play Kabaddi and Kho-Kho was pure nostalgia. Wonderful initiative to keep our cultural sports alive in the UK Midlands.",
+    sentiment: "Positive",
+    city: "Leicester",
+    isUpcoming: false
+  },
+  {
+    id: "7",
+    platform: "Facebook",
+    author: "Vikram Rao",
+    date: "2026-06-15",
+    event: "Midlands Indian Sports Day 2026",
+    text: "Great concept, but the execution of the Sports Day was ruined by the typical British summer rain. There was no indoor backup plan for most matches, and the scheduling was delayed by 3 hours. Please plan better for wet weather in 2026!",
+    sentiment: "Negative",
+    city: "Leicester",
+    isUpcoming: false
+  },
+  {
+    id: "8",
+    platform: "Quora",
+    author: "Anjali Desai",
+    date: "2026-07-02",
+    event: "Leicester Diwali Lights Switch-On 2026",
+    text: "What are the upcoming planned activities for the Leicester Diwali Lights Switch-On in October 2026? I heard they are introducing a massive drone light show on Belgrave Road this year instead of traditional fireworks. Is this true?",
+    sentiment: "Neutral",
+    city: "Leicester",
+    isUpcoming: true
+  },
+  {
+    id: "9",
+    platform: "Twitter",
+    author: "@CoventryDesis",
+    date: "2026-07-10",
+    event: "Leicester Diwali Lights Switch-On 2026",
+    text: "So excited for the upcoming Diwali Lights Switch-On 2026 in Leicester! The drone light show sounds brilliant and eco-friendly. Leicester Belgrave Road is the place to be this autumn. Already planning our family get-together!",
+    sentiment: "Positive",
+    city: "Leicester",
+    isUpcoming: true
+  },
+  {
+    id: "10",
+    platform: "Facebook",
+    author: "Neha Shah",
+    date: "2026-07-12",
+    event: "Leicester Diwali Lights Switch-On 2026",
+    text: "While the drone show sounds exciting for Diwali 2026, I am really worried about Belgrave Road traffic closures. Parking in Leicester during Diwali is already impossible. The council needs to provide park-and-ride shuttle buses.",
+    sentiment: "Neutral",
+    city: "Leicester",
+    isUpcoming: true
+  },
+  {
+    id: "11",
+    platform: "Twitter",
+    author: "@GarbaCoventry",
+    date: "2026-07-11",
+    event: "Coventry Navratri Garba 2026",
+    text: "Navratri Garba tickets in Coventry sold out in literally 10 minutes! 😡 Now scalpers are reselling £12 tickets for £45 on Facebook groups. This is unfair to genuine community members who want to celebrate. Organizers need a better ticketing system!",
+    sentiment: "Negative",
+    city: "Coventry",
+    isUpcoming: true
+  },
+  {
+    id: "12",
+    platform: "Facebook",
+    author: "Meera Joshi",
+    date: "2026-07-13",
+    event: "Coventry Navratri Garba 2026",
+    text: "Thrilled that Navratri Garba 2026 is moving to a larger venue in Coventry! The community has grown so fast in the West Midlands. This year is going to be magnificent with live musicians flying in from Gujarat. Can't wait!",
+    sentiment: "Positive",
+    city: "Coventry",
+    isUpcoming: true
+  },
+  {
+    id: "13",
+    platform: "Quora",
+    author: "Devendra Patel",
+    date: "2026-05-10",
+    event: "Midlands Indian Food Festival 2026",
+    text: "Which was the best Indian food event in the Midlands in 2026? Hands down the Midlands Indian Food Festival in Birmingham. The street food variety was mind-blowing – everything from Lucknowi chaat to South Indian filter coffee. Extremely well organized!",
+    sentiment: "Positive",
+    city: "Birmingham",
+    isUpcoming: false
+  },
+  {
+    id: "14",
+    platform: "Twitter",
+    author: "@BrumFoodie",
+    date: "2026-05-11",
+    event: "Midlands Indian Food Festival 2026",
+    text: "The Birmingham food festival had excellent culinary representation, but the venue (Digbeth Arena) was extremely cramped. Long lines made it hard to walk around. They should move it to a larger park area next year.",
+    sentiment: "Neutral",
+    city: "Birmingham",
+    isUpcoming: false
+  },
+  {
+    id: "15",
+    platform: "Quora",
+    author: "Rohan Kapoor",
+    date: "2026-07-05",
+    event: "General Community Feedback 2026",
+    text: "The level of Indian diaspora community engagement in the East Midlands (Nottingham, Leicester) has spiked in 2026. The youth-led cultural societies are doing a fantastic job bridging generational gaps through regional festivals and sports.",
+    sentiment: "Positive",
+    city: "Nottingham",
+    isUpcoming: false
+  }
+];
 
 function App() {
   const [activeTab, setActiveTab] = useState("dashboard");
@@ -10,9 +176,9 @@ function App() {
   const [selectedSentiment, setSelectedSentiment] = useState(null);
   const [selectedCity, setSelectedCity] = useState(null);
 
-  const [feedItems, setFeedItems] = useState([]);
+  const [feedItems, setFeedItems] = useState(FEEDBACK_ITEMS);
   const [stats, setStats] = useState({
-    totalFeedbackCount: 0,
+    totalFeedbackCount: FEEDBACK_ITEMS.length,
     sentimentPercentages: { Positive: 0, Neutral: 0, Negative: 0 },
     platformCounts: {},
     cityCounts: {},
@@ -29,50 +195,69 @@ function App() {
   const [isChatLoading, setIsChatLoading] = useState(false);
   const [chatError, setChatError] = useState(null);
 
+  // Store and retrieve Gemini API key directly client-side
+  const [localApiKey, setLocalApiKey] = useState(() => {
+    return localStorage.getItem("diaspora_gemini_api_key") || "";
+  });
+
   const chatEndRef = useRef(null);
 
-  // Fetch feedback based on current search query and filters
-  const fetchFeedback = async () => {
-    try {
-      let url = `${API_BASE}/feedback?`;
-      const params = [];
-      if (searchQuery) params.push(`query=${encodeURIComponent(searchQuery)}`);
-      if (selectedPlatform) params.push(`platform=${encodeURIComponent(selectedPlatform)}`);
-      if (selectedSentiment) params.push(`sentiment=${encodeURIComponent(selectedSentiment)}`);
-      if (selectedCity) params.push(`city=${encodeURIComponent(selectedCity)}`);
-      
-      url += params.join("&");
-      const res = await fetch(url);
-      if (res.ok) {
-        const data = await res.json();
-        setFeedItems(data);
-      }
-    } catch (err) {
-      console.error("Error fetching feedback:", err);
-    }
-  };
-
-  // Fetch general stats
-  const fetchStats = async () => {
-    try {
-      const res = await fetch(`${API_BASE}/stats`);
-      if (res.ok) {
-        const data = await res.json();
-        setStats(data);
-      }
-    } catch (err) {
-      console.error("Error fetching stats:", err);
-    }
-  };
-
-  // Initial fetch and dependency trigger
+  // Perform filtering locally
   useEffect(() => {
-    fetchStats();
-  }, []);
-
-  useEffect(() => {
-    fetchFeedback();
+    let filtered = FEEDBACK_ITEMS;
+    
+    if (selectedPlatform) {
+      filtered = filtered.filter(item => item.platform === selectedPlatform);
+    }
+    if (selectedSentiment) {
+      filtered = filtered.filter(item => item.sentiment === selectedSentiment);
+    }
+    if (selectedCity) {
+      filtered = filtered.filter(item => item.city === selectedCity);
+    }
+    if (searchQuery.trim()) {
+      const q = searchQuery.toLowerCase();
+      filtered = filtered.filter(item => 
+        item.text.toLowerCase().includes(q) ||
+        item.event.toLowerCase().includes(q) ||
+        item.author.toLowerCase().includes(q)
+      );
+    }
+    setFeedItems(filtered);
   }, [searchQuery, selectedPlatform, selectedSentiment, selectedCity]);
+
+  // Compute stats locally
+  useEffect(() => {
+    const total = FEEDBACK_ITEMS.length;
+    if (total === 0) return;
+
+    const positives = FEEDBACK_ITEMS.filter(item => item.sentiment === "Positive").length;
+    const neutrals = FEEDBACK_ITEMS.filter(item => item.sentiment === "Neutral").length;
+    const negatives = FEEDBACK_ITEMS.filter(item => item.sentiment === "Negative").length;
+
+    const sentimentPercentages = {
+      Positive: (positives / total) * 100,
+      Neutral: (neutrals / total) * 100,
+      Negative: (negatives / total) * 100,
+    };
+
+    const platformCounts = {};
+    FEEDBACK_ITEMS.forEach(item => {
+      platformCounts[item.platform] = (platformCounts[item.platform] || 0) + 1;
+    });
+
+    const cityCounts = {};
+    FEEDBACK_ITEMS.forEach(item => {
+      cityCounts[item.city] = (cityCounts[item.city] || 0) + 1;
+    });
+
+    setStats({
+      totalFeedbackCount: total,
+      sentimentPercentages,
+      platformCounts,
+      cityCounts
+    });
+  }, []);
 
   // Scroll to bottom of chat
   useEffect(() => {
@@ -88,52 +273,109 @@ function App() {
     setSelectedCity(null);
   };
 
+  const getMarkdownSummary = () => {
+    let lines = [
+      "| Platform | Author | Date | Event | Sentiment | City | Feedback text |",
+      "| --- | --- | --- | --- | --- | --- | --- |"
+    ];
+    FEEDBACK_ITEMS.forEach(item => {
+      const upcomingTag = item.isUpcoming ? " (Upcoming Planned Activity)" : "";
+      const textEscaped = item.text.replace(/\|/g, "\\|");
+      lines.push(
+        `| ${item.platform} | ${item.author} | ${item.date} | ${item.event}${upcomingTag} | ${item.sentiment} | ${item.city} | ${textEscaped} |`
+      );
+    });
+    return lines.join("\n");
+  };
+
+  const handleApiKeyChange = (val) => {
+    setLocalApiKey(val);
+    localStorage.setItem("diaspora_gemini_api_key", val);
+  };
+
   const handleSendChat = async (text) => {
     if (!text.trim() || isChatLoading) return;
 
     const userMessage = { sender: "USER", text: text.trim(), timestamp: Date.now() };
-    setChatMessages((prev) => [...prev, userMessage]);
+    const updatedMessages = [...chatMessages, userMessage];
+    setChatMessages(updatedMessages);
     setChatInput("");
     setIsChatLoading(true);
     setChatError(null);
 
-    try {
-      // Build the request matching ChatRequest schema in main.py
-      const payload = {
-        message: text.trim(),
-        history: chatMessages.map((msg) => ({
-          sender: msg.sender,
-          text: msg.text,
-        })),
-      };
+    const activeApiKey = localApiKey.trim() || import.meta.env.VITE_GEMINI_API_KEY || "";
 
-      const res = await fetch(`${API_BASE}/chat`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-
-      if (!res.ok) {
-        throw new Error(`Server returned status: ${res.status}`);
-      }
-
-      const data = await res.json();
+    if (!activeApiKey || activeApiKey === "MY_GEMINI_API_KEY" || activeApiKey === "YOUR_GEMINI_API_KEY") {
       setChatMessages((prev) => [
         ...prev,
         {
           sender: "BOT",
-          text: data.reply,
+          text: "⚠️ **API Key Missing**: It looks like your Gemini API key is not set. Please enter it in the **Gemini API Key input field** below the chat box to perform live RAG analysis!\n\n*(Meanwhile, here is a quick overview: Holi tickets are seen as too expensive, Diwali drone plans are exciting but park-and-ride is requested, and Coventry Garba has ticket scalping issues.)*",
+          timestamp: Date.now(),
+        },
+      ]);
+      setIsChatLoading(false);
+      return;
+    }
+
+    const systemInstructionText = `You are the "Diaspora RAG Bot", an expert sentiment analyzer and community reporter for the Indian Diaspora in the UK Midlands (including Birmingham, Leicester, Coventry, Wolverhampton, Nottingham, etc.).
+
+You have access to a consolidated database of social media feedback from Twitter (X), Facebook, and Quora regarding community event engagement in 2026, and upcoming planned events.
+
+Here is the entire consolidated dataset in Markdown format:
+${getMarkdownSummary()}
+
+Instructions for your responses:
+1. Answer the user's questions based strictly on the provided feedback dataset. Do not invent any posts, authors, or events that are not in the dataset.
+2. If the user asks about sentiment, give an insightful analysis of Positive vs Neutral vs Negative feedback, highlighting specific complaints (e.g. Holi/Garba pricing, Vaisakhi crowd management, Sports Day rain delay) and achievements (e.g. Vaisakhi Langar quality, Sports Day youth engagement).
+3. If asked about upcoming activities or planned events, detail the entries for Leicester Diwali Lights Switch-On 2026 (drone show, park and ride concerns) and Coventry Navratri Garba 2026 (scalping issues, new venue).
+4. Keep your answers well-structured using markdown formatting (bullet points, bold text, headers) and highly professional. Speak with deep familiarity about Midlands UK geography.
+5. If a query is outside the scope of community events, state: "I couldn't find specific social feedback on that in our consolidated 2026 Midlands database. However, based on our recorded trends..." and summarize the nearest relevant trend.`;
+
+    const apiContents = updatedMessages.map((msg) => ({
+      role: msg.sender === "USER" ? "user" : "model",
+      parts: [{ text: msg.text }],
+    }));
+
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=${activeApiKey}`;
+
+    try {
+      const res = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contents: apiContents,
+          systemInstruction: {
+            parts: [{ text: systemInstructionText }]
+          },
+          generationConfig: {
+            temperature: 0.3
+          }
+        }),
+      });
+
+      if (!res.ok) {
+        throw new Error(`Gemini API returned status ${res.status}`);
+      }
+
+      const data = await res.json();
+      const replyText = data.candidates?.[0]?.content?.parts?.[0]?.text || "I received an empty response. Please try rephrasing your question.";
+      setChatMessages((prev) => [
+        ...prev,
+        {
+          sender: "BOT",
+          text: replyText,
           timestamp: Date.now(),
         },
       ]);
     } catch (err) {
-      console.error("Chat error:", err);
-      setChatError("Failed to connect to AI server: " + err.message);
+      console.error(err);
+      setChatError("Failed to connect to Gemini API: " + err.message);
       setChatMessages((prev) => [
         ...prev,
         {
           sender: "BOT",
-          text: "❌ **Error**: Could not connect to Gemini API. " + err.message + "\n\n*Note: If the error persists, verify that the API key provided in the .env file is valid.*",
+          text: `❌ **Error**: Could not connect to Gemini API. ${err.message}\n\n*Note: Please verify that your API key is valid and you have a working internet connection.*`,
           timestamp: Date.now(),
         },
       ]);
@@ -262,7 +504,6 @@ function App() {
                 <div className="chart-container">
                   <div className="donut-chart-wrapper">
                     <svg viewBox="0 0 100 100" className="donut-chart">
-                      {/* Stacked circles rotated -90 deg */}
                       <g transform="rotate(-90 50 50)">
                         {/* Positive segment (Green) */}
                         {positivePct > 0 && (
@@ -471,6 +712,20 @@ function App() {
               </div>
             </div>
 
+            {/* Local Client-Side API Key Configuration Bar */}
+            <div className="api-key-input-container">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="key-icon">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+              <input
+                type="password"
+                placeholder="Enter Gemini API Key (saved locally)..."
+                value={localApiKey}
+                onChange={(e) => handleApiKeyChange(e.target.value)}
+              />
+            </div>
+
             {/* Chat Input Bar */}
             <div className="chat-input-bar">
               <input
@@ -629,17 +884,8 @@ function App() {
     </div>
   );
 
-  // Simple feedback count helpers based on local static items for UI layout matching
   function FEEDBACK_COUNT(sentiment) {
-    // Total static items is 15
-    const items = [
-      { sentiment: "Positive" }, { sentiment: "Negative" }, { sentiment: "Neutral" },
-      { sentiment: "Positive" }, { sentiment: "Negative" }, { sentiment: "Positive" },
-      { sentiment: "Negative" }, { sentiment: "Neutral" }, { sentiment: "Positive" },
-      { sentiment: "Neutral" }, { sentiment: "Negative" }, { sentiment: "Positive" },
-      { sentiment: "Positive" }, { sentiment: "Neutral" }, { sentiment: "Positive" }
-    ];
-    return items.filter(i => i.sentiment === sentiment).length;
+    return FEEDBACK_ITEMS.filter(i => i.sentiment === sentiment).length;
   }
 }
 
