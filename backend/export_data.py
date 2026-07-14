@@ -299,7 +299,7 @@ def get_top_posts(items, sentiment, top_n=5):
 
 
 def build_executive_summary(total, sentiment_pct, issues, praises, top_events, city_counts):
-    """Create a short council-ready summary."""
+    """Create a short community-ready summary."""
     top_issues = [i["theme"] for i in issues[:3]]
     top_praises = [p["theme"] for p in praises[:3]]
     top_cities = sorted(city_counts.items(), key=lambda x: x[1], reverse=True)[:3]

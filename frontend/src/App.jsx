@@ -115,7 +115,7 @@ const STATIC_FEEDBACK_ITEMS = [
     author: "Neha Shah",
     date: "2026-07-12",
     event: "Leicester Diwali Lights Switch-On 2026",
-    text: "While the drone show sounds exciting for Diwali 2026, I am really worried about Belgrave Road traffic closures. Parking in Leicester during Diwali is already impossible. The council needs to provide park-and-ride shuttle buses.",
+    text: "While the drone show sounds exciting for Diwali 2026, I am really worried about Belgrave Road traffic closures. Parking in Leicester during Diwali is already impossible. Local authorities need to provide park-and-ride shuttle buses.",
     sentiment: "Neutral",
     city: "Leicester",
     isUpcoming: true
@@ -412,7 +412,7 @@ function App() {
 
     const analyticsContext = buildAnalyticsContext(analytics);
 
-    const prompt = `You are Midlands Sentiment, an assistant that answers questions about Indian diaspora community feedback in the UK Midlands.\n\nUse the COUNCIL ANALYTICS SUMMARY for top, ranking, comparison, count, summary, or aggregation questions. Use the FEEDBACK CONTEXT for specific quotes and details. If the user asks for a number of items (e.g., top 5), list exactly that many. If the answer is not in the context, say so honestly and concisely.\n\nCOUNCIL ANALYTICS SUMMARY:\n${analyticsContext}\n\nFEEDBACK CONTEXT:\n${contextText}\n\nUser question: ${trimmed}\n\nAnswer concisely.`;
+    const prompt = `You are Midlands Sentiment, an assistant that answers questions about Indian diaspora community feedback in the UK Midlands.\n\nUse the COMMUNITY ANALYTICS SUMMARY for top, ranking, comparison, count, summary, or aggregation questions. Use the FEEDBACK CONTEXT for specific quotes and details. If the user asks for a number of items (e.g., top 5), list exactly that many. If the answer is not in the context, say so honestly and concisely.\n\nCOMMUNITY ANALYTICS SUMMARY:\n${analyticsContext}\n\nFEEDBACK CONTEXT:\n${contextText}\n\nUser question: ${trimmed}\n\nAnswer concisely.`;
 
     try {
       const res = await fetch(GEMINI_API_URL(geminiApiKey), {
@@ -690,7 +690,7 @@ function App() {
                     emoji="✨"
                     bgColor="rgba(240, 230, 140, 0.35)"
                     title="Leicester Diwali Switch-On (October 2026)"
-                    description="Major buzz around the introduction of a massive, eco-friendly drone light show instead of fireworks. However, the local diaspora is raising deep concerns about Belgrave Road traffic closures and is requesting the council to organize park-and-ride shuttle buses."
+                    description="Major buzz around the introduction of a massive, eco-friendly drone light show instead of fireworks. However, the local diaspora is raising deep concerns about Belgrave Road traffic closures and is requesting local authorities to organize park-and-ride shuttle buses."
                   />
                   <InsightItem
                     emoji="🥁"
@@ -1002,7 +1002,7 @@ function InsightsTab({ analytics }) {
     <div className="insights-content">
       <section className="dashboard-banner">
         <div className="banner-top">
-          <span className="banner-badge">COUNCIL ANALYTICS</span>
+          <span className="banner-badge">COMMUNITY ANALYTICS</span>
           <span className="banner-emoji">📊</span>
         </div>
         <h2>What the diaspora is talking about</h2>
