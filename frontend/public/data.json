@@ -1,20 +1,20 @@
 {
-  "exportedAt": "2026-07-14T21:18:13.103544Z",
-  "totalFeedbackCount": 176,
+  "exportedAt": "2026-07-14T21:46:13.903165Z",
+  "totalFeedbackCount": 177,
   "sentimentPercentages": {
-    "Positive": 21.02,
-    "Neutral": 42.05,
-    "Negative": 36.93
+    "Positive": 20.9,
+    "Neutral": 41.81,
+    "Negative": 37.29
   },
   "platformCounts": {
-    "Twitter": 167,
+    "Twitter": 168,
     "Facebook": 5,
     "Quora": 4
   },
   "cityCounts": {
     "Coventry": 5,
     "Leicester": 6,
-    "Birmingham": 163,
+    "Birmingham": 164,
     "Wolverhampton": 1,
     "Nottingham": 1
   },
@@ -141,6 +141,28 @@
       "isUpcoming": false
     },
     {
+      "id": "twitter_2076932501654692268",
+      "platform": "Twitter",
+      "author": "@eggsauceyy",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@rko78280 most muslims are of south Asian descent in the uk and they’re not really the demographic that make it pro. Most large diasporas where there’s a 50/50 population split between Muslims and Christian like Nigeria &amp; Sierra Leone most of the players come from Christian families. https://t.co/Z4p4OYE1bp",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076975504704393285",
+      "platform": "Twitter",
+      "author": "@Harry673Harry1",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@georgegalloway England woman dont talk shit she a british Pakistani  woman",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
       "id": "twitter_2077104853860364776",
       "platform": "Twitter",
       "author": "@ItsAndyRyan",
@@ -262,17 +284,6 @@
       "isUpcoming": false
     },
     {
-      "id": "twitter_2076932501654692268",
-      "platform": "Twitter",
-      "author": "@eggsauceyy",
-      "date": "2026-07-14",
-      "event": "General Community Feedback 2026",
-      "text": "@rko78280 most muslims are of south Asian descent in the uk and they’re not really the demographic that make it pro. Most large diasporas where there’s a 50/50 population split between Muslims and Christian like Nigeria &amp; Sierra Leone most of the players come from Christian families. https://t.co/Z4p4OYE1bp",
-      "sentiment": "Neutral",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
       "id": "twitter_2077094039090786787",
       "platform": "Twitter",
       "author": "@dad_who7541",
@@ -323,6 +334,17 @@
       "date": "2026-07-14",
       "event": "General Community Feedback 2026",
       "text": "@jmcsms @Independent NHS+Tories+Labour KNOW mass immigration destroys NHS:\n\n\"outdated health and care services designed for white British patients\"\n\n\"south Asian heritage in UK higher risk of heart disease, stroke, diabetes, dementia to increase 600% in the next three decades\"\nhttps://t.co/yBfHJa8jku",
+      "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2077142532534706246",
+      "platform": "Twitter",
+      "author": "@predederva",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "@Galverson9767 Is England South American ? They own the Falkland islands. Is it fair to also call England Indian since they own the British Indian Ocean Territory and used to own all of India ? Are the French South American with French Guiana? At what point is this a little silly",
       "sentiment": "Negative",
       "city": "Birmingham",
       "isUpcoming": false
@@ -526,17 +548,6 @@
       "isUpcoming": false
     },
     {
-      "id": "twitter_2076975504704393285",
-      "platform": "Twitter",
-      "author": "@Harry673Harry1",
-      "date": "2026-07-14",
-      "event": "General Community Feedback 2026",
-      "text": "@georgegalloway England woman dont talk shit she a british Pakistani  woman",
-      "sentiment": "Negative",
-      "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
       "id": "twitter_2077009520069587291",
       "platform": "Twitter",
       "author": "@MEAIndia",
@@ -684,7 +695,7 @@
       "platform": "Twitter",
       "author": "@HCI_London",
       "date": "2026-07-14",
-      "event": "India-UK Comprehensive Economic And Trade Agreement 2026",
+      "event": "India-UK Comprehensive Economic And Trade Agreement",
       "text": "RT @DoC_GoI: The India–UK Comprehensive Economic and Trade Agreement (CETA), entering into force on 15 July 2026, strengthens trade facilit…",
       "sentiment": "Neutral",
       "city": "Birmingham",
@@ -772,7 +783,7 @@
       "platform": "Twitter",
       "author": "@CGI_Bghm",
       "date": "2026-07-14",
-      "event": "India-UK Business And Investment Summit 2026",
+      "event": "India-UK Relations Landmark Event 2026",
       "text": "RT @HCI_London: 15 July 2026!\nA landmark date in the next chapter of India–UK relations. Set to unlock new business and investment opportun…",
       "sentiment": "Positive",
       "city": "Birmingham",

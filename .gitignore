@@ -10,3 +10,5 @@ backend/diaspora.db
 backend/cookies.json
 .vercel/
 
+
+backend/fb_cookies.json
