@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 DB_PATH = os.path.join(os.path.dirname(__file__), "diaspora.db")
 
 # Official accounts to ingest tweets from directly
-OFFICIAL_ACCOUNTS = ["MEAIndia", "HCI_London"]
+OFFICIAL_ACCOUNTS = ["MEAIndia", "HCI_London", "CGI_Bghm"]
 
 # Load environment
 load_dotenv(dotenv_path="../.env")
@@ -401,8 +401,8 @@ async def run_account_scraper():
                     # Relaxed UK filter for official accounts — they post about India-UK matters
                     # but may not always mention UK keywords explicitly
                     if not is_uk_relevant(tweet.text):
-                        # Still include if the account is HCI_London (always UK-relevant)
-                        if account != "HCI_London":
+                        # Still include if the account is always UK-relevant
+                        if account not in ("HCI_London", "CGI_Bghm"):
                             print(f"[SKIP] Non-UK content from @{account}")
                             continue
 
