@@ -17,17 +17,29 @@ load_dotenv()
 client = Client('en-US')
 
 def make_json_valid(s: str) -> str:
+    """Extract the first valid JSON object from a string, handling duplicate/trailing braces."""
+    import re
     s = s.strip()
-    if not s.startswith("{"):
+    # Use regex to greedily match from first { to last }, then walk back to find valid JSON
+    match = re.search(r'\{.*\}', s, re.DOTALL)
+    if not match:
         return s
-    open_braces = s.count("{")
-    close_braces = s.count("}")
-    if open_braces > close_braces:
-        if s.endswith(","):
-            s = s[:-1]
-        if s.count('"') % 2 != 0:
-            s += '"'
-        s += "}" * (open_braces - close_braces)
+    candidate = match.group(0)
+    # Try progressively shorter strings by trimming trailing } until valid JSON is found
+    while candidate.endswith('}'):
+        try:
+            json.loads(candidate)
+            return candidate  # Found valid JSON
+        except json.JSONDecodeError as e:
+            if 'Extra data' in str(e) or 'Expecting' in str(e):
+                candidate = candidate.rstrip()
+                # Remove last trailing }
+                last_brace = candidate.rfind('}')
+                if last_brace == -1:
+                    break
+                candidate = candidate[:last_brace].rstrip()
+            else:
+                break
     return s
 
 # Function to analyze tweet contents using Gemini API (structured extraction)
@@ -276,68 +288,75 @@ async def run_twikit_scraper():
             tweets = await client.search_tweet(query_string, product='Latest')
             
             for tweet in tweets:
-                tweet_id = f"twitter_{tweet.id}"
-                
-                cursor.execute("SELECT id FROM feedback_items WHERE id = ?", (tweet_id,))
-                exists = cursor.fetchone()
-                
-                if exists:
-                    print(f"Tweet {tweet.id} already exists in database. Skipping.")
-                    continue
-
-                # UK relevance gate: skip tweets with no UK connection
-                if not is_uk_relevant(tweet.text):
-                    print(f"[SKIP] Non-UK content filtered out from @{tweet.user.screen_name}")
-                    continue
-                    
-                print(f"Found new tweet by: {tweet.user.name} (@{tweet.user.screen_name})")
-                
-                analysis = analyze_tweet_with_gemini(tweet.text)
-                
                 try:
-                    if isinstance(tweet.created_at, str):
-                        dt = datetime.strptime(tweet.created_at, "%a %b %d %H:%M:%S %z %Y")
-                        date_str = dt.strftime("%Y-%m-%d")
-                    else:
-                        date_str = tweet.created_at.strftime("%Y-%m-%d")
-                except:
-                    date_str = datetime.now().strftime("%Y-%m-%d")
-                
-                cursor.execute("""
-                    INSERT INTO feedback_items (id, platform, author, date, event, text, sentiment, city, isUpcoming)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-                """, (
-                    tweet_id,
-                    "Twitter",
-                    f"@{tweet.user.screen_name}",
-                    date_str,
-                    analysis.get("event", "General Community Feedback 2026"),
-                    tweet.text,
-                    analysis.get("sentiment", "Neutral"),
-                    analysis.get("city", "Birmingham"),
-                    1 if analysis.get("isUpcoming") else 0
-                ))
-                
-                new_item = {
-                    "id": tweet_id,
-                    "platform": "Twitter",
-                    "author": f"@{tweet.user.screen_name}",
-                    "date": date_str,
-                    "event": analysis.get("event", "General Community Feedback 2026"),
-                    "text": tweet.text,
-                    "sentiment": analysis.get("sentiment", "Neutral"),
-                    "city": analysis.get("city", "Birmingham"),
-                    "isUpcoming": 1 if analysis.get("isUpcoming") else 0
-                }
-                index_item_in_chroma(new_item)
-                
-                total_added += 1
-                print(f"[SUCCESS] Added & indexed tweet: {tweet.id}")
-                
-            conn.commit()
+                    tweet_id = f"twitter_{tweet.id}"
+                    
+                    cursor.execute("SELECT id FROM feedback_items WHERE id = ?", (tweet_id,))
+                    exists = cursor.fetchone()
+                    
+                    if exists:
+                        print(f"Tweet {tweet.id} already exists in database. Skipping.")
+                        continue
+
+                    # UK relevance gate: skip tweets with no UK connection
+                    if not is_uk_relevant(tweet.text):
+                        safe_name = tweet.user.screen_name.encode('ascii','ignore').decode()
+                        print(f"[SKIP] Non-UK content filtered out from @{safe_name}")
+                        continue
+                        
+                    safe_name = tweet.user.name.encode('ascii','ignore').decode()
+                    safe_screen = tweet.user.screen_name.encode('ascii','ignore').decode()
+                    print(f"Found new tweet by: {safe_name} (@{safe_screen})")
+                    
+                    analysis = analyze_tweet_with_gemini(tweet.text)
+                    
+                    try:
+                        if isinstance(tweet.created_at, str):
+                            dt = datetime.strptime(tweet.created_at, "%a %b %d %H:%M:%S %z %Y")
+                            date_str = dt.strftime("%Y-%m-%d")
+                        else:
+                            date_str = tweet.created_at.strftime("%Y-%m-%d")
+                    except:
+                        date_str = datetime.now().strftime("%Y-%m-%d")
+                    
+                    cursor.execute("""
+                        INSERT INTO feedback_items (id, platform, author, date, event, text, sentiment, city, isUpcoming)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """, (
+                        tweet_id,
+                        "Twitter",
+                        f"@{tweet.user.screen_name}",
+                        date_str,
+                        analysis.get("event", "General Community Feedback 2026"),
+                        tweet.text,
+                        analysis.get("sentiment", "Neutral"),
+                        analysis.get("city", "Birmingham"),
+                        1 if analysis.get("isUpcoming") else 0
+                    ))
+                    conn.commit()  # Commit per-tweet to prevent rollback on later errors
+                    
+                    new_item = {
+                        "id": tweet_id,
+                        "platform": "Twitter",
+                        "author": f"@{tweet.user.screen_name}",
+                        "date": date_str,
+                        "event": analysis.get("event", "General Community Feedback 2026"),
+                        "text": tweet.text,
+                        "sentiment": analysis.get("sentiment", "Neutral"),
+                        "city": analysis.get("city", "Birmingham"),
+                        "isUpcoming": 1 if analysis.get("isUpcoming") else 0
+                    }
+                    index_item_in_chroma(new_item)
+                    
+                    total_added += 1
+                    print(f"[SUCCESS] Added & indexed tweet: {tweet.id}")
+                    
+                except Exception as tweet_err:
+                    print(f"[WARN] Skipping tweet due to error: {str(tweet_err).encode('ascii','ignore').decode()}")
+                    continue
             
         except Exception as e:
-            print(f"Error searching category {category}: {e}")
+            print(f"Error searching category {category}: {str(e).encode('ascii','ignore').decode()}")
             
         await asyncio.sleep(5)
         
