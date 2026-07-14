@@ -440,6 +440,66 @@ async def run_account_scraper():
 
     print(f"\nOfficial account ingestion complete! Processed {total_added} items.")
 
+# Deduplicate the local SQLite database in-place
+def deduplicate_db():
+    import re as _re
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("SELECT id, platform, author, date, event, text, sentiment, city, isUpcoming FROM feedback_items")
+    rows = cursor.fetchall()
+
+    def get_tokens(text):
+        return set(_re.findall(r"[a-z0-9£]+", text.lower()))
+
+    def is_near_dup(a, b):
+        ta, tb = get_tokens(a), get_tokens(b)
+        if not ta and not tb:
+            return True
+        shared = ta & tb
+        union = ta | tb
+        return len(union) > 0 and len(shared) / len(union) >= 0.85
+
+    def score(item):
+        return (
+            (4 if item[8] else 0)
+            + (2 if item[4] not in ("Community Event", "General Community Feedback 2026") else 0)
+            + (1 if item[6] != "Neutral" else 0)
+        )
+
+    unique = []
+    for row in rows:
+        dup_idx = next(
+            (
+                i for i, existing in enumerate(unique)
+                if existing[1].lower() == row[1].lower()
+                and existing[2].lower() == row[2].lower()
+                and existing[3] == row[3]
+                and is_near_dup(existing[5], row[5])
+            ),
+            -1,
+        )
+        if dup_idx == -1:
+            unique.append(row)
+        elif score(row) > score(unique[dup_idx]):
+            unique[dup_idx] = row
+
+    before = len(rows)
+    after = len(unique)
+
+    if before != after:
+        cursor.execute("DELETE FROM feedback_items")
+        for row in unique:
+            cursor.execute(
+                "INSERT INTO feedback_items (id, platform, author, date, event, text, sentiment, city, isUpcoming) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                row
+            )
+        conn.commit()
+        print(f"\nDeduplicated DB: {before} -> {after} items (removed {before - after} duplicates)")
+    else:
+        print(f"\nNo duplicates found in DB ({before} items).")
+
+    conn.close()
+
 async def run_scraper():
     bearer_token = os.getenv("TWITTER_BEARER_TOKEN")
     if bearer_token and bearer_token != "your_bearer_token":
@@ -447,8 +507,17 @@ async def run_scraper():
     else:
         await run_twikit_scraper()
 
-    # Also fetch from official accounts (@MEAIndia, @HCI_London)
+    # Also fetch from official accounts (@MEAIndia, @HCI_London, @CGI_Bghm)
     await run_account_scraper()
+
+    # Deduplicate the local DB
+    deduplicate_db()
+
+    # Auto-export to data.json
+    print("\n--- Exporting to data.json ---")
+    import subprocess
+    export_script = os.path.join(os.path.dirname(__file__), "export_data.py")
+    subprocess.run(["python", export_script], cwd=os.path.dirname(__file__))
 
 if __name__ == "__main__":
     asyncio.run(run_scraper())
