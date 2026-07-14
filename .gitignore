@@ -22,4 +22,7 @@ backend/.venv/
 .venv/
 __pycache__/
 *.pyc
+backend/diaspora.db
+backend/chroma_db/
+backend/cookies.json
 

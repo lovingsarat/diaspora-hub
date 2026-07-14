@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
 
-const FEEDBACK_ITEMS = [
+const API_BASE = "http://localhost:8000/api";
+
+const STATIC_FEEDBACK_ITEMS = [
   {
     id: "1",
     platform: "Twitter",
@@ -176,9 +178,10 @@ function App() {
   const [selectedSentiment, setSelectedSentiment] = useState(null);
   const [selectedCity, setSelectedCity] = useState(null);
 
-  const [feedItems, setFeedItems] = useState(FEEDBACK_ITEMS);
+  const [isBackendAvailable, setIsBackendAvailable] = useState(true);
+  const [feedItems, setFeedItems] = useState(STATIC_FEEDBACK_ITEMS);
   const [stats, setStats] = useState({
-    totalFeedbackCount: FEEDBACK_ITEMS.length,
+    totalFeedbackCount: STATIC_FEEDBACK_ITEMS.length,
     sentimentPercentages: { Positive: 0, Neutral: 0, Negative: 0 },
     platformCounts: {},
     cityCounts: {},
@@ -195,16 +198,47 @@ function App() {
   const [isChatLoading, setIsChatLoading] = useState(false);
   const [chatError, setChatError] = useState(null);
 
-  // Store and retrieve Gemini API key directly client-side
   const [localApiKey, setLocalApiKey] = useState(() => {
     return localStorage.getItem("diaspora_gemini_api_key") || "";
   });
 
   const chatEndRef = useRef(null);
 
-  // Perform filtering locally
-  useEffect(() => {
-    let filtered = FEEDBACK_ITEMS;
+  // Fallback local calculations
+  const calculateLocalStats = () => {
+    const total = STATIC_FEEDBACK_ITEMS.length;
+    if (total === 0) return;
+
+    const positives = STATIC_FEEDBACK_ITEMS.filter(item => item.sentiment === "Positive").length;
+    const neutrals = STATIC_FEEDBACK_ITEMS.filter(item => item.sentiment === "Neutral").length;
+    const negatives = STATIC_FEEDBACK_ITEMS.filter(item => item.sentiment === "Negative").length;
+
+    const sentimentPercentages = {
+      Positive: (positives / total) * 100,
+      Neutral: (neutrals / total) * 100,
+      Negative: (negatives / total) * 100,
+    };
+
+    const platformCounts = {};
+    STATIC_FEEDBACK_ITEMS.forEach(item => {
+      platformCounts[item.platform] = (platformCounts[item.platform] || 0) + 1;
+    });
+
+    const cityCounts = {};
+    STATIC_FEEDBACK_ITEMS.forEach(item => {
+      cityCounts[item.city] = (cityCounts[item.city] || 0) + 1;
+    });
+
+    setStats({
+      totalFeedbackCount: total,
+      sentimentPercentages,
+      platformCounts,
+      cityCounts
+    });
+  };
+
+  const filterLocalFeedback = () => {
+    let filtered = STATIC_FEEDBACK_ITEMS;
     
     if (selectedPlatform) {
       filtered = filtered.filter(item => item.platform === selectedPlatform);
@@ -224,40 +258,64 @@ function App() {
       );
     }
     setFeedItems(filtered);
-  }, [searchQuery, selectedPlatform, selectedSentiment, selectedCity]);
+  };
 
-  // Compute stats locally
+  // Fetch stats (Hybrid)
+  const fetchStats = async () => {
+    try {
+      const res = await fetch(`${API_BASE}/stats`);
+      if (res.ok) {
+        const data = await res.json();
+        setStats(data);
+        setIsBackendAvailable(true);
+      } else {
+        throw new Error();
+      }
+    } catch (err) {
+      // Backend is unavailable
+      setIsBackendAvailable(false);
+      calculateLocalStats();
+    }
+  };
+
+  // Fetch feedback (Hybrid)
+  const fetchFeedback = async () => {
+    if (!isBackendAvailable) {
+      filterLocalFeedback();
+      return;
+    }
+
+    try {
+      let url = `${API_BASE}/feedback?`;
+      const params = [];
+      if (searchQuery) params.push(`query=${encodeURIComponent(searchQuery)}`);
+      if (selectedPlatform) params.push(`platform=${encodeURIComponent(selectedPlatform)}`);
+      if (selectedSentiment) params.push(`sentiment=${encodeURIComponent(selectedSentiment)}`);
+      if (selectedCity) params.push(`city=${encodeURIComponent(selectedCity)}`);
+      
+      url += params.join("&");
+      const res = await fetch(url);
+      if (res.ok) {
+        const data = await res.json();
+        setFeedItems(data);
+      } else {
+        throw new Error();
+      }
+    } catch (err) {
+      setIsBackendAvailable(false);
+      filterLocalFeedback();
+    }
+  };
+
+  // Initial stats trigger
   useEffect(() => {
-    const total = FEEDBACK_ITEMS.length;
-    if (total === 0) return;
-
-    const positives = FEEDBACK_ITEMS.filter(item => item.sentiment === "Positive").length;
-    const neutrals = FEEDBACK_ITEMS.filter(item => item.sentiment === "Neutral").length;
-    const negatives = FEEDBACK_ITEMS.filter(item => item.sentiment === "Negative").length;
-
-    const sentimentPercentages = {
-      Positive: (positives / total) * 100,
-      Neutral: (neutrals / total) * 100,
-      Negative: (negatives / total) * 100,
-    };
-
-    const platformCounts = {};
-    FEEDBACK_ITEMS.forEach(item => {
-      platformCounts[item.platform] = (platformCounts[item.platform] || 0) + 1;
-    });
-
-    const cityCounts = {};
-    FEEDBACK_ITEMS.forEach(item => {
-      cityCounts[item.city] = (cityCounts[item.city] || 0) + 1;
-    });
-
-    setStats({
-      totalFeedbackCount: total,
-      sentimentPercentages,
-      platformCounts,
-      cityCounts
-    });
+    fetchStats();
   }, []);
+
+  // Dependencies trigger
+  useEffect(() => {
+    fetchFeedback();
+  }, [searchQuery, selectedPlatform, selectedSentiment, selectedCity, isBackendAvailable]);
 
   // Scroll to bottom of chat
   useEffect(() => {
@@ -278,7 +336,7 @@ function App() {
       "| Platform | Author | Date | Event | Sentiment | City | Feedback text |",
       "| --- | --- | --- | --- | --- | --- | --- |"
     ];
-    FEEDBACK_ITEMS.forEach(item => {
+    STATIC_FEEDBACK_ITEMS.forEach(item => {
       const upcomingTag = item.isUpcoming ? " (Upcoming Planned Activity)" : "";
       const textEscaped = item.text.replace(/\|/g, "\\|");
       lines.push(
@@ -293,6 +351,7 @@ function App() {
     localStorage.setItem("diaspora_gemini_api_key", val);
   };
 
+  // Chat Execution (Hybrid backend proxy or browser direct)
   const handleSendChat = async (text) => {
     if (!text.trim() || isChatLoading) return;
 
@@ -303,6 +362,42 @@ function App() {
     setIsChatLoading(true);
     setChatError(null);
 
+    // 1. Attempt using hosted backend proxy if available
+    if (isBackendAvailable) {
+      try {
+        const payload = {
+          message: text.trim(),
+          history: chatMessages.map((msg) => ({
+            sender: msg.sender,
+            text: msg.text,
+          })),
+        };
+
+        const res = await fetch(`${API_BASE}/chat`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+
+        if (res.ok) {
+          const data = await res.json();
+          setChatMessages((prev) => [
+            ...prev,
+            {
+              sender: "BOT",
+              text: data.reply,
+              timestamp: Date.now(),
+            },
+          ]);
+          setIsChatLoading(false);
+          return;
+        }
+      } catch (err) {
+        console.warn("Backend chat failed, falling back to serverless mode.");
+      }
+    }
+
+    // 2. Fallback: browser direct calling using Client-Side API Key
     const activeApiKey = localApiKey.trim() || import.meta.env.VITE_GEMINI_API_KEY || "";
 
     if (!activeApiKey || activeApiKey === "MY_GEMINI_API_KEY" || activeApiKey === "YOUR_GEMINI_API_KEY") {
@@ -327,10 +422,9 @@ ${getMarkdownSummary()}
 
 Instructions for your responses:
 1. Answer the user's questions based strictly on the provided feedback dataset. Do not invent any posts, authors, or events that are not in the dataset.
-2. If the user asks about sentiment, give an insightful analysis of Positive vs Neutral vs Negative feedback, highlighting specific complaints (e.g. Holi/Garba pricing, Vaisakhi crowd management, Sports Day rain delay) and achievements (e.g. Vaisakhi Langar quality, Sports Day youth engagement).
-3. If asked about upcoming activities or planned events, detail the entries for Leicester Diwali Lights Switch-On 2026 (drone show, park and ride concerns) and Coventry Navratri Garba 2026 (scalping issues, new venue).
-4. Keep your answers well-structured using markdown formatting (bullet points, bold text, headers) and highly professional. Speak with deep familiarity about Midlands UK geography.
-5. If a query is outside the scope of community events, state: "I couldn't find specific social feedback on that in our consolidated 2026 Midlands database. However, based on our recorded trends..." and summarize the nearest relevant trend.`;
+2. If the user asks about sentiment, give an insightful analysis of Positive vs Neutral vs Negative feedback, highlighting specific complaints and achievements.
+3. Use bold text, bullet points, and clean headers. Speak with deep familiarity about Midlands UK geography.
+4. If a query is outside the scope of community events, state: "I couldn't find specific social feedback on that in our consolidated 2026 Midlands database. However, based on our recorded trends..." and summarize the nearest relevant trend.`;
 
     const apiContents = updatedMessages.map((msg) => ({
       role: msg.sender === "USER" ? "user" : "model",
@@ -359,7 +453,7 @@ Instructions for your responses:
       }
 
       const data = await res.json();
-      const replyText = data.candidates?.[0]?.content?.parts?.[0]?.text || "I received an empty response. Please try rephrasing your question.";
+      const replyText = data.candidates?.[0]?.content?.parts?.[0]?.text || "I received an empty response.";
       setChatMessages((prev) => [
         ...prev,
         {
@@ -375,7 +469,7 @@ Instructions for your responses:
         ...prev,
         {
           sender: "BOT",
-          text: `❌ **Error**: Could not connect to Gemini API. ${err.message}\n\n*Note: Please verify that your API key is valid and you have a working internet connection.*`,
+          text: `❌ **Error**: Could not connect to Gemini API. ${err.message}`,
           timestamp: Date.now(),
         },
       ]);
@@ -384,19 +478,17 @@ Instructions for your responses:
     }
   };
 
-  // Donut chart calculations
+  // Donut calculations
   const radius = 35;
-  const circ = 2 * Math.PI * radius; // ~219.9
+  const circ = 2 * Math.PI * radius;
   const positivePct = stats.sentimentPercentages.Positive || 0;
   const neutralPct = stats.sentimentPercentages.Neutral || 0;
   const negativePct = stats.sentimentPercentages.Negative || 0;
 
   const posStroke = (positivePct / 100) * circ;
   const posOffset = 0;
-
   const neuStroke = (neutralPct / 100) * circ;
   const neuOffset = posStroke;
-
   const negStroke = (negativePct / 100) * circ;
   const negOffset = posStroke + neuStroke;
 
@@ -416,7 +508,7 @@ Instructions for your responses:
           <div className="brand-avatar">DP</div>
           <div className="brand-text">
             <h1>Midlands Pulse '26</h1>
-            <span>INDIAN DIASPORA ENGAGEMENT</span>
+            <span>INDIAN DIASPORA ENGAGEMENT {isBackendAvailable ? "🟢 (LIVE BACKEND)" : "🟡 (SERVERLESS LOCAL)"}</span>
           </div>
         </div>
         <button className="reset-button" onClick={handleClearFilters} title="Reset all filters">
@@ -479,12 +571,12 @@ Instructions for your responses:
               </div>
               <div className="kpi-card mentions-kpi">
                 <span className="kpi-title">Mentions</span>
-                <span className="kpi-value">12.4k</span>
+                <span className="kpi-value">{isBackendAvailable ? stats.totalFeedbackCount : "12.4k"}</span>
                 <span className="kpi-subtitle">SOCIAL AGG</span>
               </div>
               <div className="kpi-card events-kpi">
                 <span className="kpi-title">Events</span>
-                <span className="kpi-value">18</span>
+                <span className="kpi-value">{feedItems.filter(item => item.isUpcoming).length}</span>
                 <span className="kpi-subtitle">UPCOMING '26</span>
               </div>
             </section>
@@ -505,7 +597,6 @@ Instructions for your responses:
                   <div className="donut-chart-wrapper">
                     <svg viewBox="0 0 100 100" className="donut-chart">
                       <g transform="rotate(-90 50 50)">
-                        {/* Positive segment (Green) */}
                         {positivePct > 0 && (
                           <circle
                             cx="50"
@@ -519,7 +610,6 @@ Instructions for your responses:
                             strokeLinecap="round"
                           />
                         )}
-                        {/* Neutral segment (Yellow) */}
                         {neutralPct > 0 && (
                           <circle
                             cx="50"
@@ -533,7 +623,6 @@ Instructions for your responses:
                             strokeLinecap="round"
                           />
                         )}
-                        {/* Negative segment (Red) */}
                         {negativePct > 0 && (
                           <circle
                             cx="50"
@@ -559,17 +648,17 @@ Instructions for your responses:
                     <div className="legend-item">
                       <span className="legend-indicator positive"></span>
                       <span className="legend-name">Positive Review</span>
-                      <span className="legend-count">{FEEDBACK_COUNT("Positive")} ({Math.round(positivePct)}%)</span>
+                      <span className="legend-count">{feedItems.filter(i => i.sentiment === "Positive").length} ({Math.round(positivePct)}%)</span>
                     </div>
                     <div className="legend-item">
                       <span className="legend-indicator neutral"></span>
                       <span className="legend-name">Neutral Comments</span>
-                      <span className="legend-count">{FEEDBACK_COUNT("Neutral")} ({Math.round(neutralPct)}%)</span>
+                      <span className="legend-count">{feedItems.filter(i => i.sentiment === "Neutral").length} ({Math.round(neutralPct)}%)</span>
                     </div>
                     <div className="legend-item">
                       <span className="legend-indicator negative"></span>
                       <span className="legend-name">Negative Feedback</span>
-                      <span className="legend-count">{FEEDBACK_COUNT("Negative")} ({Math.round(negativePct)}%)</span>
+                      <span className="legend-count">{feedItems.filter(i => i.sentiment === "Negative").length} ({Math.round(negativePct)}%)</span>
                     </div>
                   </div>
                 </div>
@@ -581,9 +670,9 @@ Instructions for your responses:
                 <section className="metrics-card platform-card">
                   <h3 className="primary-text">Platform Feed</h3>
                   <div className="platform-bars-list">
-                    <PlatformBar label="Twitter" count={stats.platformCounts.Twitter || 0} total={15} color="#1da1f2" />
-                    <PlatformBar label="Facebook" count={stats.platformCounts.Facebook || 0} total={15} color="#1877f2" />
-                    <PlatformBar label="Quora" count={stats.platformCounts.Quora || 0} total={15} color="#b92b27" />
+                    <PlatformBar label="Twitter" count={stats.platformCounts.Twitter || 0} total={stats.totalFeedbackCount} color="#1da1f2" />
+                    <PlatformBar label="Facebook" count={stats.platformCounts.Facebook || 0} total={stats.totalFeedbackCount} color="#1877f2" />
+                    <PlatformBar label="Quora" count={stats.platformCounts.Quora || 0} total={stats.totalFeedbackCount} color="#b92b27" />
                   </div>
                 </section>
 
@@ -600,7 +689,7 @@ Instructions for your responses:
               </div>
             </div>
 
-            {/* Insights and Trends section */}
+            {/* Insights Section */}
             <div className="dashboard-insights-grid">
               <section className="metrics-card insights-card">
                 <div className="card-header-row">
@@ -669,7 +758,7 @@ Instructions for your responses:
         {/* TAB 2: AI RAG CHAT */}
         {activeTab === "chat" && (
           <div className="tab-content chat-tab fade-in">
-            {/* Chat Area */}
+            {/* Chat Messages */}
             <div className="chat-messages-container">
               {chatMessages.map((msg, idx) => (
                 <div key={idx} className={`chat-bubble-row ${msg.sender === "USER" ? "user-row" : "bot-row"}`}>
@@ -700,7 +789,7 @@ Instructions for your responses:
               <div ref={chatEndRef} />
             </div>
 
-            {/* Quick Suggestions Chips */}
+            {/* Suggested Chips */}
             <div className="quick-suggestions-section">
               <span className="suggestions-title">⚡ QUICK ANALYTICS COMMANDS</span>
               <div className="suggestions-chips-container">
@@ -712,25 +801,27 @@ Instructions for your responses:
               </div>
             </div>
 
-            {/* Local Client-Side API Key Configuration Bar */}
-            <div className="api-key-input-container">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="key-icon">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-              </svg>
-              <input
-                type="password"
-                placeholder="Enter Gemini API Key (saved locally)..."
-                value={localApiKey}
-                onChange={(e) => handleApiKeyChange(e.target.value)}
-              />
-            </div>
+            {/* Local Client API Key configuration panel (Only displayed or required when serverless fallback is active) */}
+            {!isBackendAvailable && (
+              <div className="api-key-input-container">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="key-icon">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                </svg>
+                <input
+                  type="password"
+                  placeholder="Enter Gemini API Key for serverless fallback (saved locally)..."
+                  value={localApiKey}
+                  onChange={(e) => handleApiKeyChange(e.target.value)}
+                />
+              </div>
+            )}
 
-            {/* Chat Input Bar */}
+            {/* Chat Input */}
             <div className="chat-input-bar">
               <input
                 type="text"
-                placeholder="Ask Diaspora RAG chatbot..."
+                placeholder={isBackendAvailable ? "Ask Live RAG chatbot (linked to vector DB)..." : "Ask Local RAG chatbot..."}
                 value={chatInput}
                 onChange={(e) => setChatInput(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && handleSendChat(chatInput)}
@@ -773,7 +864,6 @@ Instructions for your responses:
 
             {/* Filters Row */}
             <section className="explorer-filters-panel">
-              {/* Platform selection */}
               <div className="filter-group">
                 <span className="filter-label">Platform:</span>
                 <div className="filter-options">
@@ -784,7 +874,6 @@ Instructions for your responses:
                 </div>
               </div>
 
-              {/* Sentiment selection */}
               <div className="filter-group">
                 <span className="filter-label">Sentiment:</span>
                 <div className="filter-options">
@@ -795,7 +884,6 @@ Instructions for your responses:
                 </div>
               </div>
 
-              {/* City selection */}
               <div className="filter-group">
                 <span className="filter-label">City:</span>
                 <div className="filter-options flex-wrap">
@@ -834,7 +922,6 @@ Instructions for your responses:
               ) : (
                 feedItems.map((item) => (
                   <div key={item.id} className="feedback-feed-card">
-                    {/* Top Row: Author, platform logo, date */}
                     <div className="card-top-row">
                       <div className="card-author-info">
                         <div className={`platform-badge ${item.platform.toLowerCase()}`}>
@@ -845,7 +932,6 @@ Instructions for your responses:
                       <span className="card-date">{item.date}</span>
                     </div>
 
-                    {/* Event name row with potential Planned tag */}
                     <div className="card-event-row">
                       <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="event-icon">
                         <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
@@ -857,10 +943,8 @@ Instructions for your responses:
                       {item.isUpcoming && <span className="planned-badge">PLANNED</span>}
                     </div>
 
-                    {/* Feedback content text */}
                     <p className="card-text">{item.text}</p>
 
-                    {/* Bottom Row: City location tag and Sentiment Badge */}
                     <div className="card-bottom-row">
                       <div className="city-tag">
                         <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="location-icon">
@@ -883,10 +967,6 @@ Instructions for your responses:
       </main>
     </div>
   );
-
-  function FEEDBACK_COUNT(sentiment) {
-    return FEEDBACK_ITEMS.filter(i => i.sentiment === sentiment).length;
-  }
 }
 
 function PlatformBar({ label, count, total, color }) {
