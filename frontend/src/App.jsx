@@ -5,7 +5,7 @@ import "./App.css";
 
 const STATIC_DATA_URL = `${import.meta.env.BASE_URL}data.json`;
 const ENV_GEMINI_KEY = import.meta.env.VITE_GEMINI_API_KEY || "";
-const GEMINI_MODEL = "gemini-2.0-flash";
+const GEMINI_MODEL = "gemini-3.1-flash-lite";
 const GEMINI_API_URL = (apiKey) =>
   `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${apiKey}`;
 
