@@ -20,7 +20,6 @@ client = Client('en-US')
 def analyze_tweet_with_gemini(text: str) -> dict:
     api_key = os.getenv("GEMINI_API_KEY")
     if not api_key or api_key in ["MY_GEMINI_API_KEY", "YOUR_GEMINI_API_KEY"]:
-        # Fallback default
         return {
             "sentiment": "Neutral",
             "city": "Birmingham",
@@ -57,7 +56,6 @@ def analyze_tweet_with_gemini(text: str) -> dict:
             res_data = response.json()
             reply = res_data["candidates"][0]["content"]["parts"][0]["text"].strip()
             
-            # Remove markdown fence wrapper if present
             if reply.startswith("```json"):
                 reply = reply[7:-3].strip()
             elif reply.startswith("```"):
@@ -67,7 +65,6 @@ def analyze_tweet_with_gemini(text: str) -> dict:
     except Exception as e:
         print(f"Error parsing sentiment with Gemini: {e}")
         
-    # Return default fallback if parse failed or timed out
     return {
         "sentiment": "Neutral",
         "city": "Birmingham",
@@ -75,7 +72,108 @@ def analyze_tweet_with_gemini(text: str) -> dict:
         "event": "Community Event"
     }
 
-async def run_scraper():
+# Scraper method 1: Official Twitter API v2 Bearer Token Ingestion
+async def run_official_api_scraper(bearer_token: str):
+    headers = {"Authorization": f"Bearer {bearer_token}"}
+    queries = {
+        "diaspora": '("Indian diaspora" OR "Desi") ("West Midlands" OR "Birmingham")',
+        "events": '("Indian event" OR "Diwali" OR "Mela") ("West Midlands" OR "Birmingham" OR "Coventry")'
+    }
+    
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    total_added = 0
+    
+    async with httpx.AsyncClient() as http_client:
+        for category, query_string in queries.items():
+            print(f"\n--- Fetching category: {category} (Official API) ---")
+            url = "https://api.twitter.com/2/tweets/search/recent"
+            params = {
+                "query": query_string,
+                "tweet.fields": "created_at",
+                "expansions": "author_id",
+                "user.fields": "username,name",
+                "max_results": 10
+            }
+            try:
+                response = await http_client.get(url, headers=headers, params=params, timeout=15.0)
+                if response.status_code == 429:
+                    print("[ERROR] Official X API Rate Limited. Please wait.")
+                    break
+                if response.status_code != 200:
+                    print(f"[ERROR] Official X API returned status {response.status_code}: {response.text}")
+                    continue
+                    
+                resp_json = response.json()
+                tweets = resp_json.get("data", [])
+                users = {u["id"]: u for u in resp_json.get("includes", {}).get("users", [])}
+                
+                for tweet in tweets:
+                    tweet_id = f"twitter_{tweet['id']}"
+                    
+                    # Verify uniqueness
+                    cursor.execute("SELECT id FROM feedback_items WHERE id = ?", (tweet_id,))
+                    exists = cursor.fetchone()
+                    if exists:
+                        print(f"Tweet {tweet['id']} already exists in SQLite. Skipping.")
+                        continue
+                        
+                    author_id = tweet.get("author_id")
+                    user_info = users.get(author_id, {})
+                    screen_name = user_info.get("username", "XUser")
+                    
+                    print(f"Found new tweet by: {user_info.get('name', 'User')} (@{screen_name})")
+                    
+                    # Perform Gemini analysis
+                    analysis = analyze_tweet_with_gemini(tweet["text"])
+                    
+                    # Date formatting
+                    try:
+                        date_str = tweet["created_at"][:10]
+                    except:
+                        date_str = datetime.now().strftime("%Y-%m-%d")
+                        
+                    cursor.execute("""
+                        INSERT INTO feedback_items (id, platform, author, date, event, text, sentiment, city, isUpcoming)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """, (
+                        tweet_id,
+                        "Twitter",
+                        f"@{screen_name}",
+                        date_str,
+                        analysis.get("event", "General Community Feedback 2026"),
+                        tweet["text"],
+                        analysis.get("sentiment", "Neutral"),
+                        analysis.get("city", "Birmingham"),
+                        1 if analysis.get("isUpcoming") else 0
+                    ))
+                    
+                    new_item = {
+                        "id": tweet_id,
+                        "platform": "Twitter",
+                        "author": f"@{screen_name}",
+                        "date": date_str,
+                        "event": analysis.get("event", "General Community Feedback 2026"),
+                        "text": tweet["text"],
+                        "sentiment": analysis.get("sentiment", "Neutral"),
+                        "city": analysis.get("city", "Birmingham"),
+                        "isUpcoming": 1 if analysis.get("isUpcoming") else 0
+                    }
+                    index_item_in_chroma(new_item)
+                    total_added += 1
+                    print(f"[SUCCESS] Added & indexed tweet: {tweet['id']}")
+                    
+                conn.commit()
+            except Exception as e:
+                print(f"Error fetching category {category} with Official API: {e}")
+                
+            await asyncio.sleep(2)
+            
+    conn.close()
+    print(f"\nIngestion complete! Added {total_added} new items to SQLite and ChromaDB.")
+
+# Scraper method 2: Twikit Browser Scraper (Fallback)
+async def run_twikit_scraper():
     username = os.getenv("TWITTER_USERNAME")
     email = os.getenv("TWITTER_EMAIL")
     password = os.getenv("TWITTER_PASSWORD")
@@ -87,7 +185,6 @@ async def run_scraper():
     print(f"Authenticating with X account: {username}...")
     
     try:
-        # Load or cache cookies to avoid login flags
         cookies_file = "cookies.json"
         if os.path.exists(cookies_file):
             client.load_cookies(cookies_file)
@@ -111,19 +208,16 @@ async def run_scraper():
     
     conn = get_db_connection()
     cursor = conn.cursor()
-    
     total_added = 0
     
     for category, query_string in queries.items():
-        print(f"\n--- Fetching category: {category} ---")
+        print(f"\n--- Fetching category: {category} (Twikit Scraper) ---")
         try:
-            # Fetch latest chronological search results
             tweets = await client.search_tweet(query_string, product='Latest')
             
             for tweet in tweets:
                 tweet_id = f"twitter_{tweet.id}"
                 
-                # Check if already exists in SQLite database
                 cursor.execute("SELECT id FROM feedback_items WHERE id = ?", (tweet_id,))
                 exists = cursor.fetchone()
                 
@@ -133,13 +227,9 @@ async def run_scraper():
                     
                 print(f"Found new tweet by: {tweet.user.name} (@{tweet.user.screen_name})")
                 
-                # Run Gemini classification on tweet
                 analysis = analyze_tweet_with_gemini(tweet.text)
                 
-                # Format tweet timestamp
                 try:
-                    # Created_at is usually like "Mon Jul 14 10:20:00 +0000 2026"
-                    # If it's datetime or string, handle it
                     if isinstance(tweet.created_at, str):
                         dt = datetime.strptime(tweet.created_at, "%a %b %d %H:%M:%S %z %Y")
                         date_str = dt.strftime("%Y-%m-%d")
@@ -148,7 +238,6 @@ async def run_scraper():
                 except:
                     date_str = datetime.now().strftime("%Y-%m-%d")
                 
-                # SQLite insertion
                 cursor.execute("""
                     INSERT INTO feedback_items (id, platform, author, date, event, text, sentiment, city, isUpcoming)
                     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
@@ -164,7 +253,6 @@ async def run_scraper():
                     1 if analysis.get("isUpcoming") else 0
                 ))
                 
-                # Index in vector search (ChromaDB)
                 new_item = {
                     "id": tweet_id,
                     "platform": "Twitter",
@@ -186,11 +274,17 @@ async def run_scraper():
         except Exception as e:
             print(f"Error searching category {category}: {e}")
             
-        # Rate-limiting cushion
         await asyncio.sleep(5)
         
     conn.close()
-    print(f"\nScraping complete! Added {total_added} new items to SQLite and ChromaDB.")
+    print(f"\nIngestion complete! Added {total_added} new items to SQLite and ChromaDB.")
+
+async def run_scraper():
+    bearer_token = os.getenv("TWITTER_BEARER_TOKEN")
+    if bearer_token and bearer_token != "your_bearer_token":
+        await run_official_api_scraper(bearer_token)
+    else:
+        await run_twikit_scraper()
 
 if __name__ == "__main__":
     asyncio.run(run_scraper())
