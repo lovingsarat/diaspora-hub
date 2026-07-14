@@ -19,6 +19,59 @@ load_dotenv()
 # Initialize Twikit Client
 client = Client('en-US')
 
+# Try to load Twitter session from .env cookies, cookies.json, or login
+def load_twitter_session():
+    """Load Twitter session using env cookies, cookies.json, or login fallback.
+    Returns True if session is ready, False otherwise."""
+    # Method 1: Read cookies directly from .env variables
+    auth_token = os.getenv("TWITTER_AUTH_TOKEN", "")
+    ct0 = os.getenv("TWITTER_CT0", "")
+    if auth_token and ct0 and auth_token != "your_auth_token" and ct0 != "your_ct0":
+        try:
+            client.set_cookies({"auth_token": auth_token, "ct0": ct0})
+            print("Loaded Twitter session from .env cookies (auth_token + ct0).")
+            return True
+        except Exception as e:
+            print(f"[WARN] Failed to set cookies from .env: {e}")
+
+    # Method 2: Load from cookies.json file
+    cookies_file = "cookies.json"
+    if os.path.exists(cookies_file):
+        try:
+            with open(cookies_file, 'r') as f:
+                cookies_data = json.load(f)
+            if isinstance(cookies_data, list):
+                cookies_dict = {c["name"]: c["value"] for c in cookies_data if "name" in c and "value" in c}
+                client.set_cookies(cookies_dict)
+                print("Loaded Twitter session from cookies.json (array format).")
+                return True
+            elif isinstance(cookies_data, dict):
+                if "ct0" in cookies_data or "auth_token" in cookies_data:
+                    client.set_cookies(cookies_data)
+                    print("Loaded Twitter session from cookies.json (dict format).")
+                    return True
+        except Exception as e:
+            print(f"[WARN] Failed to load cookies.json: {e}")
+
+    # Method 3: Fallback to login with credentials
+    username = os.getenv("TWITTER_USERNAME")
+    email = os.getenv("TWITTER_EMAIL")
+    password = os.getenv("TWITTER_PASSWORD")
+    if username and username != "your_username":
+        print(f"Attempting X login with username: {username}...")
+        try:
+            asyncio.get_event_loop().run_until_complete(
+                client.login(auth_info_1=username, auth_info_2=email, password=password)
+            )
+            client.save_cookies(cookies_file)
+            print("Successfully logged in and saved session.")
+            return True
+        except Exception as e:
+            print(f"[ERROR] X login failed: {e}")
+    else:
+        print("[WARNING] No Twitter credentials or cookies found. Skipping X scraping.")
+    return False
+
 def make_json_valid(s: str) -> str:
     """Extract the first valid JSON object from a string, handling duplicate/trailing braces."""
     import re
@@ -224,54 +277,8 @@ async def run_official_api_scraper(bearer_token: str):
 
 # Scraper method 2: Twikit Browser Scraper (Fallback)
 async def run_twikit_scraper():
-    username = os.getenv("TWITTER_USERNAME")
-    email = os.getenv("TWITTER_EMAIL")
-    password = os.getenv("TWITTER_PASSWORD")
-    
-    cookies_file = "cookies.json"
-    cookies_loaded = False
-    
-    if os.path.exists(cookies_file):
-        try:
-            with open(cookies_file, 'r') as f:
-                cookies_data = json.load(f)
-            if isinstance(cookies_data, list):
-                cookies_dict = {c["name"]: c["value"] for c in cookies_data if "name" in c and "value" in c}
-                client.set_cookies(cookies_dict)
-                cookies_loaded = True
-            elif isinstance(cookies_data, dict):
-                if "ct0" in cookies_data or "auth_token" in cookies_data:
-                    client.set_cookies(cookies_data)
-                    cookies_loaded = True
-                else:
-                    try:
-                        client.load_cookies(cookies_file)
-                        cookies_loaded = True
-                    except:
-                        pass
-            if cookies_loaded:
-                print("Loaded session cookies from cookies.json successfully.")
-        except Exception as e:
-            print(f"Failed to load cookies.json: {e}. Attempting standard login...")
-            
-    if not cookies_loaded:
-        if not username or username == "your_username":
-            print("[WARNING] X credentials missing and no valid cookies.json found. Skipping X scraping.")
-            return
-            
-        print(f"Authenticating with X account: {username}...")
-        
-        try:
-            await client.login(
-                auth_info_1=username,
-                auth_info_2=email,
-                password=password
-            )
-            client.save_cookies(cookies_file)
-            print("Successfully authenticated and cached session cookies.")
-        except Exception as e:
-            print(f"[ERROR] Authentication failed: {e}")
-            return
+    if not load_twitter_session():
+        return
 
     # UK-targeted queries: require explicit UK city/region mention + English language
     UK_CITIES = '("Birmingham" OR "Leicester" OR "Coventry" OR "Wolverhampton" OR "Nottingham" OR "Derby" OR "West Midlands" OR "East Midlands" OR "UK" OR "England" OR "Britain")'
@@ -342,43 +349,9 @@ async def run_twikit_scraper():
 
 # Scraper method 3: Fetch tweets from specific official accounts
 async def run_account_scraper():
-    """Fetch recent tweets from official accounts like @MEAIndia and @HCI_London."""
-    username = os.getenv("TWITTER_USERNAME")
-    email = os.getenv("TWITTER_EMAIL")
-    password = os.getenv("TWITTER_PASSWORD")
-
-    cookies_file = "cookies.json"
-    cookies_loaded = False
-
-    if os.path.exists(cookies_file):
-        try:
-            with open(cookies_file, 'r') as f:
-                cookies_data = json.load(f)
-            if isinstance(cookies_data, list):
-                cookies_dict = {c["name"]: c["value"] for c in cookies_data if "name" in c and "value" in c}
-                client.set_cookies(cookies_dict)
-                cookies_loaded = True
-            elif isinstance(cookies_data, dict):
-                if "ct0" in cookies_data or "auth_token" in cookies_data:
-                    client.set_cookies(cookies_data)
-                    cookies_loaded = True
-            if cookies_loaded:
-                print("Loaded session cookies from cookies.json successfully.")
-        except Exception as e:
-            print(f"Failed to load cookies.json: {e}")
-
-    if not cookies_loaded:
-        if not username or username == "your_username":
-            print("[WARNING] X credentials missing. Skipping official account scraping.")
-            return
-        print(f"Authenticating with X account: {username}...")
-        try:
-            await client.login(auth_info_1=username, auth_info_2=email, password=password)
-            client.save_cookies(cookies_file)
-            print("Successfully authenticated.")
-        except Exception as e:
-            print(f"[ERROR] Authentication failed: {e}")
-            return
+    """Fetch recent tweets from official accounts like @MEAIndia, @HCI_London, @CGI_Bghm."""
+    if not load_twitter_session():
+        return
 
     total_added = 0
     for account in OFFICIAL_ACCOUNTS:
@@ -394,7 +367,11 @@ async def run_account_scraper():
                 print(f"[INFO] No recent tweets found for @{account}")
                 continue
 
-            for tweet in tweets:
+            # Twikit returns a ResultList — iterate safely
+            tweet_list = list(tweets) if tweets else []
+            print(f"[INFO] Found {len(tweet_list)} tweets for @{account}")
+
+            for tweet in tweet_list:
                 try:
                     tweet_id = f"twitter_{tweet.id}"
 
@@ -435,7 +412,9 @@ async def run_account_scraper():
                     print(f"[WARN] Skipping tweet: {str(tweet_err).encode('ascii','ignore').decode()}")
                     continue
         except Exception as e:
+            import traceback
             print(f"Error fetching @{account}: {str(e).encode('ascii','ignore').decode()}")
+            traceback.print_exc()
         await asyncio.sleep(3)
 
     print(f"\nOfficial account ingestion complete! Processed {total_added} items.")

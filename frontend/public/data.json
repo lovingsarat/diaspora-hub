@@ -1,20 +1,20 @@
 {
-  "exportedAt": "2026-07-14T20:56:10.991972Z",
-  "totalFeedbackCount": 119,
+  "exportedAt": "2026-07-14T21:12:23.028873Z",
+  "totalFeedbackCount": 142,
   "sentimentPercentages": {
-    "Positive": 19.33,
-    "Neutral": 36.97,
-    "Negative": 43.7
+    "Positive": 21.13,
+    "Neutral": 42.25,
+    "Negative": 36.62
   },
   "platformCounts": {
-    "Twitter": 110,
+    "Twitter": 133,
     "Facebook": 5,
     "Quora": 4
   },
   "cityCounts": {
     "Coventry": 5,
     "Leicester": 6,
-    "Birmingham": 107,
+    "Birmingham": 130,
     "Nottingham": 1
   },
   "items": [
@@ -371,6 +371,105 @@
       "isUpcoming": false
     },
     {
+      "id": "twitter_2077009520069587291",
+      "platform": "Twitter",
+      "author": "@MEAIndia",
+      "date": "2026-07-14",
+      "event": "BRICS Trade Union Forum Summit",
+      "text": "RT @mansukhmandviya: Building Future of Work through Tripartite Partnership!\n\nAddressed the BRICS Trade Union Forum Summit in Hyderabad. Hi…",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076898013050736765",
+      "platform": "Twitter",
+      "author": "@MEAIndia",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "Minister of Parliamentary Affairs and Minority Affairs Shri Kiren Rijiju departed for Doha, Qatar today for conveying condolences on behalf of the Government and people of India on the sad demise of Qatar's Father Amir His Highness Sheikh Hamad bin Khalifa Al Thani. \n\nFather Amir https://t.co/0MgyFQv2W8",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076849288496501163",
+      "platform": "Twitter",
+      "author": "@MEAIndia",
+      "date": "2026-07-14",
+      "event": "UNSC 2028-2029 Campaign Launch",
+      "text": "RT @DrSJaishankar: India formally launches its campaign for United Nations Security Council 2028-2029. https://t.co/RUnu1akAYe",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": true
+    },
+    {
+      "id": "twitter_2076981905220628744",
+      "platform": "Twitter",
+      "author": "@CGI_Bghm",
+      "date": "2026-07-14",
+      "event": "India-UK Business And Investment Summit 2026",
+      "text": "RT @HCI_London: 15 July 2026!\nA landmark date in the next chapter of India–UK relations. Set to unlock new business and investment opportun…",
+      "sentiment": "Positive",
+      "city": "Birmingham",
+      "isUpcoming": true
+    },
+    {
+      "id": "twitter_2076978778190807242",
+      "platform": "Twitter",
+      "author": "@CGI_Bghm",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "🇮🇳 India has launched its campaign for a non-permanent seat on the UN Security Council (2028–29), presenting a vision focused on:\n\n➡️ Amplifying the voice of the Global South.\n➡️ Advancing a more representative, reformed and effective multilateral system.\n➡️ Building a https://t.co/VRukmjhDCw",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076960718792839371",
+      "platform": "Twitter",
+      "author": "@CGI_Bghm",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "RT @DrSJaishankar: Glad to meet @antonioguterres, Secretary General of the @UN in New York today. \n\nDiscussed global developments, includin…",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076960630670589970",
+      "platform": "Twitter",
+      "author": "@CGI_Bghm",
+      "date": "2026-07-14",
+      "event": "UN Security Council Campaign Launch",
+      "text": "RT @DrSJaishankar: Pleased to launch India’s campaign for the @UN Security Council 2028-29. \n\nUnderlined 🇮🇳’s approach rooted in SHANTI - S…",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076959381132922900",
+      "platform": "Twitter",
+      "author": "@CGI_Bghm",
+      "date": "2026-07-14",
+      "event": "General Community Feedback 2026",
+      "text": "India officially launches its campaign for nomination to the United Nations Security Council membership for the 2028-2029 period.",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076959234973978956",
+      "platform": "Twitter",
+      "author": "@CGI_Bghm",
+      "date": "2026-07-14",
+      "event": "UN Security Council Campaign Launch 2028-29",
+      "text": "Remarks by Hon'ble EAM @DrSJaishankar at the launch of 🇮🇳’s campaign for @UN Security Council 2028-29.",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": true
+    },
+    {
       "id": "12",
       "platform": "Facebook",
       "author": "Meera Joshi",
@@ -488,6 +587,28 @@
       "event": "General Community Feedback 2026",
       "text": "@ApsanaBegumMP The unequal treatment of women is not an accident of geography; it is rooted in mainstream, orthodox interpretations of Islamic texts, in Islamic countries, that codify a strict male hierarchy:\n\n​Male Authority: \n\nTraditional Islamic law is built on the concept of Qiwamah (male",
       "sentiment": "Negative",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076763515772436925",
+      "platform": "Twitter",
+      "author": "@MEAIndia",
+      "date": "2026-07-13",
+      "event": "UN Security Council Campaign Launch",
+      "text": "RT @DrSJaishankar: Pleased to launch India’s campaign for the @UN Security Council 2028-29. \n\nUnderlined 🇮🇳’s approach rooted in SHANTI - S…",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2076763492384911581",
+      "platform": "Twitter",
+      "author": "@MEAIndia",
+      "date": "2026-07-13",
+      "event": "General Community Feedback 2026",
+      "text": "RT @DrSJaishankar: Speaking at the launch of India’s campaign for the @UN Security Council 2028-29.\n\n#SHANTI\n\n🇮🇳 🇺🇳  https://t.co/u9ub8cTom9",
+      "sentiment": "Neutral",
       "city": "Birmingham",
       "isUpcoming": false
     },
@@ -745,6 +866,61 @@
       "isUpcoming": false
     },
     {
+      "id": "twitter_2074862184618742046",
+      "platform": "Twitter",
+      "author": "@CGI_Bghm",
+      "date": "2026-07-08",
+      "event": "General Community Feedback 2026",
+      "text": "RT @KVSinghMPGonda: Delivered the keynote address at the side event, “From India to Geneva – A Global Convening on AI Impact at Scale,” hos…",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2074846186373058956",
+      "platform": "Twitter",
+      "author": "@CGI_Bghm",
+      "date": "2026-07-08",
+      "event": "General Community Feedback 2026",
+      "text": "RT @narendramodi: The majestic Prambanan Temple! https://t.co/pRS2S9X5gm",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2074786718419496981",
+      "platform": "Twitter",
+      "author": "@CGI_Bghm",
+      "date": "2026-07-08",
+      "event": "Consul General University Visit",
+      "text": "Consul General @venkatifs visited @unibirmingham  to tour its world-class facilities and engage with academic leaders on strengthening India–UK higher education cooperation. Discussions focused on the welfare of Indian students, expanding academic and research partnerships, https://t.co/ZDmhU9d0o0",
+      "sentiment": "Positive",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2074790548284608613",
+      "platform": "Twitter",
+      "author": "@CGI_Bghm",
+      "date": "2026-07-08",
+      "event": "India-UK Academic And Research Meeting",
+      "text": "RT @docwas: Thank you @CGI_Bghm for an excellent academic and research meeting on India -UK partnership @Andrew007Uk @UKinHyderabad @UKinIn…",
+      "sentiment": "Positive",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2074512625090584834",
+      "platform": "Twitter",
+      "author": "@CGI_Bghm",
+      "date": "2026-07-07",
+      "event": "General Community Feedback 2026",
+      "text": "RT @MEAIndia: https://t.co/QsY2udbPzB",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
       "id": "twitter_2074070816711381318",
       "platform": "Twitter",
       "author": "@NIHRresearch",
@@ -754,6 +930,61 @@
       "sentiment": "Positive",
       "city": "Birmingham",
       "isUpcoming": true
+    },
+    {
+      "id": "twitter_2074095592381288554",
+      "platform": "Twitter",
+      "author": "@CGI_Bghm",
+      "date": "2026-07-06",
+      "event": "Dr. Syama Prasad Mookerjee 125th Birth Anniversary Tribute",
+      "text": "Marking the 125th birth anniversary of Dr. Syama Prasad Mookerjee, Hon'ble PM Sri @narendramodi ji has paid a heartfelt tribute, reflecting on his lasting legacy as an educationist, institution-builder, and statesman dedicated to India’s unity and progress.\n\nRead:",
+      "sentiment": "Positive",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2074095266890698877",
+      "platform": "Twitter",
+      "author": "@CGI_Bghm",
+      "date": "2026-07-06",
+      "event": "General Community Feedback 2026",
+      "text": "RT @narendramodi: Penned an Op-Ed on Dr. Syama Prasad Mookerjee's life, emphasising his diverse accomplishments, be it Vice Chancellor, Min…",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2074095188490834086",
+      "platform": "Twitter",
+      "author": "@CGI_Bghm",
+      "date": "2026-07-06",
+      "event": "General Community Feedback 2026",
+      "text": "RT @MIB_India: The Electronic Overseas Citizen of India (e-OCI) Card is a major citizen-centric initiative aimed at transforming OCI servic…",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2074093512832786512",
+      "platform": "Twitter",
+      "author": "@CGI_Bghm",
+      "date": "2026-07-06",
+      "event": "India-UK Academic And Research Partnership Luncheon",
+      "text": "On 2 July 2026, Consul General, @venkatifs  , organised a productive luncheon meeting focused on strengthening India–UK academic and research partnerships through collaborative research, innovation, technology transfer, faculty and student mobility, and joint educational https://t.co/QMt7ik2sdJ",
+      "sentiment": "Positive",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2074058429694435697",
+      "platform": "Twitter",
+      "author": "@CGI_Bghm",
+      "date": "2026-07-06",
+      "event": "ISKCON Rath Yatra Festival",
+      "text": "Consul General @venkatifs, along with the Lord Mayor @BrumLordMayor, the Mayor of SuttonColdfield  @Mayor_RoyalSC, and other dignitaries, inaugurated the Rath Yatra festival and ceremonially pulled the divine chariot at Birmingham New Street, organized by ISKCON. On the https://t.co/bmb58drNN3",
+      "sentiment": "Positive",
+      "city": "Birmingham",
+      "isUpcoming": false
     },
     {
       "id": "15",
@@ -773,6 +1004,28 @@
       "date": "2026-07-05",
       "event": "Community Event",
       "text": "This is Lady-pool street in #Birmingham where you see desi and South Asian restaurants but was saddened to see junk and litter all over the place on the road side and especially in the Parking lots!\nWhy are we Pakistanis so dirty and despite living in the UK , doesn't make them https://t.co/KRIP4hTxgG",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2073801609436373487",
+      "platform": "Twitter",
+      "author": "@CGI_Bghm",
+      "date": "2026-07-05",
+      "event": "Hindustani Classical Music Performance",
+      "text": "RT @HCI_London: A soulful celebration of India's musical legacy!\nAn enchanting performance of Hindustani classical, ghazal, thumri and Sufi…",
+      "sentiment": "Positive",
+      "city": "Birmingham",
+      "isUpcoming": false
+    },
+    {
+      "id": "twitter_2073801450719703336",
+      "platform": "Twitter",
+      "author": "@CGI_Bghm",
+      "date": "2026-07-05",
+      "event": "General Community Feedback 2026",
+      "text": "RT @MEAIndia: Healing hands. Shared humanity.\n\nThe Army Field Hospital carries forward its humanitarian mission in Venezuela.\n\n#OperationAm…",
       "sentiment": "Neutral",
       "city": "Birmingham",
       "isUpcoming": false
