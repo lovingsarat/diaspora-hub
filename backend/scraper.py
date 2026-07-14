@@ -16,6 +16,20 @@ load_dotenv()
 # Initialize Twikit Client
 client = Client('en-US')
 
+def make_json_valid(s: str) -> str:
+    s = s.strip()
+    if not s.startswith("{"):
+        return s
+    open_braces = s.count("{")
+    close_braces = s.count("}")
+    if open_braces > close_braces:
+        if s.endswith(","):
+            s = s[:-1]
+        if s.count('"') % 2 != 0:
+            s += '"'
+        s += "}" * (open_braces - close_braces)
+    return s
+
 # Function to analyze tweet contents using Gemini API (structured extraction)
 def analyze_tweet_with_gemini(text: str) -> dict:
     api_key = os.getenv("GEMINI_API_KEY")
@@ -56,14 +70,15 @@ def analyze_tweet_with_gemini(text: str) -> dict:
             res_data = response.json()
             reply = res_data["candidates"][0]["content"]["parts"][0]["text"].strip()
             
-            if reply.startswith("```json"):
-                reply = reply[7:-3].strip()
-            elif reply.startswith("```"):
-                reply = reply[3:-3].strip()
-                
+            import re
+            match = re.search(r'\{.*\}', reply, re.DOTALL)
+            if match:
+                reply = match.group(0)
+            
+            reply = make_json_valid(reply)
             return json.loads(reply)
     except Exception as e:
-        print(f"Error parsing sentiment with Gemini: {e}")
+        print(f"Error parsing sentiment with Gemini: {e}. Raw reply: {reply if 'reply' in locals() else 'None'}")
         
     return {
         "sentiment": "Neutral",
