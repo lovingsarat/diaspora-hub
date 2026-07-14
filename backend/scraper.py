@@ -87,12 +87,26 @@ def analyze_tweet_with_gemini(text: str) -> dict:
         "event": "Community Event"
     }
 
+# Fast UK relevance gate — checks tweet text for at least one UK location/context keyword.
+# Runs before the Gemini API call to save quota on irrelevant international content.
+UK_KEYWORDS = [
+    "uk", "england", "britain", "british", "birmingham", "leicester", "coventry",
+    "wolverhampton", "nottingham", "derby", "west midlands", "east midlands",
+    "midlands", "manchester", "london", "bradford", "luton", "slough",
+    "nhs", "council", "mp ", "parliament", "whitehall", "home office"
+]
+
+def is_uk_relevant(text: str) -> bool:
+    text_lower = text.lower()
+    return any(kw in text_lower for kw in UK_KEYWORDS)
+
 # Scraper method 1: Official Twitter API v2 Bearer Token Ingestion
 async def run_official_api_scraper(bearer_token: str):
     headers = {"Authorization": f"Bearer {bearer_token}"}
+    UK_CITIES = '("Birmingham" OR "Leicester" OR "Coventry" OR "Wolverhampton" OR "Nottingham" OR "Derby" OR "West Midlands" OR "UK" OR "England" OR "Britain")'
     queries = {
-        "diaspora": '("Indian diaspora" OR "Desi") ("West Midlands" OR "Birmingham")',
-        "events": '("Indian event" OR "Diwali" OR "Mela") ("West Midlands" OR "Birmingham" OR "Coventry")'
+        "diaspora_community":   f'{UK_CITIES} ("British Indian" OR "British Asian" OR "South Asian" OR "Desi community") lang:en -is:retweet',
+        "cultural_events":      f'{UK_CITIES} ("Diwali" OR "Navratri" OR "Vaisakhi" OR "Holi" OR "Eid" OR "Mela") lang:en -is:retweet',
     }
     
     conn = get_db_connection()
@@ -131,6 +145,11 @@ async def run_official_api_scraper(bearer_token: str):
                     exists = cursor.fetchone()
                     if exists:
                         print(f"Tweet {tweet['id']} already exists in SQLite. Skipping.")
+                        continue
+                        
+                    # UK relevance gate
+                    if not is_uk_relevant(tweet["text"]):
+                        print(f"[SKIP] Non-UK content filtered out from @{user_info.get('username', 'XUser')}")
                         continue
                         
                     author_id = tweet.get("author_id")
@@ -238,9 +257,13 @@ async def run_twikit_scraper():
             print(f"[ERROR] Authentication failed: {e}")
             return
 
+    # UK-targeted queries: require explicit UK city/region mention + English language
+    UK_CITIES = '("Birmingham" OR "Leicester" OR "Coventry" OR "Wolverhampton" OR "Nottingham" OR "Derby" OR "West Midlands" OR "East Midlands" OR "UK" OR "England" OR "Britain")'
     queries = {
-        "diaspora": '("Indian diaspora" OR "Desi") AND ("West Midlands" OR "Birmingham")',
-        "events": '("Indian event" OR "Diwali" OR "Mela") AND ("West Midlands" OR "Birmingham" OR "Coventry")'
+        "diaspora_community":   f'({UK_CITIES}) ("Indian diaspora" OR "South Asian" OR "Desi community" OR "British Indian" OR "British Asian") lang:en -is:retweet',
+        "cultural_events":      f'({UK_CITIES}) ("Diwali" OR "Navratri" OR "Vaisakhi" OR "Holi" OR "Eid" OR "Mela" OR "Garba") lang:en -is:retweet',
+        "local_issues":         f'({UK_CITIES}) ("Indian community" OR "Asian community" OR "South Asian") ("council" OR "MP" OR "police" OR "NHS" OR "mosque" OR "temple" OR "gurdwara") lang:en -is:retweet',
+        "diaspora_news":        f'({UK_CITIES}) ("British Indian" OR "British Pakistani" OR "British Bangladeshi" OR "British Sikh" OR "British Hindu" OR "British Muslim") lang:en -is:retweet',
     }
     
     conn = get_db_connection()
@@ -260,6 +283,11 @@ async def run_twikit_scraper():
                 
                 if exists:
                     print(f"Tweet {tweet.id} already exists in database. Skipping.")
+                    continue
+
+                # UK relevance gate: skip tweets with no UK connection
+                if not is_uk_relevant(tweet.text):
+                    print(f"[SKIP] Non-UK content filtered out from @{tweet.user.screen_name}")
                     continue
                     
                 print(f"Found new tweet by: {tweet.user.name} (@{tweet.user.screen_name})")
