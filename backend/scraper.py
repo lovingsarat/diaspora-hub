@@ -218,7 +218,7 @@ UK_KEYWORDS = [
     "uk", "england", "britain", "british", "birmingham", "leicester", "coventry",
     "wolverhampton", "nottingham", "derby", "west midlands", "east midlands",
     "midlands", "manchester", "london", "bradford", "luton", "slough",
-    "nhs", "local authority", "mp ", "parliament", "whitehall", "home office"
+    "nhs", "council", "mp ", "parliament", "whitehall", "home office"
 ]
 
 def is_uk_relevant(text: str) -> bool:
@@ -314,7 +314,7 @@ async def run_twikit_scraper():
     queries = {
         "diaspora_community":   f'({UK_CITIES}) ("Indian diaspora" OR "South Asian" OR "Desi community" OR "British Indian" OR "British Asian") lang:en -is:retweet',
         "cultural_events":      f'({UK_CITIES}) ("Diwali" OR "Navratri" OR "Vaisakhi" OR "Holi" OR "Eid" OR "Mela" OR "Garba") lang:en -is:retweet',
-        "local_issues":         f'({UK_CITIES}) ("Indian community" OR "Asian community" OR "South Asian") ("local authority" OR "MP" OR "police" OR "NHS" OR "mosque" OR "temple" OR "gurdwara") lang:en -is:retweet',
+        "local_issues":         f'({UK_CITIES}) ("Indian community" OR "Asian community" OR "South Asian") ("council" OR "MP" OR "police" OR "NHS" OR "mosque" OR "temple" OR "gurdwara") lang:en -is:retweet',
         "diaspora_news":        f'({UK_CITIES}) ("British Indian" OR "British Pakistani" OR "British Bangladeshi" OR "British Sikh" OR "British Hindu" OR "British Muslim") lang:en -is:retweet',
     }
     
