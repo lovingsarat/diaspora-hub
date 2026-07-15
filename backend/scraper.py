@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 DB_PATH = os.path.join(os.path.dirname(__file__), "diaspora.db")
 
 # Official accounts to ingest tweets from directly
-OFFICIAL_ACCOUNTS = ["MEAIndia", "HCI_London", "CGI_Bghm"]
+OFFICIAL_ACCOUNTS = ["MEAIndia", "HCI_London", "CGI_Bghm", "BhamCityCouncil", "Leicester_News", "coventrycc", "HinduCouncilBhm", "VFSGlobal"]
 
 # Load environment
 load_dotenv(dotenv_path="../.env")
