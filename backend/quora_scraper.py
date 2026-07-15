@@ -123,14 +123,18 @@ def upsert_local(item: dict):
     c = conn.cursor()
     c.execute("""CREATE TABLE IF NOT EXISTS feedback_items (
         id TEXT PRIMARY KEY, platform TEXT, author TEXT, date TEXT,
-        event TEXT, text TEXT, sentiment TEXT, city TEXT, isUpcoming INTEGER
+        event TEXT, text TEXT, sentiment TEXT, city TEXT, isUpcoming INTEGER, parent_id TEXT
     )""")
+    try:
+        c.execute("ALTER TABLE feedback_items ADD COLUMN parent_id TEXT")
+    except sqlite3.OperationalError:
+        pass
     c.execute("""INSERT OR REPLACE INTO feedback_items
-        (id, platform, author, date, event, text, sentiment, city, isUpcoming)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+        (id, platform, author, date, event, text, sentiment, city, isUpcoming, parent_id)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
         (item["id"], item["platform"], item["author"], item["date"],
          item["event"], item["text"], item["sentiment"], item["city"],
-         1 if item["isUpcoming"] else 0))
+         1 if item["isUpcoming"] else 0, item.get("parent_id")))
     conn.commit()
     conn.close()
 

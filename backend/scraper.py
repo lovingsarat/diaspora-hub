@@ -209,16 +209,22 @@ def upsert_feedback_local(item):
             text TEXT,
             sentiment TEXT,
             city TEXT,
-            isUpcoming INTEGER
+            isUpcoming INTEGER,
+            parent_id TEXT
         )
     """)
+    try:
+        cursor.execute("ALTER TABLE feedback_items ADD COLUMN parent_id TEXT")
+    except sqlite3.OperationalError:
+        pass
     cursor.execute("""
-        INSERT OR REPLACE INTO feedback_items (id, platform, author, date, event, text, sentiment, city, isUpcoming)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        INSERT OR REPLACE INTO feedback_items (id, platform, author, date, event, text, sentiment, city, isUpcoming, parent_id)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     """, (
         item["id"], item["platform"], item["author"], item["date"],
         item["event"], item["text"], item["sentiment"], item["city"],
-        1 if item.get("isUpcoming") else 0
+        1 if item.get("isUpcoming") else 0,
+        item.get("parent_id")
     ))
     conn.commit()
     conn.close()
@@ -304,6 +310,7 @@ async def run_official_api_scraper(bearer_token: str):
                         "sentiment": analysis.get("sentiment", "Neutral"),
                         "city": analysis.get("city", "Birmingham"),
                         "isUpcoming": bool(analysis.get("isUpcoming")),
+                        "parent_id": None
                     }
                     upsert_feedback_local(new_item)
                     total_added += 1
@@ -371,6 +378,7 @@ async def run_twikit_scraper():
                         "sentiment": analysis.get("sentiment", "Neutral"),
                         "city": analysis.get("city", "Birmingham"),
                         "isUpcoming": bool(analysis.get("isUpcoming")),
+                        "parent_id": None
                     }
                     upsert_feedback_local(new_item)
                     total_added += 1
@@ -444,6 +452,7 @@ async def run_account_scraper():
                         "sentiment": analysis.get("sentiment", "Neutral"),
                         "city": analysis.get("city", "London"),
                         "isUpcoming": bool(analysis.get("isUpcoming")),
+                        "parent_id": None
                     }
                     upsert_feedback_local(new_item)
                     total_added += 1
@@ -464,7 +473,11 @@ def deduplicate_db():
     import re as _re
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
-    cursor.execute("SELECT id, platform, author, date, event, text, sentiment, city, isUpcoming FROM feedback_items")
+    try:
+        cursor.execute("ALTER TABLE feedback_items ADD COLUMN parent_id TEXT")
+    except sqlite3.OperationalError:
+        pass
+    cursor.execute("SELECT id, platform, author, date, event, text, sentiment, city, isUpcoming, parent_id FROM feedback_items")
     rows = cursor.fetchall()
 
     def get_tokens(text):
@@ -509,7 +522,7 @@ def deduplicate_db():
         cursor.execute("DELETE FROM feedback_items")
         for row in unique:
             cursor.execute(
-                "INSERT INTO feedback_items (id, platform, author, date, event, text, sentiment, city, isUpcoming) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                "INSERT INTO feedback_items (id, platform, author, date, event, text, sentiment, city, isUpcoming, parent_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
                 row
             )
         conn.commit()

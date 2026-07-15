@@ -927,6 +927,20 @@ function App() {
                           {item.platform.charAt(0)}
                         </div>
                         <span className="author-name">{item.author}</span>
+                        {item.parent_id && (
+                          <span className="comment-badge" style={{
+                            marginLeft: "8px",
+                            padding: "2px 6px",
+                            fontSize: "0.7rem",
+                            fontWeight: "bold",
+                            borderRadius: "4px",
+                            backgroundColor: "rgba(100, 116, 139, 0.15)",
+                            color: "#64748b",
+                            border: "1px solid rgba(100, 116, 139, 0.3)"
+                          }}>
+                            COMMENT
+                          </span>
+                        )}
                       </div>
                       <span className="card-date">{item.date}</span>
                     </div>

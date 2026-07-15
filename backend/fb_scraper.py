@@ -135,14 +135,18 @@ def upsert_local(item):
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS feedback_items (
             id TEXT PRIMARY KEY, platform TEXT, author TEXT, date TEXT,
-            event TEXT, text TEXT, sentiment TEXT, city TEXT, isUpcoming INTEGER
+            event TEXT, text TEXT, sentiment TEXT, city TEXT, isUpcoming INTEGER, parent_id TEXT
         )
     """)
+    try:
+        cursor.execute("ALTER TABLE feedback_items ADD COLUMN parent_id TEXT")
+    except sqlite3.OperationalError:
+        pass
     cursor.execute("""
-        INSERT OR REPLACE INTO feedback_items (id, platform, author, date, event, text, sentiment, city, isUpcoming)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        INSERT OR REPLACE INTO feedback_items (id, platform, author, date, event, text, sentiment, city, isUpcoming, parent_id)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     """, (item["id"], item["platform"], item["author"], item["date"], item["event"],
-          item["text"], item["sentiment"], item["city"], 1 if item["isUpcoming"] else 0))
+          item["text"], item["sentiment"], item["city"], 1 if item["isUpcoming"] else 0, item.get("parent_id")))
     conn.commit()
     conn.close()
 
@@ -200,28 +204,43 @@ def main():
                     page.evaluate("window.scrollBy(0, 1000)")
                     page.wait_for_timeout(2000)
 
-                # Extract visible post text from all dir="auto" elements inside the main content area
-                raw_posts = page.evaluate("""() => {
-                    const posts = [];
-                    const seen = new Set();
-                    const main = document.querySelector('[role="main"]') || document.body;
-                    const selectors = main.querySelectorAll('div[dir="auto"], span[dir="auto"]');
-                    for (const el of selectors) {
-                        const style = window.getComputedStyle(el);
+                # Extract visible post text and comment text from all articles
+                articles_data = page.evaluate("""() => {
+                    const results = [];
+                    const articles = document.querySelectorAll('div[role="article"]');
+                    for (const art of articles) {
+                        const style = window.getComputedStyle(art);
                         if (style.display === 'none' || style.visibility === 'hidden' || style.opacity === '0') continue;
-                        const text = (el.innerText || '').trim();
-                        if (text.length < 30 || seen.has(text)) continue;
-                        seen.add(text);
-                        if (text.match(/^(Like|Comment|Share|Follow|See more|View more|All reactions)/)) continue;
-                        posts.push(text);
+                        
+                        const dirs = art.querySelectorAll('div[dir="auto"], span[dir="auto"]');
+                        const texts = [];
+                        const seen = new Set();
+                        for (const el of dirs) {
+                            const innerStyle = window.getComputedStyle(el);
+                            if (innerStyle.display === 'none' || innerStyle.visibility === 'hidden' || innerStyle.opacity === '0') continue;
+                            const text = (el.innerText || '').trim();
+                            if (text.length < 25 || seen.has(text)) continue;
+                            if (text.match(/^(Like|Comment|Share|Follow|See more|View more|All reactions|Write a comment|Press Enter)/i)) continue;
+                            seen.add(text);
+                            texts.push(text);
+                        }
+                        
+                        if (texts.length > 0) {
+                            // The first block is usually the post text. Subsequent blocks are usually comments.
+                            results.push({
+                                post: texts[0],
+                                comments: texts.slice(1)
+                            });
+                        }
                     }
-                    return posts;
+                    return results;
                 }""")
                 count = 0
 
                 # Deduplicate raw posts by content within this page run
                 seen_texts = set()
-                for post_text in raw_posts:
+                for art in articles_data:
+                    post_text = art["post"]
                     if not post_text or len(post_text) < 30:
                         continue
 
@@ -271,16 +290,57 @@ def main():
                             "sentiment": analysis.get("sentiment", "Neutral"),
                             "city": city,
                             "isUpcoming": bool(analysis.get("isUpcoming")),
+                            "parent_id": None
                         }
                         upsert_local(new_item)
                         total_added += 1
                         count += 1
                         print(f"[SUCCESS] Added Facebook post: {post_id}")
+
+                        # Process up to 3 comments for this post
+                        comments_added = 0
+                        for comm_text in art["comments"]:
+                            if comments_added >= 3:
+                                break
+                            
+                            # Clean comment text
+                            comm_lines = [l.strip() for l in comm_text.split("\n") if l.strip()]
+                            comm_content = [l for l in comm_lines if l not in ui_words
+                                             and not l.startswith("All reactions")
+                                             and not l.startswith("See more")]
+                            comm_clean = " ".join(comm_content).strip()
+                            
+                            if len(comm_clean) < 25 or is_noisy(comm_clean) or is_gibberish(comm_clean):
+                                continue
+                                
+                            comm_hash = hashlib.md5(comm_clean.lower()[:300].encode()).hexdigest()[:12]
+                            comment_id = f"facebook_comment_{fb_page}_{comm_hash}"
+                            
+                            print(f"  Analyzing comment: {comm_clean[:60]}...")
+                            comm_analysis = analyze_with_gemini(comm_clean[:500])
+                            
+                            comm_item = {
+                                "id": comment_id,
+                                "platform": "Facebook",
+                                "author": f"Commenter_{comm_hash[:6]}",
+                                "date": datetime.now().strftime("%Y-%m-%d"),
+                                "event": event, # inherit parent event
+                                "text": comm_clean[:500],
+                                "sentiment": comm_analysis.get("sentiment", "Neutral"),
+                                "city": city, # inherit parent city
+                                "isUpcoming": False,
+                                "parent_id": post_id
+                            }
+                            upsert_local(comm_item)
+                            total_added += 1
+                            comments_added += 1
+                            print(f"  [SUCCESS] Added Facebook comment: {comment_id}")
+
                     except Exception as e:
                         print(f"[WARN] Error processing post: {str(e).encode('ascii','ignore').decode()[:100]}")
                         continue
 
-                print(f"[INFO] Processed {count} posts from {fb_page}")
+                print(f"[INFO] Processed {count} posts (plus comments) from {fb_page}")
             except Exception as e:
                 print(f"Error fetching {fb_page}: {str(e).encode('ascii','ignore').decode()}")
 

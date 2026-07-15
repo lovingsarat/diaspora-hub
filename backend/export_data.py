@@ -359,7 +359,7 @@ def export_to_json():
 
     items = []
     for row in rows:
-        items.append({
+        item_dict = {
             "id": row["id"],
             "platform": row["platform"],
             "author": row["author"],
@@ -369,7 +369,13 @@ def export_to_json():
             "sentiment": row["sentiment"],
             "city": row["city"],
             "isUpcoming": bool(row["isUpcoming"])
-        })
+        }
+        # Safely read parent_id if present in row keys
+        if "parent_id" in row.keys():
+            item_dict["parent_id"] = row["parent_id"]
+        else:
+            item_dict["parent_id"] = None
+        items.append(item_dict)
 
     # Deduplicate before exporting
     before = len(items)

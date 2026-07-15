@@ -1,18 +1,18 @@
 {
-  "exportedAt": "2026-07-15T13:41:32.531055Z",
-  "totalFeedbackCount": 318,
+  "exportedAt": "2026-07-15T15:11:53.375845Z",
+  "totalFeedbackCount": 321,
   "sentimentPercentages": {
-    "Positive": 21.7,
-    "Neutral": 54.09,
-    "Negative": 24.21
+    "Positive": 21.5,
+    "Neutral": 54.52,
+    "Negative": 23.99
   },
   "platformCounts": {
     "Twitter": 215,
-    "Facebook": 33,
+    "Facebook": 36,
     "Quora": 70
   },
   "cityCounts": {
-    "Birmingham": 269,
+    "Birmingham": 272,
     "Leicester": 36,
     "Coventry": 9,
     "Nottingham": 3,
@@ -226,6 +226,13 @@
         "negative": 0
       },
       {
+        "event": "Day off after work",
+        "count": 4,
+        "positive": 0,
+        "neutral": 4,
+        "negative": 0
+      },
+      {
         "event": "Leicester Diwali Lights Switch-On 2026",
         "count": 4,
         "positive": 2,
@@ -255,13 +262,6 @@
       },
       {
         "event": "India-UK CETA Implementation",
-        "count": 2,
-        "positive": 1,
-        "neutral": 1,
-        "negative": 0
-      },
-      {
-        "event": "India-UK Comprehensive Economic And Trade Agreement 2026",
         "count": 2,
         "positive": 1,
         "neutral": 1,
@@ -305,7 +305,7 @@
     "sentimentByDate": {
       "2026-07-15": {
         "Positive": 21,
-        "Neutral": 91,
+        "Neutral": 94,
         "Negative": 9
       },
       "2026-07-14": {
@@ -377,9 +377,9 @@
     "citySentiment": {
       "Birmingham": {
         "Positive": 47,
-        "Neutral": 148,
+        "Neutral": 151,
         "Negative": 74,
-        "total": 269
+        "total": 272
       },
       "Leicester": {
         "Positive": 16,
@@ -490,7 +490,7 @@
         "date": "2026-07-15"
       }
     ],
-    "executiveSummary": "Across 318 posts, the conversation is 22% positive, 54% neutral, and 24% negative. The main concerns residents are raising are Waste & Litter, Weather Planning, Food & Catering. The strongest positive feedback is around Culture, Community Spirit, Food & Catering. Most discussed events include None, N/A, Leicester Diwali Lights Switch-On 2026. Top discussion cities: Birmingham (269), Leicester (36), Coventry (9)."
+    "executiveSummary": "Across 321 posts, the conversation is 22% positive, 55% neutral, and 24% negative. The main concerns residents are raising are Waste & Litter, Weather Planning, Food & Catering. The strongest positive feedback is around Culture, Community Spirit, Food & Catering. Most discussed events include None, N/A, Day off after work. Top discussion cities: Birmingham (272), Leicester (36), Coventry (9)."
   },
   "items": [
     {
@@ -502,7 +502,8 @@
       "text": "@tinkabonk I spent my whole morning arguing w my friend over this 😭 cos she said she supports england over Argentina cos she hates Argentina over fucking england… we’re south asian make it make sense 😭🤦‍♀️",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077350805330333881",
@@ -513,7 +514,8 @@
       "text": "@SirJBritain Yep. I maintain we need a national enquiry into the number of road collisions and road fatalities caused by predominantly young South Asian heritage men in the UK.",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077347882940899682",
@@ -524,7 +526,8 @@
       "text": "The British “genius” at map-making: draw a line through India based on religion, create Pakistan… then Pakistan breaks apart and Bangladesh appears because of language, ethnicity, and politics.\nMeanwhile, I’m still standing outside a South Asian restaurant wondering: “Is this https://t.co/pZ103plypM",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077339219434041745",
@@ -535,7 +538,8 @@
       "text": "Haldiram’s Takes London by Storm : The Indian Snack Giant Opens Its First UK Branch\n\nIndia’s premier snack and restaurant brand, Haldiram’s, has officially made its UK debut with a flagship branch near London’s iconic Leicester Square.\n\nLocated at 19-20 Irving Street, the massive https://t.co/vOfdLPyFdF",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077329640310378644",
@@ -546,7 +550,8 @@
       "text": "India–UK trade deal takes effect: cheaper Scotch, more towels—and limited overall lift\n\nWhat this means\nThe India–UK free trade agreement is now live, cutting or removing tariffs on most goods both ways. UK officials pitch it as the biggest bilateral pact since Brexit; long-run",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077322818254225627",
@@ -557,7 +562,8 @@
       "text": "The India-UK FTA Explodes into Action: A Gold-Standard Blueprint for Stock Investors\n\nThe highly anticipated India-UK Comprehensive Economic and Trade Agreement (CETA) officially entered into force on July 15, 2026. Hailed by commerce officials as a \"gold standard\" agreement,",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077283180340506716",
@@ -568,7 +574,8 @@
       "text": "@blackmagnet0 ima be real. I don't even know what a British dish is beyond beans and toast. I'm 20 in the UK. most people been eating south asian/african eats whole time. What the hell DO British people eat?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077272424668856599",
@@ -579,7 +586,8 @@
       "text": "@ANI The consensual icecream in a London park clinches the India EU trade deal. Noteworthy is that UK chief negotiator is belongs to Indian diaspora. Europeans know only Indians can clinch such deals with their Indian counterparts n that’s why they keep them on their rolls.",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077350755388788948",
@@ -590,7 +598,8 @@
       "text": "If England win the World Cup and we get a bank holiday, no way should it include Scotland.\n\nIt’d be like giving Tommy Robinson a day off for Eid-Al-Fitr.",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077200961983123941",
@@ -601,7 +610,8 @@
       "text": "Lol no, parts of India will celebrate Diwali if Argentina beat England tomorrow",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077209942650507581",
@@ -612,7 +622,8 @@
       "text": "Report ID: INC‑HATE‑KIRANDEEP‑KAUR‑2026‑0715\nDate: 15 July 2026\nSubject: Murder of Kirandeep Kaur in Hayes – Rising Racial Hatred and Far‑Right Influence\nIncident\n\nOn 12 July 2026, 24‑year‑old Kirandeep Kaur was fatally stabbed in Hayes, West London. A 44‑year‑old man has https://t.co/Pf8tc515ie",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077358368562307154",
@@ -623,7 +634,8 @@
       "text": "@basedandbougie A British Pakistani talking about a country he doesn’t live in! Uk can’t even fix this country and you want them to fix Pakistan hahah fuck pff !",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077352297357599067",
@@ -634,7 +646,8 @@
       "text": "@virtualhistoria @Empireaesth This was blocked in Parliament by the Conservative Party. The British Indian Ocean Territory, including Diego Garcia, remains a UK Overseas Territory.",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077329726146842668",
@@ -645,7 +658,8 @@
       "text": "FOR IMMEDIATE RELEASE!    14.07.2027\n𝙁𝙄𝙎𝙄-𝙐𝙆 𝙃𝙤𝙨𝙩𝙨 𝙏𝙝𝙤𝙪𝙜𝙝𝙩-𝙋𝙧𝙤𝙫𝙤𝙠𝙞𝙣𝙜 𝙎𝙚𝙨𝙨𝙞𝙤𝙣 𝙤𝙣 𝘾𝙞𝙫𝙞𝙡𝙞𝙯𝙖𝙩𝙞𝙤𝙣𝙖𝙡 𝙄𝙣𝙙𝙞𝙖 𝙬𝙞𝙩𝙝 𝘼𝙢𝙞 𝙂𝙖𝙣𝙖𝙩𝙧𝙖 𝙖𝙩 Nehru Centre London\nThe Friends of India Society International–UK (FISI-UK) recently https://t.co/5JYMYnuupD",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077295444619575645",
@@ -656,7 +670,8 @@
       "text": "@Ginjarella @RupertLowe10 Oh is Trump in the room with us? You still haven't offered a shred of evidence of Trump personally taking a cut of Fifa's revenue. Fvckin British Muslim terrorists with half a brain. Stay in your lane. Britain is the most fvcked up country. \n\nSuck on my candy",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077295206051828104",
@@ -667,7 +682,8 @@
       "text": "@TFTranssexual We've switched up here and it might be my fault im very tired. We started at british \"food\" but we've moved to British cuisine. From where I stand something like chicken tikka masala is indian cuisine but british \"food\". It was invented in Britain by a british Pakistani but in",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077231531454566442",
@@ -678,7 +694,8 @@
       "text": "@__0HOUR1_ @CorkySwift2 The photo shows Vickrum Singh Digwa, a British Sikh convicted in the UK for the December 2025 stabbing murder of 18-year-old Henry Nowak; he was sentenced in June 2026 to life imprisonment with a minimum term of 21 years.",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077218879869432172",
@@ -689,7 +706,8 @@
       "text": "Gurudev Nidar Singh Nihang (born Surjit Singh Bains, 1967, UK) is a British Sikh scholar, author, and martial artist who claims to be the ninth Gurdev (grandmaster) and sole surviving master of the Baba Darbara Singh Shastar Vidya Akhara (founded 1661). He promotes \"Sanatan",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077188861323559115",
@@ -700,7 +718,8 @@
       "text": "@shadihamid @mehdirhasan We were helped to set up 12 different British Muslim groups in the UK to support Labour and defend Israel",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077348330372579429",
@@ -711,7 +730,8 @@
       "text": "RT @mansukhmandviya: Strengthening BRICS Cooperation for the Future of Work!\n\nChaired the 12th BRICS Labour and Employment Ministers' Meeti…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077324045524324745",
@@ -722,7 +742,8 @@
       "text": "RT @DrSJaishankar: A new chapter in the India-UK Comprehensive Strategic Partnership unfolds, under the visionary leadership of PM @narendr…",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077285683115549017",
@@ -733,7 +754,8 @@
       "text": "A defining moment!\n\nThe India-UK Comprehensive Economic &amp; Trade Agreement (CETA) and the Agreement on Social Security enters into force today. \n\nThe agreement secures zero-duty market access for nearly 99% of India's exports, covering almost 100% of trade value. It unlocks https://t.co/6Hd9lqYDCQ",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077284351440736309",
@@ -744,7 +766,8 @@
       "text": "RT @PiyushGoyal: Today marks a defining milestone in India-UK ties. 🇮🇳🤝🇬🇧\n\nUnder the dynamic leadership of Hon'ble PM @NarendraModi ji, the…",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077248112645877967",
@@ -755,7 +778,8 @@
       "text": "RT @DrSJaishankar: Concluded my visit to New York to launch India’s campaign for United Nations Security Council 2028-29. \n\n🇮🇳 🇺🇳 https://t…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077217922033041524",
@@ -766,7 +790,8 @@
       "text": "RT @IndEmbDoha: On behalf of Government and people of India, Hon’ble MInister of Parliamentary Affairs and Minority Affairs Mr Kiren Rijiju…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077206388326195615",
@@ -777,7 +802,8 @@
       "text": "RT @DrSJaishankar: Pleased to call on President of the European Council @antoniolscosta alongside CIM @PiyushGoyal, MoS MEITY @JitinPrasada…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077364919490486363",
@@ -788,7 +814,8 @@
       "text": "RT @FieoHq: #FIEO in 🤝 association with the Office of DGFT (RA), Ludhiana, organised the India–UK CETA Flag-off Ceremony on 🗓️ July 15, 202…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077360504708739466",
@@ -799,7 +826,8 @@
       "text": "From farms and factories to start-ups and skilled professionals, the India–UK CETA opens doors across sectors. Having entered into force today, it expands trade and investment, improves market access, strengthens innovation and talent mobility, and builds a stronger, more https://t.co/Xsqtnwbsu6",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077358742513885658",
@@ -810,7 +838,8 @@
       "text": "#CabinetDecisions\n\n@MEAIndia @IndianDiplomacy @PMOIndia @narendramodi @AshwiniVaishnaw @DrSJaishankar @Kumaran49604795 @getkart @DoC_GoI @DPIITGoI @RailMinIndia",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077358571465961607",
@@ -821,7 +850,8 @@
       "text": "RT @DG_PIB: #Cabinet approves the National Investment Policy for Urea-2026 for Atmanirbhar Bharat (NIPU-2026)\n\nPolicy to encourage new inve…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077358218968244602",
@@ -832,7 +862,8 @@
       "text": "RT @MEAIndia: Secretary (Economic Relations) Shri Sudhakar Dalela visited the Embassy of the State of Qatar in New Delhi and signed the con…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077358167281799494",
@@ -843,7 +874,8 @@
       "text": "RT @CGIManchester: Prodigious opportunities ahead for India and North England as the India-UK Comprehensive Economic Trade Agreement Comes…",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2077358137166758176",
@@ -854,7 +886,8 @@
       "text": "RT @IndPerspectives: The signature feathered blur of Ikat is its identity. It is the imprint of countless hours of careful resist-dyeing, m…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077346003770868034",
@@ -865,7 +898,8 @@
       "text": "RT @FieoHq: #FIEO in 🤝 association with the Office of the DGFT (RA), Ludhiana, and the Customs Commissionerate, Ludhiana, successfully orga…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077340195494465950",
@@ -876,7 +910,8 @@
       "text": "NOW LIVE!\nThe India–UK Comprehensive Economic &amp; Trade Agreement has entered into force. With duty-free access for nearly 100% of India's trade value and major gains across goods and services, this is a win for businesses, workers, farmers, MSMEs and consumers in both countries. https://t.co/g91PDzFT8s",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077338797373596153",
@@ -887,7 +922,8 @@
       "text": "RT @FieoHq: #FIEO in 🤝 association with the Office of the DGFT (RA), Delhi, organised a 🚩 Flag-Off Ceremony at the IGI Air Cargo Complex, N…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077338562953953737",
@@ -898,7 +934,8 @@
       "text": "RT @CGIBelfast: India–UK CETA | Enters into Force Today\n\n@HCI_London @DoC_GoI @biztradegovuk @InvestNI @retail_ni @ManufacturingNI @Economy…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077338543358128365",
@@ -909,7 +946,8 @@
       "text": "RT @DrSJaishankar: A good meeting with EU Commissioner for Startups, Research and Innovation @EZaharievaEU today. \n\nDiscussed opportunities…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077330017344758240",
@@ -920,7 +958,8 @@
       "text": "A major boost for India's fisheries sector!\n\nWith the India-UK Comprehensive Economic &amp; Trade Agreement (CETA) entering into force, zero-duty access for 100% of India's marine exports will expand opportunities for seafood exports, raise incomes for fisherfolk and accelerate",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077329951947124893",
@@ -931,7 +970,8 @@
       "text": "A landmark milestone under the dynamic leadership of Hon'ble PM Sri @NarendraModi ji!\n\nThe India-UK Comprehensive Economic &amp; Trade Agreement (CETA) enters into force, expanding export opportunities and benefiting farmers, fisherfolk, forest dwellers, workers, SMEs &amp; https://t.co/QQI20XWnhN",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077329892996210694",
@@ -942,7 +982,8 @@
       "text": "A major boost to India's export competitiveness under the visionary leadership of Hon'ble PM Sri  @NarendraModi ji. The India-UK Comprehensive Economic &amp; Trade Agreement (CETA) enters into force today, providing zero-duty access to ~99% of India's exports and unlocking growth https://t.co/MpF9WKuiPv",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077329860024774799",
@@ -953,7 +994,8 @@
       "text": "Every tide now brings new opportunities.\n\nThe India-UK Comprehensive Economic &amp; Trade Agreement (CETA) opens the UK market to Indian seafood with tariff-free access, boosting exports, empowering fisherfolk and creating new opportunities for India's fisheries value chain and https://t.co/FYd5d6g0s8",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077305662485209561",
@@ -964,7 +1006,8 @@
       "text": "The India-UK Comprehensive Economic &amp; Trade Agreement (CETA) covers all 12 major service sectors &amp; 137 sub-sectors, providing Indian businesses with simplified trade, stronger market access and a more conducive environment to expand globally. #IndiaUKFTA",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077305479135420715",
@@ -975,7 +1018,8 @@
       "text": "A transformative step in India's trade journey under the dynamic leadership of Hon'ble PM Sri @NarendraModi ji. \n\nWith the India-UK Comprehensive Economic &amp; Trade Agreement (CETA) entering into force, nearly 100% of India's trade value will enjoy duty-free access, benefiting",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077305131318525959",
@@ -986,7 +1030,8 @@
       "text": "A defining milestone in 🇮🇳-🇬🇧 ties as the India-UK Comprehensive Economic and Trade Agreement (CETA) and the Agreement on Social Security, have come into force, delivering zero-duty market access for nearly 99% of India's exports, covering almost 100% of trade value.\n\n#IndiaUKFTA",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077276221423960393",
@@ -997,7 +1042,8 @@
       "text": "The 3rd Meeting of the BRICS Heads of National Standards Bodies takes place in Bengaluru, Karnataka, on 16-17 July 2026. The meeting brings together representatives from BRICS member countries to advance cooperation in standardisation, with discussions centred on reinforcing a",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "facebook_AISfestival_d3608096f99d",
@@ -1008,7 +1054,8 @@
       "text": "An Indian Summer shares the sights, sounds & wonders of South Asia in the heart of Britain!",
       "sentiment": "Positive",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "facebook_AISfestival_ba49ed98f119",
@@ -1019,18 +1066,20 @@
       "text": "Phoenix Square, 4 Midland Street, Leicester, United Kingdom",
       "sentiment": "Neutral",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
-      "id": "facebook_AISfestival_1098b3603f4a",
+      "id": "facebook_AISfestival_8a09f3ee7b44",
       "platform": "Facebook",
       "author": "AISfestival",
       "date": "2026-07-15",
-      "event": "NADI Kathak ensemble introduction",
-      "text": "𝐈𝐧𝐭𝐫𝐨𝐝𝐮𝐜𝐢𝐧𝐠 𝐭𝐡𝐞 𝐍𝐀𝐃𝐈 𝐞𝐧𝐬𝐞𝐦𝐛𝐥𝐞. NADI (नदी) is a Kathak-con… See more",
+      "event": "NADI (नदी) Kathak performance",
+      "text": "NADI (नदी) is a Kathak-con… See more",
       "sentiment": "Positive",
       "city": "Leicester",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "facebook_ShivamEvents_d8436e936dd1",
@@ -1041,7 +1090,8 @@
       "text": "Barkby Road, Leicester, United Kingdom",
       "sentiment": "Neutral",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "facebook_CentralStageCrew_79645115d6ef",
@@ -1052,18 +1102,8 @@
       "text": "Events Crew in Birmingham + Covering Nottingham, Coventry, Leicester, All Midlands, London, & Uk.",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
-    },
-    {
-      "id": "facebook_CentralStageCrew_7d55050408ef",
-      "platform": "Facebook",
-      "author": "CentralStageCrew",
-      "date": "2026-07-15",
-      "event": "Day off after work",
-      "text": "Looking forward to a day off after many back to backs. #centralstagecrew #crewlife #BackToBack",
-      "sentiment": "Neutral",
-      "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "facebook_CentralStageCrew_b1f1d4fd3f70",
@@ -1074,7 +1114,8 @@
       "text": "#centralstagecrew #crewlife #BackToBack",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "facebook_SriBardai_d768c7897be7",
@@ -1085,7 +1126,8 @@
       "text": "Bardaionline - Sri Bardai Brahmin Samaj (Leicester) UK",
       "sentiment": "Neutral",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "facebook_SriBardai_17e9fc1c775e",
@@ -1096,7 +1138,8 @@
       "text": "Connecting Bardai Brahmins Worldwide. Welcome to the Facebook Page of the Sri Bardai Brahmin Samaj (",
       "sentiment": "Positive",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_diaspora_Birmingham_UK__bccaa514124a",
@@ -1107,7 +1150,8 @@
       "text": "What is it like for an Indian to live in the UK?. What is it like for an Indian to live in the UK?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_diaspora_Birmingham_UK__803622c7eb02",
@@ -1118,7 +1162,8 @@
       "text": "Which is the most Indian city in the UK?. Which is the most Indian city in the UK?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_diaspora_Birmingham_UK__c42f5688ed5f",
@@ -1129,7 +1174,8 @@
       "text": "What is the difference between London and Birmingham .... What is the difference between London and Birmingham, culture-wise?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_diaspora_Birmingham_UK__3575e804689b",
@@ -1140,7 +1186,8 @@
       "text": "Which cities in UK have maximum NRIs?. Which cities in UK have maximum NRIs?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_diaspora_Birmingham_UK__20d9a6ab629b",
@@ -1151,7 +1198,8 @@
       "text": "How do people of Indian descent in the UK typically .... Why do people from the UK sometimes choose not to identify with the larger UK or British identity, preferring local or cultural identities?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_diaspora_Birmingham_UK__ac29bbd80028",
@@ -1162,7 +1210,8 @@
       "text": "Do Indians face racism and discrimination in the UK?. Do Indians face racism and discrimination in the UK?",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_British_Indian_Midlands_Diwali_5c37f0f66ed1",
@@ -1173,7 +1222,8 @@
       "text": "Which Indian festivals are celebrated abroad?. Which Indian festivals are celebrated abroad?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_British_Indian_Midlands_Diwali_d43fcf26d624",
@@ -1184,7 +1234,8 @@
       "text": "Is it hard for international students to study medicine in .... Is it hard for international students to study medicine in the UK?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_community_Leicester_UK__170641bc2190",
@@ -1195,7 +1246,8 @@
       "text": "Is there any Indian influence on British culture?. Is there any Indian influence on British culture?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_community_Leicester_UK__3aa468bf12d4",
@@ -1206,7 +1258,8 @@
       "text": "Are Indians better integrated in the US or the UK?. Are Indians better integrated in the US or the UK?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_community_Leicester_UK__ed30a650dcc8",
@@ -1217,7 +1270,8 @@
       "text": "Do the British have their own culture? Why has Great .... Do the British have their own culture? Why has Great Britain been influenced by other cultures?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_community_Leicester_UK__a4671e05c076",
@@ -1228,7 +1282,8 @@
       "text": "Do Indian people culturally inherit more from British or .... Do Indian people culturally inherit more from British or from their own traditions?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_community_Leicester_UK__c8e927f9c972",
@@ -1239,7 +1294,8 @@
       "text": "What are the main festivals celebrated around the UK?. What are the main festivals celebrated around the UK?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_community_Leicester_UK__226a26c40ca9",
@@ -1250,7 +1306,8 @@
       "text": "How do festivals contribute to preserving cultural heritage .... There were Indian foods, traditional dances, Indian made jewellery, traditional music. The culture creates the music, dress, dance, food …",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_community_Leicester_UK__6fdccd4014f4",
@@ -1261,7 +1318,8 @@
       "text": "I am from India. I am going to the UK first time away .... I am from India. I am going to the UK first time away from the family. I am probably going to Manchester, Leeds or London. What tips would you give to",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_community_Leicester_UK__96c34e77ddcb",
@@ -1272,7 +1330,8 @@
       "text": "What is a unique festival which is celebrated only in your .... What is a unique festival which is celebrated only in your country and the rest of the world does not know much about it?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_community_Leicester_UK__fc5e1c069102",
@@ -1283,7 +1342,8 @@
       "text": "Can you suggest some unique places to visit in the UK for .... Leicester was home to the largest Indian population, with 6.6% of all Indian people living there, followed by Birmingham (4.6%) and Harrow (4.5",
       "sentiment": "Neutral",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_South_Asian_British_Midlands_e_3dca06c11bde",
@@ -1294,7 +1354,8 @@
       "text": "How are South Asian immigrants perceived in the UK .... How are South Asian immigrants perceived in the UK compared to Eastern Europeans?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_South_Asian_British_Midlands_e_04cae720f760",
@@ -1305,7 +1366,8 @@
       "text": "What do the British think about South Asian immigrants in .... What do the British think about South Asian immigrants in the UK (regardless of the generation)?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_South_Asian_British_Midlands_e_da5690127c16",
@@ -1316,7 +1378,8 @@
       "text": "How are South Asian immigrants treated in Europe?. How are South Asian immigrants treated in Europe?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_South_Asian_British_Midlands_e_e94d48eead71",
@@ -1327,7 +1390,8 @@
       "text": "Me and my sister have recently done an Ancestry DNA test .... Me and my sister have recently done an Ancestry DNA test, we’re of south Asian descent and surprisingly my results identified me as 13.6% Irish, Scottish",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_South_Asian_British_Midlands_e_68a83e26b9a2",
@@ -1338,7 +1402,8 @@
       "text": "Is it true that Indian, East Asian, and Eastern European .... British curry has evolved well beyond its South Asian homeland to the point where there exists a Birmingham Balti Association",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_South_Asian_British_Midlands_e_adab8ac9acc6",
@@ -1349,7 +1414,8 @@
       "text": "Why are there so few East Asians with British accents (any .... Why are there so few East Asians with British accents (any of the many in Britain)?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_South_Asian_British_Midlands_e_e7d8148a05e2",
@@ -1360,7 +1426,8 @@
       "text": "Were Bollywood movies being shown in England in the .... Were Bollywood movies being shown in England in the 1980s? Perhaps in some South Asian diasporic communities in London, etc.?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_South_Asian_British_Midlands_e_9ac2ac5a06ef",
@@ -1371,7 +1438,8 @@
       "text": "Why would you (not) move to Birmingham, UK? Which .... Why would you (not) move to Birmingham, UK? Which other British cities would you recommend?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham_UK_0254d466016d",
@@ -1382,7 +1450,8 @@
       "text": "What are some positive sides to living in Leicester, UK?. What are some positive sides to living in Leicester, UK?",
       "sentiment": "Positive",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham_UK_db37e0e45317",
@@ -1393,7 +1462,8 @@
       "text": "Which city in England is better to live in, Birmingham .... Which city in England is better to live in, Birmingham or Leicester?",
       "sentiment": "Neutral",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham_UK_34ccee7cf9f2",
@@ -1404,7 +1474,8 @@
       "text": "Where are you from in the UK? Do you live in Leicester?. Where are you from in the UK? Do you live in Leicester?",
       "sentiment": "Neutral",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham_UK_bcf5ce54369f",
@@ -1415,7 +1486,8 @@
       "text": "What's the best thing about living in Birmingham, UK?. What’s the best thing about living in Birmingham, UK?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham_UK_6dc57f5a8f4d",
@@ -1426,7 +1498,8 @@
       "text": "How is it to live in the best areas in Leicester?. How is it to live in the best areas in Leicester?",
       "sentiment": "Neutral",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_diaspora_Birmingham_U_a10354535611",
@@ -1437,7 +1510,8 @@
       "text": "How is Indian life in the United Kingdom?. How is Indian life in the United Kingdom?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_diaspora_Birmingham_U_0998bee5ee0b",
@@ -1448,7 +1522,8 @@
       "text": "Does the UK have better Indian food than India itself?. Does the UK have better Indian food than India itself?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_diaspora_Birmingham_U_eccae3f6fb85",
@@ -1459,7 +1534,8 @@
       "text": "For an Indian, is it better to emigrate to the UK or to the US?. For an Indian, is it better to emigrate to the UK or to the US?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_community_Leicester_U_1ad1ad1e6bae",
@@ -1470,7 +1546,8 @@
       "text": "What is your favorite yearly cultural event?. What is your favorite yearly cultural event?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_community_Leicester_U_086a15e729a3",
@@ -1481,7 +1558,8 @@
       "text": "What cultural festivals or traditions from different parts of .... Janam means Birth and Ashtami means eight- symbolising the birth of Lord Krishna on the eighth day of the fortnight of the new moon in the Hindu",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_community_Leicester_U_254277d49d6d",
@@ -1492,7 +1570,8 @@
       "text": "How does performing or organizing cultural festivals help .... Cultural Festivals promote Intercultural dialogue, exchange, and mutual learning, it fosters cultural understanding and acceptance, and it",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_South_Asian_British_Midlands_78dda9fcc730",
@@ -1503,7 +1582,8 @@
       "text": "What place in America is like Birmingham, UK? I'm talking .... What place in America is like Birmingham, UK? I’m talking about urban culture and hoods",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham__9ac2ac5a06ef",
@@ -1514,7 +1594,8 @@
       "text": "Why would you (not) move to Birmingham, UK? Which .... Why would you (not) move to Birmingham, UK? Which other British cities would you recommend?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_British_Sikh_Hindu_Gujarati__019d4276633d",
@@ -1525,7 +1606,8 @@
       "text": "What are examples of Sikh communities across the world .... WELFARE - larger Sikh gurdwaras offer free hot meals to all. PEACE - Sikhs are peaceful but allowed to defend themselves",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_culture_UK_Birmingham_51a89179302e",
@@ -1536,7 +1618,8 @@
       "text": "Would you argue the British Midlands are viewed as just an .... Would you argue the British Midlands are viewed as just an extension of the 'North' in terms of poverty, regional dialects, and social issues? Many Brummies",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_community_Leicester_U_2909f35a80c9",
@@ -1547,7 +1630,8 @@
       "text": "What has been lost from British culture as a result of .... What has been lost from British culture as a result of multiculturalism?",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_South_Asian_British_Midlands_803622c7eb02",
@@ -1558,7 +1642,8 @@
       "text": "Which is the most Indian city in the UK?. Which is the most Indian city in the UK?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham__4e16ef4b44ca",
@@ -1569,7 +1654,8 @@
       "text": "How does it mean to live in Leicester, UK?. How does it mean to live in Leicester, UK?",
       "sentiment": "Neutral",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham__25a1b5c74704",
@@ -1580,7 +1666,8 @@
       "text": "How much are the living expenses in Leicester, UK? I am .... How much are the living expenses in Leicester, UK? I am coming in September as a student with my wife",
       "sentiment": "Neutral",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham__d445330017eb",
@@ -1591,7 +1678,8 @@
       "text": "What are the best aspects of living in Leicester as a young .... What are the best aspects of living in Leicester as a young adult?",
       "sentiment": "Neutral",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham__8cb6bca55465",
@@ -1602,7 +1690,8 @@
       "text": "What are some positive sides to living in Birmingham, UK?. What are some positive sides to living in Birmingham, UK?",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_British_Sikh_Hindu_Gujarati__390b7632e832",
@@ -1613,7 +1702,8 @@
       "text": "Where do most Punjabis from India and Pakistan currently .... Where do most Punjabis from India and Pakistan currently reside in the United Kingdom?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_British_Sikh_Hindu_Gujarati__491386bc5fe6",
@@ -1624,7 +1714,8 @@
       "text": "Are most Indian diasporas in the UK from North or South .... Are most Indian diasporas in the UK from North or South India?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_British_Sikh_Hindu_Gujarati__7e1e72461e20",
@@ -1635,7 +1726,8 @@
       "text": "Do overseas Punjabis from India and Pakistan like to get .... Do overseas Punjabis from India and Pakistan like to get along and hang out with each other in Britain, the USA and other countries?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_British_Sikh_Hindu_Gujarati__6a85a8c82aa5",
@@ -1646,7 +1738,8 @@
       "text": "In which part of India did Hinduism emerge? Was it Punjab?. In which part of India did Hinduism emerge? Was it Punjab?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_British_Sikh_Hindu_Gujarati__ff9aecc714e7",
@@ -1657,7 +1750,8 @@
       "text": "If Sikhs had thier own country like other religions, Would .... If Sikhs had thier own country like other religions, Would they have faced less problems in foreign countries and been more successful?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_British_Sikh_Hindu_Gujarati__141b74f0bf8c",
@@ -1668,7 +1762,8 @@
       "text": "How long would it take me to learn Punjabi if I am good at .... How long would it take me to learn Punjabi if I am good at speaking Hindi?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_British_Sikh_Hindu_Gujarati__075df9b41085",
@@ -1679,7 +1774,8 @@
       "text": "Why did Sikhs fight alongside the British rather than .... Why did Sikhs fight alongside the British rather than against them in World Wars?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_British_Sikh_Hindu_Gujarati__ede55c924278",
@@ -1690,7 +1786,8 @@
       "text": "How do people of Indian descent in the UK typically .... How do people of Indian descent in the UK typically balance their British and Indian cultural identities? All related (31)",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Navratri_Garba_UK_Birmingham_edbdc19f8e7c",
@@ -1701,7 +1798,8 @@
       "text": "Is Gujarati literature dying? Or why does .... Is Gujarati literature dying? Or why does Gujarati literature need to reach out to the twenty-first century?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Navratri_Garba_UK_Birmingham_9f55522fc0e3",
@@ -1712,7 +1810,8 @@
       "text": "As a Gujarati, I would like to know how Gujarati is faring .... As a Gujarati, I would like to know how Gujarati is faring in Pakistan? How are the language and culture preserved in Pakistan?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Navratri_Garba_UK_Birmingham_e2375b571113",
@@ -1723,7 +1822,8 @@
       "text": "Why has the Gujarati language lost popularity?. Why has the Gujarati language lost popularity?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Navratri_Garba_UK_Birmingham_22b25725e69e",
@@ -1734,7 +1834,8 @@
       "text": "What are the most interesting facts about the Sammakka .... Navratri is celebrated as a Hindu festival of worship and dance from 10th to 18th October. Meaning 'nine nights',",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_culture_UK_Birmingham_a0282f66fff9",
@@ -1745,7 +1846,8 @@
       "text": "If you had to choose between Manchester, Newcastle .... If you had to choose between Manchester, Newcastle, Brighton, Bristol, Liverpool, Birmingham, Coventry and Nottingham which option would you get and why?",
       "sentiment": "Neutral",
       "city": "Coventry",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_culture_UK_Birmingham_ac29bbd80028",
@@ -1756,7 +1858,8 @@
       "text": "Do Indians face racism and discrimination in the UK?. Do Indians face racism and discrimination in the UK?",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_culture_UK_Birmingham_b8b0c943d8d6",
@@ -1767,7 +1870,8 @@
       "text": "I'm moving to Coventry, UK in 2 days. What are some tips .... I’m moving to Coventry, UK in 2 days. What are some tips you have for me?",
       "sentiment": "Neutral",
       "city": "Coventry",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_culture_UK_Birmingham_c43c9d739a56",
@@ -1778,7 +1882,8 @@
       "text": "What is it like to live in Nottingham England?. What is it like to live in Nottingham England?",
       "sentiment": "Neutral",
       "city": "Nottingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_culture_UK_Birmingham_ea2d653c5769",
@@ -1789,7 +1894,8 @@
       "text": "What is it like living in Coventry?. What is it like living in Coventry?",
       "sentiment": "Neutral",
       "city": "Coventry",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_culture_UK_Birmingham_b7eb515cd1c2",
@@ -1800,7 +1906,8 @@
       "text": "Which British city outside of London has the highest Indian .... Which British city outside of London has the highest Indian population?",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_culture_UK_Birmingham_4dd4517cdf6f",
@@ -1811,7 +1918,8 @@
       "text": "Which is the best option out of Birmingham, Nottingham .... Which is the best option out of Birmingham, Nottingham, Edinburgh, Liverpool, Southampton, and Sheffield for a full-time MBA? I am an Indian aspirant",
       "sentiment": "Neutral",
       "city": "Nottingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "quora_Indian_culture_UK_Birmingham_d69fd136fac1",
@@ -1822,7 +1930,56 @@
       "text": "I am an Indian. I might join the University Of Warwick .... I am an Indian. I might join the University Of Warwick, Coventry, the UK for a PhD study. I might receive a stipend of 1200 pounds per month and my spouse",
       "sentiment": "Neutral",
       "city": "Coventry",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
+    },
+    {
+      "id": "facebook_CentralStageCrew_7d55050408ef",
+      "platform": "Facebook",
+      "author": "CentralStageCrew",
+      "date": "2026-07-15",
+      "event": "Day off after work",
+      "text": "Looking forward to a day off after many back to backs. #centralstagecrew #crewlife #BackToBack",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false,
+      "parent_id": null
+    },
+    {
+      "id": "facebook_comment_CentralStageCrew_3daf88cd28e9",
+      "platform": "Facebook",
+      "author": "Commenter_3daf88",
+      "date": "2026-07-15",
+      "event": "Day off after work",
+      "text": "Looking forward to a day off after many back to backs.",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false,
+      "parent_id": "facebook_CentralStageCrew_7d55050408ef"
+    },
+    {
+      "id": "facebook_comment_CentralStageCrew_b1f1d4fd3f70",
+      "platform": "Facebook",
+      "author": "Commenter_b1f1d4",
+      "date": "2026-07-15",
+      "event": "Day off after work",
+      "text": "#centralstagecrew #crewlife #BackToBack",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false,
+      "parent_id": "facebook_CentralStageCrew_7d55050408ef"
+    },
+    {
+      "id": "facebook_comment_CentralStageCrew_be6fc41e309e",
+      "platform": "Facebook",
+      "author": "Commenter_be6fc4",
+      "date": "2026-07-15",
+      "event": "Day off after work",
+      "text": "I used to go for months without a day off.",
+      "sentiment": "Neutral",
+      "city": "Birmingham",
+      "isUpcoming": false,
+      "parent_id": "facebook_CentralStageCrew_7d55050408ef"
     },
     {
       "id": "manual_432016a9",
@@ -1833,7 +1990,8 @@
       "text": "Extremely excited for Coventry Navratri Garba 2026. The new massive venue is going to accommodate the growing community so well!",
       "sentiment": "Positive",
       "city": "Coventry",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "simulated_twitter_4dc0b3",
@@ -1844,7 +2002,8 @@
       "text": "The upcoming Leicester Diwali Lights Switch-On 2026 drone show looks absolutely spectacular. Can't wait to see the lights on Belgrave Road!",
       "sentiment": "Positive",
       "city": "Leicester",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "simulated_twitter_7c3040",
@@ -1855,7 +2014,8 @@
       "text": "Frustrated with the lack of parking spaces near Handsworth Park for the Vaisakhi Mela. It took us 45 minutes just to find a spot!",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "simulated_twitter_572bae",
@@ -1866,7 +2026,8 @@
       "text": "Birmingham Holi Festival 2026 was okay, but the ticket pricing of £25 is far too expensive for students who want to join the colors.",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076927793451954381",
@@ -1877,7 +2038,8 @@
       "text": "The claim that Gandhi's fasts brought the British Empire to its knees doesn't hold up in the internet age. \n\nBy the end of World War II, Britain was exhausted economically and politically. The Atlantic Charter (1941), signed by Churchill and Roosevelt, proclaimed the principle of",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076898082814300519",
@@ -1888,7 +2050,8 @@
       "text": "No wonder these low IQ perennially online people lose their jobs to competent foreigners. Bro posted 2010 data from OK Cupid like it means something lmao 😭\n\nIndian men with US/UK women isn’t ‘coping’-it’s a growing reality. US interracial marriages jumped from 3% in 1967 to",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076895404835402098",
@@ -1899,7 +2062,8 @@
       "text": "@D_Tarczynski @GalvanisedJohn I'm from Glasgow. we've become the rape capital of Britain because of mass immigration and the traitorous SNP has covered decades of rape gangs just looking up Operations Cotswold Dash and Cerrar from 2011-16 and a decade before that Operation Gadher about south Asian crime gangs https://t.co/LaT8hv5Oql",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076857265848500696",
@@ -1910,7 +2074,8 @@
       "text": "@jellysmithrave @Polymarket Man’s not Indian brav \n\nYou realise the Indian diaspora in Britain is similar to Mexicans to America",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076853863295107281",
@@ -1921,7 +2086,8 @@
       "text": "@swansteak55 @koreanscot Only subversive elements in the UK call South Asian brown people, Asian. \n\nThe rest of the world know what Asian people are.",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076876332932481475",
@@ -1932,7 +2098,8 @@
       "text": "@Rightanglenews A controversial \"Englistan\" billboard was put up in Whitechapel, London. Whitechapel is one of London's most culturally vibrant and historically diverse districts.\n\nApproximately 56.3% of residents identify as Asian, with the British Bangladeshi community alone accounting for https://t.co/ceRlMgQjng",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076961238098084164",
@@ -1943,7 +2110,8 @@
       "text": "@captive_dreamer The prosecutor at the ICC is a british pakistani who raped his coworker, then issued an arrest warrant against Bibi Netanyahu and told her if she tells on him for raping her it will her the Palestinians.\n\nHis brother is also a judge in the UK.\nAnd also a rapist.",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076932501654692268",
@@ -1954,7 +2122,8 @@
       "text": "@rko78280 most muslims are of south Asian descent in the uk and they’re not really the demographic that make it pro. Most large diasporas where there’s a 50/50 population split between Muslims and Christian like Nigeria &amp; Sierra Leone most of the players come from Christian families. https://t.co/Z4p4OYE1bp",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076975504704393285",
@@ -1965,7 +2134,8 @@
       "text": "@georgegalloway England woman dont talk shit she a british Pakistani  woman",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076980379433496980",
@@ -1976,7 +2146,8 @@
       "text": "Responding to the #terror arrests in relation to threats to an Islamic event in #Suffolk, British Muslim Trust CEO @AkeelaAhmed said,\n\n\"The arrests in relation to an alleged terror threat to the UK Ijtima event at Shrubland Hall are a frightening reminder of where anti-Muslim",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077041584751739113",
@@ -1987,7 +2158,8 @@
       "text": "@onchainmurderer Have you seen the amount of begs in the UK wearing the Morocco jersey, and they you have the south asian twinks talking on tiktok ab how north african food is meady wallah they wouldnt say this typa shit to a moroccans face",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077026476415689073",
@@ -1998,7 +2170,8 @@
       "text": "@James525765 @nikhilu38489288 @RanaBharatiye @RupertLowe10 If this happened in india, it would be seen as colonisation. Even though i am south asian myself (not indian) i hate what has happened to the UK",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077022684274213203",
@@ -2009,7 +2182,8 @@
       "text": "@Aaronal16 Most of these passport holding emigrants who leave each year are of African and South Asian origin mostly moving to France &amp; the UK with a minority returning home. These trend is also increasing in number.",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077010883914670131",
@@ -2020,7 +2194,8 @@
       "text": "@Whatshalli16854 he is literally a UK citizen, but you don’t consider him as such because he’s ethnically south asian, and then you say you’re not racist, make it make sense lmaooo",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077000157162250500",
@@ -2031,7 +2206,8 @@
       "text": "UK Govt Claims It May Restrict Visas for Pakistan Over Refusal to Take Back Grooming Gang Leader.\n\nThe British government claims to be considering visa restrictions on the Islamic Republic of Pakistan if it refuses to take back Shabir Ahmed, a convicted grooming gang leader, https://t.co/nW3doo2yPB",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076985564423705071",
@@ -2042,7 +2218,8 @@
       "text": "@benonwine No reparations should ever be paid. \n\nAre they asking reparations from other European empires from the time, some like Spain, France and Portugal had more slaves the Britain ever did?\n\nAre they asking for reparations from the African nations, that had a culture of slavery that https://t.co/rZCJMRRSc0",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076982798293045522",
@@ -2053,7 +2230,8 @@
       "text": "@totalindiadeath When I was young, I wished to travel to Canada and the UK for sightseeing and experiencing European culture. But now those plans have changed because it's not what it used to be, it's just South Asian bioweapons.",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076977861865746786",
@@ -2064,7 +2242,8 @@
       "text": "@LauraKirkh95756 Im a non religious one but from asia. White girls chose pakis or muslims or fell into their victim hood traps. I saw them in clubs social meetings etc. you see their fate! I dont live in the uk but back where i born but never frust muslim south asian men. Most are frauds",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076965763991433325",
@@ -2075,7 +2254,8 @@
       "text": "Ah yes, The South Asian subcontinent, The Irish and scots will support \"England\"",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076957786861187400",
@@ -2086,7 +2266,8 @@
       "text": "It was a pleasure meeting Shri Shishir Bajoriya Ji during his short visit to London.\n\nAs a Core Committee Member of the BJP’s Foreign Affairs Department and Overseas Friends of BJP (OFBJP), he shared valuable guidance and direction with the OFBJP UK team on strengthening our https://t.co/mIkIkweNfl",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077110328341467197",
@@ -2097,7 +2278,8 @@
       "text": "@JohnCleese 3rd gen British pakistani here. \n\nGo to Lidget Green Bradford and tell me how \"diverse\" it is. My lot has made the lives of non Muslims hell since the 60's. Now that entire postcode might as well be occupied land.\n\nThe UK didn't import cheap labour, it imported islamic mafias.",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077020502300987474",
@@ -2108,7 +2290,8 @@
       "text": "@UsaAlicex The British Muslim sympathizers need to be deported with their illegal friends, regardless if they were born in the UK. They deserve to feel what it's like to live in those places",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077018326312927545",
@@ -2119,7 +2302,8 @@
       "text": "@muneebqadirmmq U mean to say Imran Riaz is Equal to Shabbir Ahmed? \n\nYou mean to say Imran should see the same fate as Shabbir?\n\nAnd what is wrong about Tommy? What has he explicitly said that is wrong?\n\nHere is a British Pakistani admitting that Pakis turned UK into living hell in everything https://t.co/UUSN4W6YTd",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077001927225713062",
@@ -2130,7 +2314,8 @@
       "text": "@PalePatriot14 No such thing as a British Pakistani,\n\nThere are however Pakistanis living in Britain... sadly. https://t.co/exJI2JPEKD",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076994167402533301",
@@ -2141,7 +2326,8 @@
       "text": "Our current attorney General has made a career fighting for the rights of law abiding citizens.\n\nHARMER &amp; STARMER joined the Gravy train bringing the CHAGOS loophole where British &amp; Indian Civil Servants and lawyers fighting for a share of UK £45BILLION PAYMENT to undermine",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076987976605643043",
@@ -2152,7 +2338,8 @@
       "text": "@RmSalih There is no such thing as a British Muslim. Only Muslims. We all know Muslims hate British people and western values. All of the terrorist attacks of the last 30 years in the uk committed by Islam.",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076982374382833901",
@@ -2163,7 +2350,8 @@
       "text": "@daveatherton @RupertLowe10 A British Hindu lady is making a video about Israeli sponsored psyops to marginalize Muslims in uk \nLike her people and Zionist are saints or truthful about anything in their lives",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076898013050736765",
@@ -2174,7 +2362,8 @@
       "text": "Minister of Parliamentary Affairs and Minority Affairs Shri Kiren Rijiju departed for Doha, Qatar today for conveying condolences on behalf of the Government and people of India on the sad demise of Qatar's Father Amir His Highness Sheikh Hamad bin Khalifa Al Thani. \n\nFather Amir https://t.co/0MgyFQv2W8",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076849288496501163",
@@ -2185,7 +2374,8 @@
       "text": "RT @DrSJaishankar: India formally launches its campaign for United Nations Security Council 2028-2029. https://t.co/RUnu1akAYe",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2077138687016460338",
@@ -2196,7 +2386,8 @@
       "text": "RT @DrSJaishankar: Pleased to call on President of the European Council @antoniolscosta alongside CIM @PiyushGoyal, MoS MEITY @JitinPrasada…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077128052954345712",
@@ -2207,7 +2398,8 @@
       "text": "RT @DrSJaishankar: Started my visit to Brussels, meeting with EU HRVP @kajakallas. \n\nHad useful discussions on West Asia and the need to en…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077085323436134726",
@@ -2218,7 +2410,8 @@
       "text": "RT @DoC_GoI: Ahead of the entry into force of the India–UK Comprehensive Economic and Trade Agreement (CETA) on 15 July, Commerce Secretary…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2077065630172279170",
@@ -2229,7 +2422,8 @@
       "text": "RT @IndiaInScotland: 🇮🇳🤝🇬🇧 A new chapter in the India–UK partnership begins from tomorrow, 15 July 2026 with the implementation of the Comp…",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2077065533724172689",
@@ -2240,7 +2434,8 @@
       "text": "RT @DoC_GoI: The India–UK Comprehensive Economic and Trade Agreement (CETA) comes into force on 15 July 2026, marking a new milestone in th…",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2077050975207010752",
@@ -2251,7 +2446,8 @@
       "text": "RT @WeAreTeamIndia: Flip, stick, shine. ✨🇮🇳\n\nएक टीम। एक सपना। एक भारत। 💪🏼\n\nThe Artistic Gymnastics squad is all set for the 2026 Commonweal…",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2077044235774148939",
@@ -2262,7 +2458,8 @@
       "text": "RT @DoC_GoI: The India–UK Comprehensive Economic and Trade Agreement (CETA), entering into force on 15 July 2026, creates new opportunities…",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2077044220611707238",
@@ -2273,7 +2470,8 @@
       "text": "RT @DoC_GoI: The Double Contribution Convention (DCC) under the India–UK partnership is a major step forward for India’s services sector an…",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077044207735193951",
@@ -2284,7 +2482,8 @@
       "text": "RT @DoC_GoI: The India–UK Comprehensive Economic and Trade Agreement (CETA) goes beyond traditional tariff reductions, covering 30 chapters…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077044150352932984",
@@ -2295,7 +2494,8 @@
       "text": "RT @DoC_GoI: The entry into force of the India–UK Comprehensive Economic and Trade Agreement (CETA) and Double Contribution Convention (DCC…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077041974016610577",
@@ -2306,7 +2506,8 @@
       "text": "RT @DoC_GoI: The India–UK Comprehensive Economic and Trade Agreement (CETA), entering into force on 15 July 2026, strengthens trade facilit…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2077036982807478594",
@@ -2317,7 +2518,8 @@
       "text": "RT @IndPerspectives: One monsoon. Countless stories. Across India, every raindrop paints the landscape a little differently. Which destinat…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077036649213579338",
@@ -2328,7 +2530,8 @@
       "text": "RT @DDNewslive: #WATCH | We issued a statement after summoning the Deputy Chief of Mission of Iran. We conveyed to them our deepest concern…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077031482892153194",
@@ -2339,7 +2542,8 @@
       "text": "RT @mansukhmandviya: Building Future of Work through Tripartite Partnership!\n\nAddressed the BRICS Trade Union Forum Summit in Hyderabad. Hi…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077020490720333892",
@@ -2350,7 +2554,8 @@
       "text": "RT @CGIBelfast: India–UK CETA | Effective 15 July 2026\n@HCI_London @DoC_GoI @biztradegovuk @InvestNI @retail_ni @ManufacturingNI @Economy_N…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2077020009059029133",
@@ -2361,7 +2566,8 @@
       "text": "High Commissioner P. Kumaran held an introductory meeting with Chinese Ambassador Zheng Zeguang yesterday. The meeting offered an opportunity to exchange views on matters of mutual interest and reaffirm the value of continued diplomatic engagement.\n\n@MEAIndia @IndianDiplomacy https://t.co/397mWHh1kP",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077000960807665994",
@@ -2372,7 +2578,8 @@
       "text": "A vision rooted in #SHANTI and a commitment to a stronger, more representative world order.\n#UNSC #UNSecurityCouncil #SecurityCouncil #GlobalSouth #SHANTI #UNSC #IndiaAtUN #Multilateralism #Peacekeeping #MaritimeSecurity #CounterTerrorism #ResponsibleAI\n\n@MEAIndia https://t.co/cur16Yy8qj",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076998643584786870",
@@ -2383,7 +2590,8 @@
       "text": "A stronger voice for the Global South. \nA reformed multilateral order.\nFuture-ready peacekeeping. \nResponsible AI. \nFree, open and rules-based maritime order. \nZero tolerance for terrorism.\nFor a reformed, representative and results-driven Security Council.\n#SHANTI #UNSC",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "facebook_AISfestival_e83777c183be",
@@ -2394,7 +2602,8 @@
       "text": "Phoenix Square, 4 Midland Street, Leicester, United Kingdom, LE1 1TG",
       "sentiment": "Neutral",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "facebook_AISfestival_8cd8b206f44d",
@@ -2405,7 +2614,8 @@
       "text": "Day 2 of An Indian Summer Festival … See more",
       "sentiment": "Positive",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "facebook_AISfestival_08a249047c9c",
@@ -2416,7 +2626,8 @@
       "text": "Photos from An Indian Summer's post",
       "sentiment": "Neutral",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "facebook_AISfestival_d4dba7373306",
@@ -2427,7 +2638,8 @@
       "text": "An Indian Summer Festival Begins Today … See more",
       "sentiment": "Positive",
       "city": "Leicester",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "facebook_AISfestival_e11eb17f01de",
@@ -2438,7 +2650,8 @@
       "text": "An Indian Summer Festival Begins Today Our festival begins with @sitarmusicsociety's event, Cycles and Circles Evening Raag from 7:30pm - 9:30pm. Immerse yourself in an enchanting evening of Indian classical music that traces the enduring beauty of circles and cycles—echoing through rāg, rhythm, and resonance. This special performance explores the continuous flow of musical patterns, where beginnings dissolve into endings and return again, much like the cycles of nature and life itself. Renowned",
       "sentiment": "Positive",
       "city": "Leicester",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "facebook_AISfestival_00b266a9179d",
@@ -2449,7 +2662,8 @@
       "text": "An Indian Summer 2026 Is this week! … See more",
       "sentiment": "Positive",
       "city": "Leicester",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "facebook_ShivamEvents_4b976c8731e6",
@@ -2460,7 +2674,8 @@
       "text": "Barkby Road, Leicester, United Kingdom, LE4 9LG",
       "sentiment": "Neutral",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "facebook_ShivamEvents_26b826d13244",
@@ -2471,7 +2686,8 @@
       "text": "Shivam Events · Original audio",
       "sentiment": "Neutral",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "facebook_ShivamEvents_b3471567fe80",
@@ -2482,7 +2698,8 @@
       "text": "Our bride enjoying canapé hour with her friends Event at @moorhallhotel Pleasure working alongside side amazing supplier @sharnadhill @sunitmusic content created and managed by @jnandhacommercial #cateringexperience #luxurycatering #shivamevents #weddingcatering #indianweddingcatering foodlover",
       "sentiment": "Positive",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "facebook_CentralStageCrew_162a80279cd2",
@@ -2493,7 +2710,8 @@
       "text": "We hit a new personal best this month. \"107 Jobs in a month\". Our previous best being 60... Thanks to the CSC team for your hard work & determination.💯🔥 #centralstagecrew #bestcrew #crewboss #events #snowballing #allthework #TeamCSC #DontStandBy #topcrew #crewlife #midlands #squadgoals #CSC",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "facebook_CentralStageCrew_2f8a5685c49e",
@@ -2504,7 +2722,8 @@
       "text": "You should always check it's clear. #centralstagecrew",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "facebook_CentralStageCrew_9c836e363c23",
@@ -2515,7 +2734,8 @@
       "text": "Do You Understand Me? Official Trailer 2025 Through dance, projection and art installation, ‘Do You Understand Me?’ follows the journey of someone with dementia navigating an ever changing world and the new limits they face. Exploring the 5 main symptoms of the condition; memory loss, sequencing, spatial awareness/depth perception and audio & visual hallucinations, we see how their environments change, the relationship with their loved ones change and how two sisters try to find a new way of und",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "facebook_SriBardai_4bb23a660b38",
@@ -2526,7 +2746,8 @@
       "text": "Looking forward to seeing you all tomorrow for the Satyanarayan Katha … See more",
       "sentiment": "Positive",
       "city": "Leicester",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "facebook_SriBardai_2d046e569c53",
@@ -2537,7 +2758,8 @@
       "text": "Looking forward to seeing you all tomorrow for the Satyanarayan Katha Please do not worry if you have not had the opportunity to RSVP, as you are still more than welcome to join us on the day The deadline to participate as a Yajman has now passed, so walk-ins will be unable to register for this. Further details including location are in your official email invite We would love to see as many of you there as possible! #bardaibrahminsamaj #leicestersamaj #satyanarayankatha #samaj #brahminsamaj",
       "sentiment": "Positive",
       "city": "Leicester",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "facebook_SriBardai_1bbac840c3bf",
@@ -2548,7 +2770,8 @@
       "text": "Help Disha with this survey for her Masters study about British Hindu Community… See more",
       "sentiment": "Neutral",
       "city": "Leicester",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "facebook_SriBardai_1bdf6ff01d00",
@@ -2559,7 +2782,8 @@
       "text": "British Hindu Community Attitudes",
       "sentiment": "Neutral",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "facebook_SriBardai_f595811a6d51",
@@ -2570,7 +2794,8 @@
       "text": "Family Announcements » Sad News – Ramagauri Mohanlal Thanki, Leicester, UK. » SBBSLeics",
       "sentiment": "Negative",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "facebook_SriBardai_3e641d015033",
@@ -2581,7 +2806,8 @@
       "text": "Looking forward to seeing you at tomorrow’s Patotsav! … See more",
       "sentiment": "Positive",
       "city": "Leicester",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "facebook_SriBardai_8943dc4c5eec",
@@ -2592,7 +2818,8 @@
       "text": "Looking forward to seeing you at tomorrow’s Patotsav! Don’t worry if you haven’t had a chance to RSVP yet, as you are still more than welcome to join us on the day Location details are in your official email invite! #bardaibrahminsamaj #brahminsamaj #leicestersamaj #leicesterbrahminsamaj #patotsav",
       "sentiment": "Positive",
       "city": "Leicester",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2077104853860364776",
@@ -2603,7 +2830,8 @@
       "text": "@QueenMab87 But Britain has lots of Caribbean, East Asian, South Asian, African immigrants, and others, and yes, they eat their own ethnic food.\n\nIf you don't like fried tomatoes, mushrooms, bacon, sausage etc for breakfast then that's fine, but it comes down to your own personal taste...",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077045828296773878",
@@ -2614,7 +2842,8 @@
       "text": "@RestoreBritain @RupertLowe10 - here you go, a British Indian pushing an idea to make  Britain great again",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077094039090786787",
@@ -2625,7 +2854,8 @@
       "text": "@GeorgeUK Which means when Christmas comes, all those lights will be a hazard too!!\nHow many more examples do you need!! There are too many examples of things like this against England. \nBut I wonder if any Diwali decorations will be taken down?",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077044915561771037",
@@ -2636,7 +2866,8 @@
       "text": "@LouFrance75 ❌ The video in the post shows a bearded imam preaching in English about applying historical Islamic rules (citing Prophet Muhammad and Imam Malik) in a future UK Islamic state, including forcing non-Muslims to wear distinctive/humiliating markers like mismatched shoes, a red",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076997823204089921",
@@ -2647,7 +2878,8 @@
       "text": "Peterborough. 31st July. Something extraordinary.\n\nThe International Indian Dance Festival lands at The Cresset – Bharatnatyam, Kathak, Garba, Odissi and more, performed by artists from across the UK.\n\nRead the full article here: https://t.co/bAtmUT8nGv\n\n#IndianDanceFestival https://t.co/Qi6rucfNUn",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2076971872462455085",
@@ -2658,7 +2890,8 @@
       "text": "UK West Midlands Police arrested 4 South Asian men who were armed at the time of the arrest.\n\nGurwinder Singh, 25, of Ealing, London, admitted possession of a firearm, ammunition and five swords, and was jailed for five years and 11 months.\n\nHarpandeep Singh, 23, of Hackney, https://t.co/zavIbHMVVH",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076918956049264955",
@@ -2669,7 +2902,8 @@
       "text": "@jmcsms @Independent NHS+Tories+Labour KNOW mass immigration destroys NHS:\n\n\"outdated health and care services designed for white British patients\"\n\n\"south Asian heritage in UK higher risk of heart disease, stroke, diabetes, dementia to increase 600% in the next three decades\"\nhttps://t.co/yBfHJa8jku",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077155797264400462",
@@ -2680,7 +2914,8 @@
       "text": "@NicholasLissack Bushra is yet another British-Pakistani Muslim woman heading abroad to cosy up to Islamist terrorists and reminds me of Shamima Begum.\n\nWhen will Britain stop importing and excusing this? Arrest her on return and revoke her British nationality. Enough is enough.",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077142532534706246",
@@ -2691,7 +2926,8 @@
       "text": "@Galverson9767 Is England South American ? They own the Falkland islands. Is it fair to also call England Indian since they own the British Indian Ocean Territory and used to own all of India ? Are the French South American with French Guiana? At what point is this a little silly",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077135494924599512",
@@ -2702,7 +2938,8 @@
       "text": "@jordanbpeterson I think it's supposed to refer to Mother Mirian of @thejourney15  type converts.\n\nLike in the UK a British Indian is someone with a British and Indian parent.\n\nLike with woman we are in the tower of Babel.",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077130456202629141",
@@ -2713,7 +2950,8 @@
       "text": "Critical things happening\nin Britain right now:\n\n🏛️ Andy Burnham confirmed\nas new Labour leader —\n349 of 403 MPs backing him.\n\nBritain’s next Prime Minister,\nfor all practical purposes,\nis now decided.\n\n⚡ UK industrial electricity\nprices — 45% above the\nG7 median. \n\n4 in 10",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077119232144224363",
@@ -2724,7 +2962,8 @@
       "text": "@Fwoggie @BobCrauford @USWPColby No, I did not get my information from X or Fox News, I got them through these published reports.. 👇🏻👇🏻👇🏻\nHere is a list of key official UK reports and inquiries into group-based child sexual exploitation (“grooming gangs”):\n•  Jay Report (2014) – Independent Inquiry into Child",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077115330984305103",
@@ -2735,7 +2974,8 @@
       "text": "@WHITEONLYPLANET @seumasabheinn @Victor_Coates82 Bollox! \n\nAs of 2025, Muslims make up approximately 6.5% of the population in England &amp; Wales. This demographic represents one of the fastest-growing and youngest groups in the country, with nearly half of the British Muslim population under the age of 25. That’s over 4 million!!",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077103728838979802",
@@ -2746,7 +2986,8 @@
       "text": "@FNSWAY Theres no such thing as British Pakistani.\nHes a Pakistani probably leeching benefits in England",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077083486075146609",
@@ -2757,7 +2998,8 @@
       "text": "@shaynewiskin There's no such person as a British Muslim, there are however Muslim Islamists who live in Britain.",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077068690097349073",
@@ -2768,7 +3010,8 @@
       "text": "@SJG99 @gjquartermaine @georgegalloway Hows she english you donut? Shes a british Pakistani, English are an ethnic white group indigenous native to England",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077062165480001905",
@@ -2779,7 +3022,8 @@
       "text": "The UK has always had a serious problem with child abuse/sexual exploitation whether it was Jimmy Saville or the Church.Its grooming gang issue is a product of lack of accountability for decades.Our ex British Indian PM(friend of BJP) ensured Pakistanis were specifically targeted",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077049602981650501",
@@ -2790,7 +3034,8 @@
       "text": "@ApsanaBegumMP @KNFMHBV Apsana, we cannot end honor-based abuse without addressing one of its root causes: Sharia councils in the UK. These courts, which must be banned, routinely dismiss physical, emotional, and psychological abuse. Countless women are pressured by these institutions and their",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2077009520069587291",
@@ -2801,7 +3046,8 @@
       "text": "RT @mansukhmandviya: Building Future of Work through Tripartite Partnership!\n\nAddressed the BRICS Trade Union Forum Summit in Hyderabad. Hi…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076981905220628744",
@@ -2812,7 +3058,8 @@
       "text": "RT @HCI_London: 15 July 2026!\nA landmark date in the next chapter of India–UK relations. Set to unlock new business and investment opportun…",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2076978778190807242",
@@ -2823,7 +3070,8 @@
       "text": "🇮🇳 India has launched its campaign for a non-permanent seat on the UN Security Council (2028–29), presenting a vision focused on:\n\n➡️ Amplifying the voice of the Global South.\n➡️ Advancing a more representative, reformed and effective multilateral system.\n➡️ Building a https://t.co/VRukmjhDCw",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076960718792839371",
@@ -2834,7 +3082,8 @@
       "text": "RT @DrSJaishankar: Glad to meet @antonioguterres, Secretary General of the @UN in New York today. \n\nDiscussed global developments, includin…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076960630670589970",
@@ -2845,7 +3094,8 @@
       "text": "RT @DrSJaishankar: Pleased to launch India’s campaign for the @UN Security Council 2028-29. \n\nUnderlined 🇮🇳’s approach rooted in SHANTI - S…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076959381132922900",
@@ -2856,7 +3106,8 @@
       "text": "India officially launches its campaign for nomination to the United Nations Security Council membership for the 2028-2029 period.",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076959234973978956",
@@ -2867,7 +3118,8 @@
       "text": "Remarks by Hon'ble EAM @DrSJaishankar at the launch of 🇮🇳’s campaign for @UN Security Council 2028-29.",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "12",
@@ -2878,7 +3130,8 @@
       "text": "Thrilled that Navratri Garba 2026 is moving to a larger venue in Coventry! The community has grown so fast in the West Midlands. This year is going to be magnificent with live musicians flying in from Gujarat. Can't wait!",
       "sentiment": "Positive",
       "city": "Coventry",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2076800599069278537",
@@ -2889,7 +3142,8 @@
       "text": "North America, Britain owns Bermuda and some Caribbean Islands.\nSouth America, Britain owns the Falkland Islands.\nAfrica, Britain owns St Helena, Ascension island etc.\nAsia, Britain owns British Indian Ocean territory.\nOceania, Britain owns the Pitcairn Islands.",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076768584664317966",
@@ -2900,7 +3154,8 @@
       "text": "@MarioNawfal These ijtema have been taking place in the UK annually for nearly 50 years. It's nothing new. Mainly takes place in Dewsbury but this time took place in a large outdoor space owned and operated by a British Bangladeshi businessman.",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076761967633502643",
@@ -2911,7 +3166,8 @@
       "text": "Medical Training Prioritisation\nAct 2026 — became law\n5 March.\n\nUK graduates + citizens/ILR\nholders get FIRST access\nto training posts.\n\nProtects: British Indian\nmedical students, British\nIndian doctors with ILR.\n\nAffects: Indian-trained\ndoctors applying from\noverseas — now",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076761371518140431",
@@ -2922,7 +3178,8 @@
       "text": "Britain's political scene\nright now — in brief.\n\nLabour leadership nominations\nopened four days ago.\n\nAndy Burnham is the ONLY\ndeclared candidate so far.\n\nWes Streeting and Al Carns —\nboth potential rivals —\nhave backed him instead.\n\nAngela Rayner has too.\n\nIf nobody else steps",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076730912545587256",
@@ -2933,7 +3190,8 @@
       "text": "@ApsanaBegumMP The unequal treatment of women is not an accident of geography; it is rooted in mainstream, orthodox interpretations of Islamic texts, in Islamic countries, that codify a strict male hierarchy:\n\n​Male Authority: \n\nTraditional Islamic law is built on the concept of Qiwamah (male",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076537173499924755",
@@ -2944,7 +3202,8 @@
       "text": "@visegrad24 First they come for Saturday people, then Sunday, and now they started attacking Hindu festivals in London (holi) and now this. Everyone else should unite or else UK is doomed!",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076763515772436925",
@@ -2955,7 +3214,8 @@
       "text": "RT @DrSJaishankar: Pleased to launch India’s campaign for the @UN Security Council 2028-29. \n\nUnderlined 🇮🇳’s approach rooted in SHANTI - S…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076763492384911581",
@@ -2966,7 +3226,8 @@
       "text": "RT @DrSJaishankar: Speaking at the launch of India’s campaign for the @UN Security Council 2028-29.\n\n#SHANTI\n\n🇮🇳 🇺🇳  https://t.co/u9ub8cTom9",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076658781023539674",
@@ -2977,7 +3238,8 @@
       "text": "EDUCATIONAL LOAN MELA 2026* \nDo not miss it! \n @AbideEdu\n#abideedu #studyabroad #uk #france🇫🇷 #germany https://t.co/1g3mQfzyyG",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2076657813510590611",
@@ -2988,7 +3250,8 @@
       "text": "@Rosiewr50 @andrewc44104127 He made a message for Eid &amp; not for Easter. He’s meant to be Supreme Leader of the Church of England.",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076457442410369150",
@@ -2999,7 +3262,8 @@
       "text": "@LizaRosen0000 This is what multiculturalism has done to Britain — and the supremacist mindset is on full display.\nOver 250,000 British girls systematically raped, tortured, and in some cases murdered by grooming gangs.\n87 to 95% of the rape gang members were Muslims — predominantly Pakistani",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076590578398023764",
@@ -3010,7 +3274,8 @@
       "text": "@DailyMail NHS+Tories+Labour KNOW mass immigration destroys NHS:\n\n\"outdated health and care services designed for white British patients\"\n\n\"south Asian heritage in UK higher risk of heart disease, stroke, diabetes, dementia to increase 600% in the next three decades\"\nhttps://t.co/yBfHJa8jku",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "10",
@@ -3021,7 +3286,8 @@
       "text": "While the drone show sounds exciting for Diwali 2026, I am really worried about Belgrave Road traffic closures. Parking in Leicester during Diwali is already impossible. The council needs to provide park-and-ride shuttle buses.",
       "sentiment": "Neutral",
       "city": "Leicester",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2076182611181916598",
@@ -3032,7 +3298,8 @@
       "text": "@PatrickByrne It had to do with George Soros manifesto open border open society. Hillary Clinton brought him into our government in 1993 about the same time he broke the Bank of England and we all know it holds the Monarch’s money, govt of England, all banking cartels are tied, and all the 12",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076326505727107289",
@@ -3043,7 +3310,8 @@
       "text": "Katie Hopkins completely destroyed the diversity myth in one viral video.\n\nIn 2019, she confronted a mob of Pakistani Muslims in London who showed up specifically to intimidate and shut down a Hindu Diwali celebration.\n\nWhy? Because in their eyes, it was “haram” and",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076253481707393340",
@@ -3054,7 +3322,8 @@
       "text": "Will there be any posts from the traitors of the UK?\n\n@RoyalFamily @Keir_Starmer @YvetteCooperMP @bphillipsonMP @darrenpjones @MikeTappTweets @churchofengland @EdwardJDavey \n\nYou all claim to be proud of the UK but as usual it’s not eid so it’ll not be important.",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076434133564244095",
@@ -3065,7 +3334,8 @@
       "text": "@LizaRosen0000 This is what multiculturalism has done to Britain — and the numbers are damning.\nPakistani Muslims harassing Hindus at Diwali.\nLondon streets that look like Pakistan.\nLocal government leaders who no longer look British.\nKhalistani Sikhs dragging effigies through Trafalgar Square.",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076433780684812385",
@@ -3076,7 +3346,8 @@
       "text": "@LizaRosen0000 This is what multiculturalism has done to Britain — and the horror is even worse than you think.\nPakistani Muslims harassing Hindus at Diwali.\nLondon streets that look like Pakistan.\nLocal government leaders who no longer look British.\nKhalistani Sikhs dragging effigies of",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076433052654522760",
@@ -3087,7 +3358,8 @@
       "text": "@LizaRosen0000 This is what multiculturalism has done to Britain — and it’s getting worse.\nPakistani Muslims harassing Hindus at Diwali.\nLondon streets that look like Pakistan.\nLocal government leaders who no longer look British.\nKhalistani Sikhs dragging effigies of assassinated leaders",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076432458774425630",
@@ -3098,7 +3370,8 @@
       "text": "@LizaRosen0000 This is what multiculturalism has done to London — and Britain is running out of time.\nPakistani Muslims harassing Hindus at Diwali.\nA London street that looks like Pakistan.\nLocal government leaders who no longer look British.\nKhalistani Sikhs dragging effigies of assassinated",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076432063696105733",
@@ -3109,7 +3382,8 @@
       "text": "@LizaRosen0000 This is what multiculturalism has done to London.\nPakistani Muslims turning out to harass and intimidate Hindus celebrating Diwali because it’s “haram.”\nA London street that now looks like Pakistan.\nLondon’s local government leaders who no longer look British.\nKhalistani Sikhs",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076428352433344889",
@@ -3120,7 +3394,8 @@
       "text": "@LizaRosen0000 This is what multiculturalism has done to London.\nPakistani Muslims turning out to harass and intimidate Hindus celebrating Diwali because it’s “haram.”\nAnd now London’s local government leaders look nothing like the British people they’re supposed to represent.\nThis isn’t",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076403741930967206",
@@ -3131,7 +3406,8 @@
       "text": "@RupertLowe10 You started this off. Now that a majority BLACK England team has taken us to the semis, now youre saying \"lets judt enjoy it\" oh yeah, tell your daughter a happy late eid mubarak 😊",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076330245439795619",
@@ -3142,7 +3418,8 @@
       "text": "@rvkymin England a Muslim country??? Why don’t ppl get 2 weeks off for Eid then LMAO",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076224435044913442",
@@ -3153,7 +3430,8 @@
       "text": "@BBCNews NHS+Tories+Labour KNOW mass immigration destroys NHS:\n\n\"outdated health and care services designed for white British patients\"\n\n\"south Asian heritage in UK higher risk of heart disease, stroke, diabetes, dementia to increase 600% in the next three decades\"\nhttps://t.co/yBfHJa8jku",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "11",
@@ -3164,7 +3442,8 @@
       "text": "Navratri Garba tickets in Coventry sold out in literally 10 minutes! 😡 Now scalpers are reselling £12 tickets for £45 on Facebook groups. This is unfair to genuine community members who want to celebrate. Organizers need a better ticketing system!",
       "sentiment": "Negative",
       "city": "Coventry",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2075925070191399158",
@@ -3175,7 +3454,8 @@
       "text": "Some outfits just feel special at first glance ✨\nThis desi look had my heart right away 💖\nShop now before they’re gone 🛍️\nhttps://t.co/CU7FJ0fsLh \n#Completethelookz #trendingnow #fashiontrends #ethnicwear #fancysuit #desivibes #fashion  #london #uk #birmingham https://t.co/wh06qHMR4O",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2075849383359476160",
@@ -3186,7 +3466,8 @@
       "text": "@PaulineHansonOz Birmingham is no longer Britain as we knew it. It's little India/PakistanI have no problem with a small minority through immigration by skill but currently the Indian diaspora in Australia is 7% of the population! That is ridiculous. In another year it will be 8% then 10%!!",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2076049148491768193",
@@ -3197,7 +3478,8 @@
       "text": "@urownnoob warra weather rn + england going out + pessi going through... yea it'll be eid in the morning",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "9",
@@ -3208,7 +3490,8 @@
       "text": "So excited for the upcoming Diwali Lights Switch-On 2026 in Leicester! The drone light show sounds brilliant and eco-friendly. Leicester Belgrave Road is the place to be this autumn. Already planning our family get-together!",
       "sentiment": "Positive",
       "city": "Leicester",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2075731168868127024",
@@ -3219,7 +3502,8 @@
       "text": "@DMF_LDN @ImtiazMadmood Yeah sure she did. Things that didn’t happen. Fucking joke @ massive pressure on the NHS. I have never seen not one of those rat face deformities in the Asian community in the UK throughout my 50 years in this planet. Pakistan maybe but I ain’t any here!",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2075415359612666094",
@@ -3230,7 +3514,8 @@
       "text": "Indian Independence was a disaster for India and Britain.\n\nThat is a fascinating alternate-history scenario. I’ll assume that after 1945 Britain does not leave India, but instead makes the whole subcontinent a fully equal part of the United Kingdom—something like a “fifth home",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2075216349677146278",
@@ -3241,7 +3526,8 @@
       "text": "A pleasure to join colleagues &amp; guests at New Cross Hospital to celebrate South Asian Heritage Month. Thank you for hosting such a meaningful event, recognising the rich cultures, contributions and achievements of our South Asian communities across #Wolverhampton and in the NHS! https://t.co/cnMpa0fXnB",
       "sentiment": "Positive",
       "city": "Wolverhampton",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2074846186373058956",
@@ -3252,7 +3538,8 @@
       "text": "RT @narendramodi: The majestic Prambanan Temple! https://t.co/pRS2S9X5gm",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2074786718419496981",
@@ -3263,7 +3550,8 @@
       "text": "Consul General @venkatifs visited @unibirmingham  to tour its world-class facilities and engage with academic leaders on strengthening India–UK higher education cooperation. Discussions focused on the welfare of Indian students, expanding academic and research partnerships, https://t.co/ZDmhU9d0o0",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2074790548284608613",
@@ -3274,7 +3562,8 @@
       "text": "RT @docwas: Thank you @CGI_Bghm for an excellent academic and research meeting on India -UK partnership @Andrew007Uk @UKinHyderabad @UKinIn…",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2074908076071616521",
@@ -3285,7 +3574,8 @@
       "text": "Rupert Lowe on Joe Rogan Experience JUST DROPPED!\n\nThe Joe Rogan Experience #2524 with Rupert Lowe (British MP for Great Yarmouth, leader of Restore Britain) is a ~2-hour conversation released on July 8, 2026. It covers UK politics, immigration, grooming gangs, free speech,",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2074757666056859986",
@@ -3296,7 +3586,8 @@
       "text": "@Alexarmstrong Perhaps if they told truth: immigration destroys NHS.\n\n\"outdated health and care services designed for white British patients\"\n\n\"south Asian heritage in UK higher risk of heart disease, stroke, diabetes, dementia to increase 600% in the next three decades\"\nhttps://t.co/yBfHJa8jku",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2074862184618742046",
@@ -3307,7 +3598,8 @@
       "text": "RT @KVSinghMPGonda: Delivered the keynote address at the side event, “From India to Geneva – A Global Convening on AI Impact at Scale,” hos…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2074512625090584834",
@@ -3318,7 +3610,8 @@
       "text": "RT @MEAIndia: https://t.co/QsY2udbPzB",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2074095592381288554",
@@ -3329,7 +3622,8 @@
       "text": "Marking the 125th birth anniversary of Dr. Syama Prasad Mookerjee, Hon'ble PM Sri @narendramodi ji has paid a heartfelt tribute, reflecting on his lasting legacy as an educationist, institution-builder, and statesman dedicated to India’s unity and progress.\n\nRead:",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2074095266890698877",
@@ -3340,7 +3634,8 @@
       "text": "RT @narendramodi: Penned an Op-Ed on Dr. Syama Prasad Mookerjee's life, emphasising his diverse accomplishments, be it Vice Chancellor, Min…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2074095188490834086",
@@ -3351,7 +3646,8 @@
       "text": "RT @MIB_India: The Electronic Overseas Citizen of India (e-OCI) Card is a major citizen-centric initiative aimed at transforming OCI servic…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2074093512832786512",
@@ -3362,7 +3658,8 @@
       "text": "On 2 July 2026, Consul General, @venkatifs  , organised a productive luncheon meeting focused on strengthening India–UK academic and research partnerships through collaborative research, innovation, technology transfer, faculty and student mobility, and joint educational https://t.co/QMt7ik2sdJ",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2074058429694435697",
@@ -3373,7 +3670,8 @@
       "text": "Consul General @venkatifs, along with the Lord Mayor @BrumLordMayor, the Mayor of SuttonColdfield  @Mayor_RoyalSC, and other dignitaries, inaugurated the Rath Yatra festival and ceremonially pulled the divine chariot at Birmingham New Street, organized by ISKCON. On the https://t.co/bmb58drNN3",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2074070816711381318",
@@ -3384,7 +3682,8 @@
       "text": "When NHS consultant Sabrina lost her brother, she found that professional bereavement services didn’t meet the communal and cultural needs of her Pakistani family's grief.\n\nSabrina turned her personal tragedy into action. She and her team applied for funding to research the issue https://t.co/YLh33PiiON",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "15",
@@ -3395,7 +3694,8 @@
       "text": "The level of Indian diaspora community engagement in the East Midlands (Nottingham, Leicester) has spiked in 2026. The youth-led cultural societies are doing a fantastic job bridging generational gaps through regional festivals and sports.",
       "sentiment": "Positive",
       "city": "Nottingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2073748633321640416",
@@ -3406,7 +3706,8 @@
       "text": "This is Lady-pool street in #Birmingham where you see desi and South Asian restaurants but was saddened to see junk and litter all over the place on the road side and especially in the Parking lots!\nWhy are we Pakistanis so dirty and despite living in the UK , doesn't make them https://t.co/KRIP4hTxgG",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2073801609436373487",
@@ -3417,7 +3718,8 @@
       "text": "RT @HCI_London: A soulful celebration of India's musical legacy!\nAn enchanting performance of Hindustani classical, ghazal, thumri and Sufi…",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2073801450719703336",
@@ -3428,7 +3730,8 @@
       "text": "RT @MEAIndia: Healing hands. Shared humanity.\n\nThe Army Field Hospital carries forward its humanitarian mission in Venezuela.\n\n#OperationAm…",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2073041013233373626",
@@ -3439,7 +3742,8 @@
       "text": "Where's all the freaks from Manchester and surrounding at then? Horny as fuck today. DM me if you want your pussy ate #manchester #bradford #leeds #birmingham #horny #nsfwtwt #desi #bengali #pakistani #hijabi #asian #arab #meets",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "8",
@@ -3450,7 +3754,8 @@
       "text": "What are the upcoming planned activities for the Leicester Diwali Lights Switch-On in October 2026? I heard they are introducing a massive drone light show on Belgrave Road this year instead of traditional fireworks. Is this true?",
       "sentiment": "Neutral",
       "city": "Leicester",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2072649133945401387",
@@ -3461,7 +3766,8 @@
       "text": "Jammu &amp; Kashmir’s State Investigation Agency has filed a chargesheet in the 1990 abduction, torture, and murder of Sarla Bhat, naming JKLF terrorist Yasin Malik as a key accused and alleged mastermind.\n\nThis marks a significant late-stage prosecution in a long-pending case tied https://t.co/sAoHvCM0FF",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2072215208995553285",
@@ -3472,7 +3778,8 @@
       "text": "Heartfelt thanks to the media houses who covered FISI UK's Golden Jubilee celebrations at The Bhavans, London marking 50 years of advocacy for the British Indian community and India-UK relations.\n\n📰 Coverage:\n- Goa Chronicle: https://t.co/bqavnlTaP8\n- The Asian Independent: https://t.co/W1aP2g9eQB",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2070747925597093923",
@@ -3483,7 +3790,8 @@
       "text": "Ideal: \n'Diversity is our strength'\n\nReality:\nUK + Irish = 1,132,267 (86.65%)\nOther Europeans = 57,645 (4.41%)\n----------------------- Total 91.06% White European.\n\nSouth Asian = 42,012 (3.21%)\nSouth East Asian = 29,581 (2.26%)\nOriental = 1,529 (0.12%)\nAfrican = 31,177 (2.39%)",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2070434854676656439",
@@ -3494,7 +3802,8 @@
       "text": "@technopopulist Birmingham City Council is now ungovernable because South Asian gangs have spent several years using the resources of Birmingham City Council to attack people because John Cotton wanted patronage money.",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2068981133614673930",
@@ -3505,7 +3814,8 @@
       "text": "Cultural Diversity in Britain🇬🇧\n→UK is one of Europe's most culturally diverse countries\n→ Multicultural cities: London, Birmingham &amp; Manchester \n→ Notting Hill Carnival, Eid &amp; Diwali bring communities together\n\nAuthor: Zainab Lawal\nFull article: https://t.co/eRfjeSIpkR",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "7",
@@ -3516,7 +3826,8 @@
       "text": "Great concept, but the execution of the Sports Day was ruined by the typical British summer rain. There was no indoor backup plan for most matches, and the scheduling was delayed by 3 hours. Please plan better for wet weather in 2026!",
       "sentiment": "Negative",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2066653673095107060",
@@ -3527,7 +3838,8 @@
       "text": "Any married women on here? Manchester and surrounding #asian #cuck #cheat #nsfwtwt #asian #desi #bengali #pakistani #manchester #birmingham #london #bradford",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "6",
@@ -3538,7 +3850,8 @@
       "text": "Huge congratulations to the organizers of the Indian Sports Day in Leicester! Seeing the youngsters play Kabaddi and Kho-Kho was pure nostalgia. Wonderful initiative to keep our cultural sports alive in the UK Midlands.",
       "sentiment": "Positive",
       "city": "Leicester",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2066037154812158029",
@@ -3549,7 +3862,8 @@
       "text": "India’s World Cup Journey Begins as Birmingham Sets Almost-Desi Stage\n• \n•Birmingham’s vibrant South Asian community and strong tournament build-up provide the perfect backdrop for India vs Pakistan\n• \n•India’s spinners and top order will be crucial as Harmanpreet Kaur’s side",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2056094134943830198",
@@ -3560,7 +3874,8 @@
       "text": "@Miss_Snuffy @DavidAn09060969 No, Katharine. \n\nBlack people aren’t British.\n\nCitizenship is a stamp on a passport. Britishness is not.\n\n It is the inherited identity of the native peoples of these isles, Anglo-Saxons, Celts, Danes, Normans—who built this nation over two thousand years. \n\nYou don’t acquire",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2054529223612649772",
@@ -3571,7 +3886,8 @@
       "text": "A perfect representation of Birmingham today. They've built a drive-in Halal 'food court' (think the top floor of a foreign shopping mall) selling smash burgers and loaded desi boxes, on an old abandoned playground, with no planning permission.\n\nhttps://t.co/kUqyzAaXqO",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "14",
@@ -3582,7 +3898,8 @@
       "text": "The Birmingham food festival had excellent culinary representation, but the venue (Digbeth Arena) was extremely cramped. Long lines made it hard to walk around. They should move it to a larger park area next year.",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "13",
@@ -3593,7 +3910,8 @@
       "text": "Which was the best Indian food event in the Midlands in 2026? Hands down the Midlands Indian Food Festival in Birmingham. The street food variety was mind-blowing – everything from Lucknowi chaat to South Indian filter coffee. Extremely well organized!",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2052040648811778283",
@@ -3604,7 +3922,8 @@
       "text": "One of the oldest desi pubs in the West Midlands is to be demolished - here’s why https://t.co/vFsiAKmEHJ",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2049023928253755893",
@@ -3615,7 +3934,8 @@
       "text": "No disrespect but this headline 🤨Volume doesn’t = quality, so isn’t a marker of ‘best’. Birmingham invented its own globally celebrated curry, has a rich Desi pub culture, 2* Michelin Indian restaurant plus Tom Cruises fav curry! #Birmingham  https://t.co/KhkZVtAaPp",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2047366454060728685",
@@ -3626,7 +3946,8 @@
       "text": "@Gandalf_LFC @I_amMukhtar I’m from Dudley and I’m with you mate. Desi pubs are the epitome of multi cultural, started in Birmingham and are some of my favourite places in the country. Fire Laurence fox from a bridge",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2046522101038039448",
@@ -3637,7 +3958,8 @@
       "text": "https://t.co/OAJwDdkOTh",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "5",
@@ -3648,7 +3970,8 @@
       "text": "The crowd management at the Handsworth Park Vaisakhi event was quite poor. It felt unsafe at times around the main stage area, and there was litter everywhere by 4 PM. We really need more waste bins and volunteers next year.",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "4",
@@ -3659,7 +3982,8 @@
       "text": "So glad we made the trip from Leicester to Handsworth Park for Vaisakhi Mela 2026! The Langar (free kitchen) was served with so much love, and the energetic Bhangra acts had everyone dancing. Wonderful community engagement!",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2043505095678046471",
@@ -3670,7 +3994,8 @@
       "text": "jus a young ho xx #nsfw #slut #birmingham #pakistani #desi #DL #horny https://t.co/9ZmioGCOMN",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2042670926920122506",
@@ -3681,7 +4006,8 @@
       "text": "@brianpiehouse But still has the best desi bar &amp; grill in Birmingham right there in your photo! @henchickenbrum",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2042507827848122805",
@@ -3692,7 +4018,8 @@
       "text": "DM for availability this weekend #birmingham \nPlease read pinned post. \n\nFoot fetish  • desi girl • Indian • leg worship • thicc thighs • fupa • meaty • curves • soles • heels • jhanjra\n\n@FeeturedPhotos https://t.co/Du3nnm00uj",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2040535926774923382",
@@ -3703,7 +4030,8 @@
       "text": "IRL: Sunday &amp; Monday  - DM for availability #birmingham #westmidlands #indian #Desi \n\nFoot fetish  • desi girl • Indian • leg worship • thicc thighs • fupa • meaty • curves • soles • heels • jhanjra https://t.co/9cAZZJmZMX",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2039778857251725333",
@@ -3714,7 +4042,8 @@
       "text": "Comment your favourite\n#desi #pakistani\n#viral #punjabi #manlikemobeen #fyp #guzkł #funny #desitiktok #india #bradford\n#birmingham #southasian #foryou\n#pakistanidrama #foryou\n🤣🤣🤣🤯🎙️🤣 https://t.co/nF3OSXJfi9",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2039497110177890336",
@@ -3725,7 +4054,8 @@
       "text": "@iemziishan is shora @Shamoonali ki zuban batati hai, yah Birmingham, bredford, ya Luton ka rahnay wala hai jahan is jaisay desi kanjar kasrat sa paye jatay \nhain, log ganday  ghar ganday road ganday , or is jaisay soor sharab pi ka us gand pa giray hotay hain",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2038548616793424197",
@@ -3736,7 +4066,8 @@
       "text": "Available for IRL Friday and Saturday - DM for availability.\n\n#birmingham #BirminghamCity #westmidlands \n\nFoot fetish  • desi girl • Indian • leg worship • thicc thighs • fupa • meaty • curves • soles • heels • jhanjra https://t.co/O53gx0jLCl",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2037988443771310240",
@@ -3747,7 +4078,8 @@
       "text": "Hosting tonight #birmingham #birminghamcity \n\nBlack and Yellow Black and Yellow \n\nFoot fetish  • desi girl • Indian • leg worship • thicc thighs • fupa • meaty • curves • soles • heels • jhanjra https://t.co/8f6WIbEOf9",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2037490412944830806",
@@ -3758,7 +4090,8 @@
       "text": "Last chance to book in for tomorrow 3pm onwards Birmingham City \n\nFoot fetish  • desi girl • Indian • leg worship • thicc thighs • fupa • meaty • curves • soles • heels • jhanjra https://t.co/gBdsMPMsv5",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "3",
@@ -3769,7 +4102,8 @@
       "text": "Attended the Holi festival in Birmingham last weekend. While the cultural performances were top-notch and the community spirit was strong, the parking situation was a total mess and there weren't enough washroom facilities for the crowd.",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "2",
@@ -3780,7 +4114,8 @@
       "text": "Extremely frustrated with the ticket prices for the Midlands Holi event. £25 per person is way too steep for families. Also, the queue for the food stalls was over an hour long! Kids were starving.",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "1",
@@ -3791,7 +4126,8 @@
       "text": "The Birmingham Holi Festival 2026 was absolutely spectacular! Incredible colors, lively dhol players, and such an amazing atmosphere at Ward End Park. The Midlands diaspora really showed up today! 🇮🇳✨",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2022437360806563923",
@@ -3802,7 +4138,8 @@
       "text": "We have Diwali lights in Birmingham and other cities on an annual basis, as well as a Vaisakhi procession as well across the major cities. \n\nFor a journalist you really need to do some basic research.",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2021253506951242186",
@@ -3813,7 +4150,8 @@
       "text": "@DreamHack @TheMelaLee Mela you’ll love Birmingham!!! \n\nGotta hit lady pool road after the event too 🥘",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": true
+      "isUpcoming": true,
+      "parent_id": null
     },
     {
       "id": "twitter_2014831615596224519",
@@ -3824,7 +4162,8 @@
       "text": "@YisraelChaiAdam They also did it to the local Hindu community, which was denied the communal celebration of Diwali. @Telegraph has done stirling work uncovering the misdeeds of West Midlands Police.",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2012660887094440113",
@@ -3835,7 +4174,8 @@
       "text": "https://t.co/A2gjgpQDIM",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2012482678948233614",
@@ -3846,7 +4186,8 @@
       "text": "@DerbyChrisW @CPhilpOfficial There is nothing vindictive about it.  Do you know how many Brits have been absolutely disgusted by this in our Police force.  I believe Diwali was cancelled also in Birmingham.  I'm more concerned about all communities being treated equally.  I'm happy this is being followed up!",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2012264182603829690",
@@ -3857,7 +4198,8 @@
       "text": "It's emerged West Midlands Police  &amp; Safety Advisory Group with Craig Guildford called off Birmingham's Diwali Hindu Festival of Lights 2025\nOrganisers postponed the 10th anniversary celebration just days before it was due,\nprioritising public safety amid perceived threats. https://t.co/YSUGA46FJA",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_2003410489401881012",
@@ -3868,7 +4210,8 @@
       "text": "From Deepavali to Yom Kippur to Christmas: The curtailing of religious celebrations in the UK\n\nA couple of months ago, INSIGHT UK warned that Deepavali (Diwali) celebrations in Britain were being steadily pared back in ways that felt like a step-by-step curtailing of Hindu https://t.co/ga3KDgIAcN",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_1996142425136382418",
@@ -3879,7 +4222,8 @@
       "text": "We've been spreading the word about #BePartOf Research at events and locations all over the country this year.\n\nAmong others, our West Midlands colleagues have visited Pride events, GP surgeries, the Birmingham Mela and shopping centres in the region.\n\nhttps://t.co/PiUNauY5Pt https://t.co/jGcINnJNxD",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_1990107046641869246",
@@ -3890,7 +4234,8 @@
       "text": "@Mofoman360 @robert2hartley We should respect everyone’s beliefs. This was Diwali in Birmingham where this lady was very kind helping md put beads together. She was  a lovely lady with a lot of patience https://t.co/JKqPJ7vkam",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_1988171462059192364",
@@ -3901,7 +4246,8 @@
       "text": "November’s Recurring Nightmare: Is There a Pattern to #Terror’s Calendar?\n\nAs we mark Armistice Day today Nov 11, 2025 amid whispers of yesterday’s alleged car bomb near Delhi’s Red Fort (unconfirmed reports suggest 9 dead, 20+ injured), an eerie recurrence cannot be ignored. Why",
       "sentiment": "Negative",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_1986861388426297400",
@@ -3912,7 +4258,8 @@
       "text": "Wrapping up 𝐎𝐜𝐭𝐨𝐛𝐞𝐫 for 𝐒𝐚𝐟𝐞 𝐀𝐮𝐭𝐨𝐧𝐨𝐦𝐲 𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡 𝐆𝐫𝐨𝐮𝐩 @wmgwarwick, &amp; Christmas is almost here...\n\n🚨 𝐓𝐚𝐥𝐤𝐬 &amp; 𝐏𝐮𝐛𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧𝐬\n𝐈𝐂𝐂𝐕 𝟐𝟎𝟐𝟓 🇺🇸 &amp; 𝐨𝐮𝐫 𝐥𝐚𝐭𝐞𝐬𝐭 𝐀𝐈 𝐒𝐚𝐟𝐞𝐭𝐲 𝐜𝐨𝐧𝐜𝐞𝐩𝐭\nOur brilliant PhD student, Yi https://t.co/gXWFHGKsZ5",
       "sentiment": "Positive",
       "city": "Coventry",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_1985992210572018131",
@@ -3923,7 +4270,8 @@
       "text": "Tutta la sinistra \"Global PD💩\" è in festa, perchè a New York grazie ai voti di sinistri, asterischi, e immigrati, ha visto un sindaco musulmano.\nDopo Londra, Birmingham, e tutta una serie di preoccupanti cellule scure, cade anche la grande mela.\nE i sinistroidi festeggiano e https://t.co/1KrKWLE65j",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_1985966053050946023",
@@ -3934,7 +4282,8 @@
       "text": "@SimoPillon Mamdani non è un moderato: è l’uomo che vuole “defund the police” in una metropoli già al limite, che applaude il BDS contro Israele, che vede l’America come un sistema da smantellare. \nLondra ha Khan, Birmingham ha i suoi, ora NYC ha Mamdani. La Grande Mela non è “caduta”: è",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_1985960610266337499",
@@ -3945,7 +4294,8 @@
       "text": "La città dell'11 settembre sceglie un sindaco musulmano.\nMamdani eletto sindaco di New York.\nDopo Londra, Birmingham e molte altre città inglesi, ora cade anche la Grande Mela.\nLa penetrazione dell'Islam nell'Occidente (ex?) cristiano continua inarrestabile, usando tre armi https://t.co/zfjcQiLQES",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_1985370671531032626",
@@ -3956,7 +4306,8 @@
       "text": "@dontforgetchaos @basilthegreat We also used to win the world curry sauce championships until Birmingham overtook us. Also used to have the best diwali ✨️ celebrations outside of India.",
       "sentiment": "Neutral",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_1982781577689014624",
@@ -3967,7 +4318,8 @@
       "text": "Today is all about community and connection! We're delighted to be at the Indian Community Centre in Coventry, invited to join their Diwali celebrations. It's a privilege to engage with members and share in the spirit of this special Festival of Lights.\n\n@kamleshkhunti https://t.co/cvb47BvBm5",
       "sentiment": "Positive",
       "city": "Coventry",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_1981711698261319966",
@@ -3978,7 +4330,8 @@
       "text": "It was wonderful to see such unity last week as our Birmingham branch hosted their first Circle of Celebrations Against Hate: Diwali Luncheon! 🌟🙏 Thank you to everyone who joined and to @Damascena_uk for their kind support. #DialogueInAction #CommunityHarmony https://t.co/8ucArK94Xj",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     },
     {
       "id": "twitter_1977690005305753792",
@@ -3989,7 +4342,8 @@
       "text": "Following UK PM @Keir_Starmer's visit to India with the largest-ever UK trade delegation, take a look at what business leaders have to say about the India–UK CETA being a game-changer! From textiles to technology, consumables to automobiles— it promises to multiply trade, deepen https://t.co/mgNiwROQRG",
       "sentiment": "Positive",
       "city": "Birmingham",
-      "isUpcoming": false
+      "isUpcoming": false,
+      "parent_id": null
     }
   ]
 }
