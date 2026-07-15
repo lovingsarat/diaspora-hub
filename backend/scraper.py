@@ -184,6 +184,17 @@ def run_facebook_scraper():
     if result.returncode != 0:
         print("[WARN] Facebook scraper exited with errors.")
 
+
+# Scraper method 5: Quora scraping (runs as subprocess to avoid asyncio conflicts)
+def run_quora_scraper():
+    """Scrape public Quora spaces and search results. Runs quora_scraper.py as a subprocess."""
+    import subprocess
+    quora_script = os.path.join(os.path.dirname(__file__), "quora_scraper.py")
+    print("\n--- Starting Quora scraper (Playwright) ---")
+    result = subprocess.run([sys.executable, quora_script], cwd=os.path.dirname(__file__))
+    if result.returncode != 0:
+        print("[WARN] Quora scraper exited with errors.")
+
 # Local SQLite upsert
 def upsert_feedback_local(item):
     conn = sqlite3.connect(DB_PATH)
@@ -523,6 +534,11 @@ async def run_scraper():
     fb_thread = threading.Thread(target=run_facebook_scraper)
     fb_thread.start()
     fb_thread.join()
+
+    # Fetch from Quora (public spaces & search results, no login needed)
+    quora_thread = threading.Thread(target=run_quora_scraper)
+    quora_thread.start()
+    quora_thread.join()
 
     # Deduplicate the local DB
     deduplicate_db()
