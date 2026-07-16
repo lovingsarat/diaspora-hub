@@ -18,6 +18,7 @@ load_dotenv(dotenv_path="../.env")
 load_dotenv()
 
 # Initialize Twikit Client
+GEMINI_MODEL = "gemini-1.5-flash"
 client = Client('en-US')
 
 # Try to load Twitter session from .env cookies, cookies.json, or login
@@ -267,10 +268,12 @@ def is_uk_relevant(text: str) -> bool:
 async def run_official_api_scraper(bearer_token: str):
     headers = {"Authorization": f"Bearer {bearer_token}"}
     UK_CITIES = '("Birmingham" OR "Leicester" OR "Coventry" OR "Wolverhampton" OR "Nottingham" OR "Derby" OR "West Midlands" OR "UK" OR "England" OR "Britain")'
+    mentions_query = " OR ".join([f"@{acc}" for acc in OFFICIAL_ACCOUNTS])
     queries = {
         "diaspora_community":   f'{UK_CITIES} ("British Indian" OR "British Asian" OR "South Asian" OR "Desi community") lang:en -is:retweet',
         "cultural_events":      f'{UK_CITIES} ("Diwali" OR "Navratri" OR "Vaisakhi" OR "Holi" OR "Eid" OR "Mela") lang:en -is:retweet',
         "consular_services":    f'{UK_CITIES} ("India passport" OR "India Visa" OR "Visa Appointment" OR "OCI Card" OR "OCI appointment" OR "consular") lang:en -is:retweet',
+        "account_mentions":     f'({mentions_query}) lang:en -is:retweet',
     }
     
     total_added = 0
@@ -302,10 +305,12 @@ async def run_official_api_scraper(bearer_token: str):
                 for tweet in tweets:
                     tweet_id = f"twitter_{tweet['id']}"
                     
-                    # UK relevance gate
+                    # UK relevance gate: skip non-UK content unless mentioning UK-specific official accounts
                     author_id = tweet.get("author_id")
                     user_info = users.get(author_id, {})
-                    if not is_uk_relevant(tweet["text"]):
+                    text_lower = tweet["text"].lower()
+                    is_uk = is_uk_relevant(tweet["text"]) or any(f"@{acc.lower()}" in text_lower for acc in ["hci_london", "cgi_bghm", "bhamcitycouncil", "leicester_news", "coventrycc", "hinducouncilbhm"])
+                    if not is_uk:
                         print(f"[SKIP] Non-UK content filtered out from @{user_info.get('username', 'XUser')}")
                         continue
 
@@ -321,6 +326,13 @@ async def run_official_api_scraper(bearer_token: str):
                         date_str = tweet["created_at"][:10]
                     except:
                         date_str = datetime.now().strftime("%Y-%m-%d")
+                    
+                    # Find which official account was tagged, to set parent_id
+                    tagged_account = None
+                    for account in OFFICIAL_ACCOUNTS:
+                        if f"@{account.lower()}" in text_lower:
+                            tagged_account = f"@{account}"
+                            break
                         
                     new_item = {
                         "id": tweet_id,
@@ -332,7 +344,7 @@ async def run_official_api_scraper(bearer_token: str):
                         "sentiment": analysis.get("sentiment", "Neutral"),
                         "city": analysis.get("city", "Birmingham"),
                         "isUpcoming": bool(analysis.get("isUpcoming")),
-                        "parent_id": None,
+                        "parent_id": tagged_account,
                         "priority_score": int(analysis.get("priority_score", 1)),
                         "category_tag": analysis.get("category_tag", "General"),
                         "action_insight": analysis.get("action_insight", "No recommendation.")
@@ -345,7 +357,7 @@ async def run_official_api_scraper(bearer_token: str):
                 
             await asyncio.sleep(2)
             
-    print(f"\nIngestion complete! Processed {total_added} items in Supabase.")
+    print(f"\nIngestion complete! Processed {total_added} items in local DB.")
 
 # Scraper method 2: Twikit Browser Scraper (Fallback)
 async def run_twikit_scraper():
@@ -354,12 +366,14 @@ async def run_twikit_scraper():
 
     # UK-targeted queries: require explicit UK city/region mention + English language
     UK_CITIES = '("Birmingham" OR "Leicester" OR "Coventry" OR "Wolverhampton" OR "Nottingham" OR "Derby" OR "West Midlands" OR "East Midlands" OR "UK" OR "England" OR "Britain")'
+    mentions_query = " OR ".join([f"@{acc}" for acc in OFFICIAL_ACCOUNTS])
     queries = {
         "diaspora_community":   f'({UK_CITIES}) ("Indian diaspora" OR "South Asian" OR "Desi community" OR "British Indian" OR "British Asian") lang:en -is:retweet',
         "cultural_events":      f'({UK_CITIES}) ("Diwali" OR "Navratri" OR "Vaisakhi" OR "Holi" OR "Eid" OR "Mela" OR "Garba") lang:en -is:retweet',
         "local_issues":         f'({UK_CITIES}) ("Indian community" OR "Asian community" OR "South Asian") ("council" OR "MP" OR "police" OR "NHS" OR "mosque" OR "temple" OR "gurdwara") lang:en -is:retweet',
         "diaspora_news":        f'({UK_CITIES}) ("British Indian" OR "British Pakistani" OR "British Bangladeshi" OR "British Sikh" OR "British Hindu" OR "British Muslim") lang:en -is:retweet',
         "consular_services":    f'({UK_CITIES}) ("India passport" OR "India Visa" OR "Visa Appointment" OR "OCI Card" OR "OCI appointment" OR "consular") lang:en -is:retweet',
+        "account_mentions":     f'({mentions_query}) lang:en -is:retweet',
     }
     
     total_added = 0
@@ -373,8 +387,10 @@ async def run_twikit_scraper():
                 try:
                     tweet_id = f"twitter_{tweet.id}"
                     
-                    # UK relevance gate: skip tweets with no UK connection
-                    if not is_uk_relevant(tweet.text):
+                    # UK relevance gate: skip tweets with no UK connection unless mentioning UK-specific official accounts
+                    text_lower = tweet.text.lower()
+                    is_uk = is_uk_relevant(tweet.text) or any(f"@{acc.lower()}" in text_lower for acc in ["hci_london", "cgi_bghm", "bhamcitycouncil", "leicester_news", "coventrycc", "hinducouncilbhm"])
+                    if not is_uk:
                         safe_name = tweet.user.screen_name.encode('ascii','ignore').decode()
                         print(f"[SKIP] Non-UK content filtered out from @{safe_name}")
                         continue
@@ -394,6 +410,13 @@ async def run_twikit_scraper():
                     except:
                         date_str = datetime.now().strftime("%Y-%m-%d")
                     
+                    # Find which official account was tagged, to set parent_id
+                    tagged_account = None
+                    for account in OFFICIAL_ACCOUNTS:
+                        if f"@{account.lower()}" in text_lower:
+                            tagged_account = f"@{account}"
+                            break
+                    
                     new_item = {
                         "id": tweet_id,
                         "platform": "Twitter",
@@ -404,7 +427,7 @@ async def run_twikit_scraper():
                         "sentiment": analysis.get("sentiment", "Neutral"),
                         "city": analysis.get("city", "Birmingham"),
                         "isUpcoming": bool(analysis.get("isUpcoming")),
-                        "parent_id": None,
+                        "parent_id": tagged_account,
                         "priority_score": int(analysis.get("priority_score", 1)),
                         "category_tag": analysis.get("category_tag", "General"),
                         "action_insight": analysis.get("action_insight", "No recommendation.")

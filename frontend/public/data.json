@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-15T19:16:20.975589Z",
+  "exportedAt": "2026-07-16T14:39:33.044972Z",
   "totalFeedbackCount": 321,
   "sentimentPercentages": {
     "Positive": 21.5,
@@ -504,9 +504,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077350805330333881",
@@ -519,9 +519,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
-      "category_tag": "Transport",
-      "action_insight": "Review safety measures and improve transport coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077347882940899682",
@@ -535,8 +535,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077339219434041745",
@@ -549,9 +549,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077329640310378644",
@@ -566,7 +566,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077322818254225627",
@@ -581,7 +581,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077283180340506716",
@@ -594,9 +594,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077272424668856599",
@@ -611,7 +611,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077350755388788948",
@@ -624,9 +624,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Safety & Crowd",
-      "action_insight": "Review safety measures and improve safety & crowd coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077200961983123941",
@@ -640,8 +640,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077209942650507581",
@@ -654,9 +654,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077358368562307154",
@@ -669,9 +669,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077352297357599067",
@@ -684,9 +684,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077329726146842668",
@@ -699,9 +699,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
-      "category_tag": "OCI Card",
-      "action_insight": "Monitor feedback regarding oci card details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077295444619575645",
@@ -714,9 +714,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077295206051828104",
@@ -729,9 +729,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077231531454566442",
@@ -744,9 +744,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
-      "category_tag": "Safety & Crowd",
-      "action_insight": "Review safety measures and improve safety & crowd coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077218879869432172",
@@ -761,7 +761,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077188861323559115",
@@ -776,7 +776,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077348330372579429",
@@ -791,7 +791,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077324045524324745",
@@ -806,7 +806,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077285683115549017",
@@ -820,8 +820,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "OCI Card",
-      "action_insight": "Maintain high standards for oci card experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077284351440736309",
@@ -836,7 +836,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077248112645877967",
@@ -849,9 +849,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077217922033041524",
@@ -864,9 +864,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077206388326195615",
@@ -879,9 +879,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
-      "category_tag": "Ticketing",
-      "action_insight": "Monitor feedback regarding ticketing details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077364919490486363",
@@ -895,8 +895,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "OCI Card",
-      "action_insight": "Monitor feedback regarding oci card details."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077360504708739466",
@@ -911,7 +911,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077358742513885658",
@@ -924,9 +924,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Safety & Crowd",
-      "action_insight": "Monitor feedback regarding safety & crowd details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077358571465961607",
@@ -939,9 +939,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Safety & Crowd",
-      "action_insight": "Monitor feedback regarding safety & crowd details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077358218968244602",
@@ -954,9 +954,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077358167281799494",
@@ -971,7 +971,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077358137166758176",
@@ -985,8 +985,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077346003770868034",
@@ -1000,8 +1000,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "OCI Card",
-      "action_insight": "Monitor feedback regarding oci card details."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077340195494465950",
@@ -1015,8 +1015,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Transport",
-      "action_insight": "Maintain high standards for transport experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077338797373596153",
@@ -1029,9 +1029,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
-      "category_tag": "OCI Card",
-      "action_insight": "Monitor feedback regarding oci card details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077338562953953737",
@@ -1044,9 +1044,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077338543358128365",
@@ -1061,7 +1061,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077330017344758240",
@@ -1075,8 +1075,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Maintain high standards for stalls & food experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077329951947124893",
@@ -1091,7 +1091,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077329892996210694",
@@ -1106,7 +1106,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077329860024774799",
@@ -1120,8 +1120,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Maintain high standards for stalls & food experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077305662485209561",
@@ -1134,9 +1134,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
-      "category_tag": "Transport",
-      "action_insight": "Monitor feedback regarding transport details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077305479135420715",
@@ -1151,7 +1151,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077305131318525959",
@@ -1165,8 +1165,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "OCI Card",
-      "action_insight": "Maintain high standards for oci card experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077276221423960393",
@@ -1179,9 +1179,9 @@
       "city": "Birmingham",
       "isUpcoming": true,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_AISfestival_d3608096f99d",
@@ -1196,7 +1196,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_AISfestival_ba49ed98f119",
@@ -1209,9 +1209,9 @@
       "city": "Leicester",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_AISfestival_8a09f3ee7b44",
@@ -1226,7 +1226,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_ShivamEvents_d8436e936dd1",
@@ -1239,9 +1239,9 @@
       "city": "Leicester",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Transport",
-      "action_insight": "Monitor feedback regarding transport details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_CentralStageCrew_79645115d6ef",
@@ -1254,9 +1254,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_CentralStageCrew_b1f1d4fd3f70",
@@ -1269,9 +1269,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_SriBardai_d768c7897be7",
@@ -1284,9 +1284,9 @@
       "city": "Leicester",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_SriBardai_17e9fc1c775e",
@@ -1301,7 +1301,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_diaspora_Birmingham_UK__bccaa514124a",
@@ -1314,9 +1314,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_diaspora_Birmingham_UK__803622c7eb02",
@@ -1329,9 +1329,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_diaspora_Birmingham_UK__c42f5688ed5f",
@@ -1344,9 +1344,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_diaspora_Birmingham_UK__3575e804689b",
@@ -1359,9 +1359,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_diaspora_Birmingham_UK__20d9a6ab629b",
@@ -1374,9 +1374,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_diaspora_Birmingham_UK__ac29bbd80028",
@@ -1389,9 +1389,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_British_Indian_Midlands_Diwali_5c37f0f66ed1",
@@ -1404,9 +1404,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
-      "category_tag": "Transport",
-      "action_insight": "Monitor feedback regarding transport details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_British_Indian_Midlands_Diwali_d43fcf26d624",
@@ -1419,9 +1419,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_community_Leicester_UK__170641bc2190",
@@ -1436,7 +1436,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_community_Leicester_UK__3aa468bf12d4",
@@ -1449,9 +1449,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_community_Leicester_UK__ed30a650dcc8",
@@ -1464,9 +1464,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_community_Leicester_UK__a4671e05c076",
@@ -1479,9 +1479,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_community_Leicester_UK__c8e927f9c972",
@@ -1494,9 +1494,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_community_Leicester_UK__226a26c40ca9",
@@ -1510,8 +1510,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Maintain high standards for stalls & food experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_community_Leicester_UK__6fdccd4014f4",
@@ -1524,9 +1524,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_community_Leicester_UK__96c34e77ddcb",
@@ -1539,9 +1539,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_community_Leicester_UK__fc5e1c069102",
@@ -1556,7 +1556,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_South_Asian_British_Midlands_e_3dca06c11bde",
@@ -1569,9 +1569,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_South_Asian_British_Midlands_e_04cae720f760",
@@ -1584,9 +1584,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_South_Asian_British_Midlands_e_da5690127c16",
@@ -1599,9 +1599,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_South_Asian_British_Midlands_e_e94d48eead71",
@@ -1614,9 +1614,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_South_Asian_British_Midlands_e_68a83e26b9a2",
@@ -1629,9 +1629,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "OCI Card",
-      "action_insight": "Monitor feedback regarding oci card details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_South_Asian_British_Midlands_e_adab8ac9acc6",
@@ -1646,7 +1646,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_South_Asian_British_Midlands_e_e7d8148a05e2",
@@ -1659,9 +1659,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_South_Asian_British_Midlands_e_9ac2ac5a06ef",
@@ -1674,9 +1674,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham_UK_0254d466016d",
@@ -1691,7 +1691,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham_UK_db37e0e45317",
@@ -1706,7 +1706,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham_UK_34ccee7cf9f2",
@@ -1721,7 +1721,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham_UK_bcf5ce54369f",
@@ -1734,9 +1734,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham_UK_6dc57f5a8f4d",
@@ -1749,9 +1749,9 @@
       "city": "Leicester",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_diaspora_Birmingham_U_a10354535611",
@@ -1766,7 +1766,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_diaspora_Birmingham_U_0998bee5ee0b",
@@ -1780,8 +1780,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_diaspora_Birmingham_U_eccae3f6fb85",
@@ -1794,9 +1794,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_community_Leicester_U_1ad1ad1e6bae",
@@ -1811,7 +1811,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_community_Leicester_U_086a15e729a3",
@@ -1824,9 +1824,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_community_Leicester_U_254277d49d6d",
@@ -1841,7 +1841,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_South_Asian_British_Midlands_78dda9fcc730",
@@ -1854,9 +1854,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham__9ac2ac5a06ef",
@@ -1871,7 +1871,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_British_Sikh_Hindu_Gujarati__019d4276633d",
@@ -1886,7 +1886,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_culture_UK_Birmingham_51a89179302e",
@@ -1900,8 +1900,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "OCI Card",
-      "action_insight": "Monitor feedback regarding oci card details."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_community_Leicester_U_2909f35a80c9",
@@ -1914,9 +1914,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_South_Asian_British_Midlands_803622c7eb02",
@@ -1931,7 +1931,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham__4e16ef4b44ca",
@@ -1944,9 +1944,9 @@
       "city": "Leicester",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham__25a1b5c74704",
@@ -1959,9 +1959,9 @@
       "city": "Leicester",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham__d445330017eb",
@@ -1976,7 +1976,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Diwali_Leicester_Birmingham__8cb6bca55465",
@@ -1991,7 +1991,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_British_Sikh_Hindu_Gujarati__390b7632e832",
@@ -2006,7 +2006,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_British_Sikh_Hindu_Gujarati__491386bc5fe6",
@@ -2021,7 +2021,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_British_Sikh_Hindu_Gujarati__7e1e72461e20",
@@ -2034,9 +2034,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_British_Sikh_Hindu_Gujarati__6a85a8c82aa5",
@@ -2049,9 +2049,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_British_Sikh_Hindu_Gujarati__ff9aecc714e7",
@@ -2064,9 +2064,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_British_Sikh_Hindu_Gujarati__141b74f0bf8c",
@@ -2081,7 +2081,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_British_Sikh_Hindu_Gujarati__075df9b41085",
@@ -2094,9 +2094,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_British_Sikh_Hindu_Gujarati__ede55c924278",
@@ -2109,9 +2109,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Navratri_Garba_UK_Birmingham_edbdc19f8e7c",
@@ -2124,9 +2124,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Navratri_Garba_UK_Birmingham_9f55522fc0e3",
@@ -2141,7 +2141,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Navratri_Garba_UK_Birmingham_e2375b571113",
@@ -2156,7 +2156,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Navratri_Garba_UK_Birmingham_22b25725e69e",
@@ -2169,9 +2169,9 @@
       "city": "Birmingham",
       "isUpcoming": true,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Culture & Music",
-      "action_insight": "Monitor feedback regarding culture & music details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_culture_UK_Birmingham_a0282f66fff9",
@@ -2186,7 +2186,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_culture_UK_Birmingham_ac29bbd80028",
@@ -2199,9 +2199,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_culture_UK_Birmingham_b8b0c943d8d6",
@@ -2214,9 +2214,9 @@
       "city": "Coventry",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_culture_UK_Birmingham_c43c9d739a56",
@@ -2229,9 +2229,9 @@
       "city": "Nottingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_culture_UK_Birmingham_ea2d653c5769",
@@ -2244,9 +2244,9 @@
       "city": "Coventry",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_culture_UK_Birmingham_b7eb515cd1c2",
@@ -2259,9 +2259,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_culture_UK_Birmingham_4dd4517cdf6f",
@@ -2274,9 +2274,9 @@
       "city": "Nottingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "quora_Indian_culture_UK_Birmingham_d69fd136fac1",
@@ -2291,7 +2291,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_CentralStageCrew_7d55050408ef",
@@ -2306,7 +2306,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_comment_CentralStageCrew_3daf88cd28e9",
@@ -2319,9 +2319,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": "facebook_CentralStageCrew_7d55050408ef",
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_comment_CentralStageCrew_b1f1d4fd3f70",
@@ -2334,9 +2334,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": "facebook_CentralStageCrew_7d55050408ef",
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_comment_CentralStageCrew_be6fc41e309e",
@@ -2351,7 +2351,7 @@
       "parent_id": "facebook_CentralStageCrew_7d55050408ef",
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "manual_432016a9",
@@ -2365,8 +2365,8 @@
       "isUpcoming": true,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Culture & Music",
-      "action_insight": "Maintain high standards for culture & music experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "simulated_twitter_4dc0b3",
@@ -2380,8 +2380,8 @@
       "isUpcoming": true,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Transport",
-      "action_insight": "Maintain high standards for transport experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "simulated_twitter_7c3040",
@@ -2394,9 +2394,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Transport",
-      "action_insight": "Review safety measures and improve transport coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "simulated_twitter_572bae",
@@ -2409,9 +2409,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Pricing",
-      "action_insight": "Monitor feedback regarding pricing details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076927793451954381",
@@ -2424,9 +2424,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076898082814300519",
@@ -2439,9 +2439,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076895404835402098",
@@ -2454,9 +2454,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076857265848500696",
@@ -2469,9 +2469,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076853863295107281",
@@ -2484,9 +2484,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076876332932481475",
@@ -2501,7 +2501,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076961238098084164",
@@ -2514,9 +2514,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076932501654692268",
@@ -2529,9 +2529,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076975504704393285",
@@ -2544,9 +2544,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076980379433496980",
@@ -2559,9 +2559,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Review safety measures and improve stalls & food coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077041584751739113",
@@ -2574,9 +2574,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Review safety measures and improve stalls & food coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077026476415689073",
@@ -2589,9 +2589,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077022684274213203",
@@ -2604,9 +2604,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "India Passport",
-      "action_insight": "Monitor feedback regarding india passport details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077010883914670131",
@@ -2619,9 +2619,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077000157162250500",
@@ -2634,9 +2634,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
-      "category_tag": "India Visa",
-      "action_insight": "Review safety measures and improve india visa coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076985564423705071",
@@ -2649,9 +2649,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076982798293045522",
@@ -2664,9 +2664,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Review safety measures and improve stalls & food coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076977861865746786",
@@ -2679,9 +2679,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
-      "category_tag": "OCI Card",
-      "action_insight": "Review safety measures and improve oci card coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076965763991433325",
@@ -2696,7 +2696,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076957786861187400",
@@ -2710,8 +2710,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Culture & Music",
-      "action_insight": "Maintain high standards for culture & music experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077110328341467197",
@@ -2724,9 +2724,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077020502300987474",
@@ -2739,9 +2739,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077018326312927545",
@@ -2754,9 +2754,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077001927225713062",
@@ -2769,9 +2769,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076994167402533301",
@@ -2784,9 +2784,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Transport",
-      "action_insight": "Review safety measures and improve transport coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076987976605643043",
@@ -2799,9 +2799,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076982374382833901",
@@ -2814,9 +2814,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Review safety measures and improve stalls & food coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076898013050736765",
@@ -2830,8 +2830,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Safety & Crowd",
-      "action_insight": "Monitor feedback regarding safety & crowd details."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076849288496501163",
@@ -2844,9 +2844,9 @@
       "city": "Birmingham",
       "isUpcoming": true,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077138687016460338",
@@ -2859,9 +2859,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
-      "category_tag": "Ticketing",
-      "action_insight": "Monitor feedback regarding ticketing details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077128052954345712",
@@ -2874,9 +2874,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077085323436134726",
@@ -2891,7 +2891,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077065630172279170",
@@ -2906,7 +2906,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077065533724172689",
@@ -2921,7 +2921,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077050975207010752",
@@ -2936,7 +2936,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077044235774148939",
@@ -2950,8 +2950,8 @@
       "isUpcoming": true,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Maintain high standards for stalls & food experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077044220611707238",
@@ -2966,7 +2966,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077044207735193951",
@@ -2979,9 +2979,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077044150352932984",
@@ -2994,9 +2994,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077041974016610577",
@@ -3011,7 +3011,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077036982807478594",
@@ -3026,7 +3026,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077036649213579338",
@@ -3039,9 +3039,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077031482892153194",
@@ -3056,7 +3056,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077020490720333892",
@@ -3071,7 +3071,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077020009059029133",
@@ -3084,9 +3084,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077000960807665994",
@@ -3099,9 +3099,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076998643584786870",
@@ -3116,7 +3116,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_AISfestival_e83777c183be",
@@ -3129,9 +3129,9 @@
       "city": "Leicester",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_AISfestival_8cd8b206f44d",
@@ -3146,7 +3146,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_AISfestival_08a249047c9c",
@@ -3161,7 +3161,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_AISfestival_d4dba7373306",
@@ -3176,7 +3176,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_AISfestival_e11eb17f01de",
@@ -3190,8 +3190,8 @@
       "isUpcoming": true,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "OCI Card",
-      "action_insight": "Maintain high standards for oci card experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_AISfestival_00b266a9179d",
@@ -3206,7 +3206,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_ShivamEvents_4b976c8731e6",
@@ -3219,9 +3219,9 @@
       "city": "Leicester",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
-      "category_tag": "Transport",
-      "action_insight": "Monitor feedback regarding transport details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_ShivamEvents_26b826d13244",
@@ -3234,9 +3234,9 @@
       "city": "Leicester",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_ShivamEvents_b3471567fe80",
@@ -3250,8 +3250,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Maintain high standards for stalls & food experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_CentralStageCrew_162a80279cd2",
@@ -3266,7 +3266,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_CentralStageCrew_2f8a5685c49e",
@@ -3279,9 +3279,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_CentralStageCrew_9c836e363c23",
@@ -3294,9 +3294,9 @@
       "city": "Birmingham",
       "isUpcoming": true,
       "parent_id": null,
-      "priority_score": 2,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_SriBardai_4bb23a660b38",
@@ -3311,7 +3311,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_SriBardai_2d046e569c53",
@@ -3326,7 +3326,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_SriBardai_1bbac840c3bf",
@@ -3341,7 +3341,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_SriBardai_1bdf6ff01d00",
@@ -3354,9 +3354,9 @@
       "city": "Leicester",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_SriBardai_f595811a6d51",
@@ -3369,9 +3369,9 @@
       "city": "Leicester",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_SriBardai_3e641d015033",
@@ -3386,7 +3386,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "facebook_SriBardai_8943dc4c5eec",
@@ -3401,7 +3401,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077104853860364776",
@@ -3415,8 +3415,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077045828296773878",
@@ -3430,8 +3430,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Maintain high standards for stalls & food experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077094039090786787",
@@ -3444,9 +3444,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077044915561771037",
@@ -3459,9 +3459,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076997823204089921",
@@ -3475,8 +3475,8 @@
       "isUpcoming": true,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Culture & Music",
-      "action_insight": "Maintain high standards for culture & music experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076971872462455085",
@@ -3489,9 +3489,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076918956049264955",
@@ -3504,9 +3504,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077155797264400462",
@@ -3519,9 +3519,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
-      "category_tag": "Transport",
-      "action_insight": "Review safety measures and improve transport coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077142532534706246",
@@ -3534,9 +3534,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077135494924599512",
@@ -3549,9 +3549,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077130456202629141",
@@ -3565,8 +3565,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Ticketing",
-      "action_insight": "Monitor feedback regarding ticketing details."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077119232144224363",
@@ -3579,9 +3579,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077115330984305103",
@@ -3594,9 +3594,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077103728838979802",
@@ -3609,9 +3609,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077083486075146609",
@@ -3624,9 +3624,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077068690097349073",
@@ -3639,9 +3639,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077062165480001905",
@@ -3654,9 +3654,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
-      "category_tag": "Transport",
-      "action_insight": "Review safety measures and improve transport coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077049602981650501",
@@ -3669,9 +3669,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Transport",
-      "action_insight": "Review safety measures and improve transport coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2077009520069587291",
@@ -3684,9 +3684,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076981905220628744",
@@ -3700,8 +3700,8 @@
       "isUpcoming": true,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Transport",
-      "action_insight": "Maintain high standards for transport experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076978778190807242",
@@ -3714,9 +3714,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076960718792839371",
@@ -3729,9 +3729,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076960630670589970",
@@ -3744,9 +3744,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076959381132922900",
@@ -3761,7 +3761,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076959234973978956",
@@ -3774,9 +3774,9 @@
       "city": "Birmingham",
       "isUpcoming": true,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "12",
@@ -3790,8 +3790,8 @@
       "isUpcoming": true,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Culture & Music",
-      "action_insight": "Maintain high standards for culture & music experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076800599069278537",
@@ -3806,7 +3806,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076768584664317966",
@@ -3819,9 +3819,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Transport",
-      "action_insight": "Monitor feedback regarding transport details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076761967633502643",
@@ -3835,8 +3835,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Transport",
-      "action_insight": "Monitor feedback regarding transport details."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076761371518140431",
@@ -3849,9 +3849,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076730912545587256",
@@ -3864,9 +3864,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Review safety measures and improve stalls & food coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076537173499924755",
@@ -3879,9 +3879,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076763515772436925",
@@ -3894,9 +3894,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076763492384911581",
@@ -3909,9 +3909,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076658781023539674",
@@ -3925,8 +3925,8 @@
       "isUpcoming": true,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Transport",
-      "action_insight": "Maintain high standards for transport experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076657813510590611",
@@ -3939,9 +3939,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076457442410369150",
@@ -3954,9 +3954,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076590578398023764",
@@ -3969,9 +3969,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "10",
@@ -3984,9 +3984,9 @@
       "city": "Leicester",
       "isUpcoming": true,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Transport",
-      "action_insight": "Monitor feedback regarding transport details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076182611181916598",
@@ -3999,9 +3999,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
-      "category_tag": "OCI Card",
-      "action_insight": "Review safety measures and improve oci card coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076326505727107289",
@@ -4014,9 +4014,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076253481707393340",
@@ -4029,9 +4029,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076434133564244095",
@@ -4044,9 +4044,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076433780684812385",
@@ -4059,9 +4059,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076433052654522760",
@@ -4074,9 +4074,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076432458774425630",
@@ -4089,9 +4089,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076432063696105733",
@@ -4104,9 +4104,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076428352433344889",
@@ -4119,9 +4119,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076403741930967206",
@@ -4134,9 +4134,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076330245439795619",
@@ -4149,9 +4149,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076224435044913442",
@@ -4164,9 +4164,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "11",
@@ -4179,9 +4179,9 @@
       "city": "Coventry",
       "isUpcoming": true,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Ticketing",
-      "action_insight": "Review safety measures and improve ticketing coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2075925070191399158",
@@ -4196,7 +4196,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2075849383359476160",
@@ -4209,9 +4209,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2076049148491768193",
@@ -4225,8 +4225,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "9",
@@ -4240,8 +4240,8 @@
       "isUpcoming": true,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Transport",
-      "action_insight": "Maintain high standards for transport experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2075731168868127024",
@@ -4254,9 +4254,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2075415359612666094",
@@ -4269,9 +4269,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2075216349677146278",
@@ -4286,7 +4286,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2074846186373058956",
@@ -4299,9 +4299,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2074786718419496981",
@@ -4316,7 +4316,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2074790548284608613",
@@ -4331,7 +4331,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2074908076071616521",
@@ -4345,8 +4345,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2074757666056859986",
@@ -4359,9 +4359,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2074862184618742046",
@@ -4374,9 +4374,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2074512625090584834",
@@ -4391,7 +4391,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2074095592381288554",
@@ -4406,7 +4406,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2074095266890698877",
@@ -4421,7 +4421,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2074095188490834086",
@@ -4434,9 +4434,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
-      "category_tag": "OCI Card",
-      "action_insight": "Monitor feedback regarding oci card details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2074093512832786512",
@@ -4451,7 +4451,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2074058429694435697",
@@ -4466,7 +4466,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2074070816711381318",
@@ -4481,7 +4481,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "15",
@@ -4495,8 +4495,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "OCI Card",
-      "action_insight": "Maintain high standards for oci card experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2073748633321640416",
@@ -4510,8 +4510,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Transport",
-      "action_insight": "Monitor feedback regarding transport details."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2073801609436373487",
@@ -4525,8 +4525,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Culture & Music",
-      "action_insight": "Maintain high standards for culture & music experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2073801450719703336",
@@ -4539,9 +4539,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2073041013233373626",
@@ -4554,9 +4554,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "8",
@@ -4569,9 +4569,9 @@
       "city": "Leicester",
       "isUpcoming": true,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Transport",
-      "action_insight": "Monitor feedback regarding transport details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2072649133945401387",
@@ -4584,9 +4584,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2072215208995553285",
@@ -4601,7 +4601,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2070747925597093923",
@@ -4614,9 +4614,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2070434854676656439",
@@ -4629,9 +4629,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2068981133614673930",
@@ -4646,7 +4646,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "7",
@@ -4659,9 +4659,9 @@
       "city": "Leicester",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Review safety measures and improve stalls & food coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2066653673095107060",
@@ -4675,8 +4675,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "6",
@@ -4691,7 +4691,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2066037154812158029",
@@ -4706,7 +4706,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2056094134943830198",
@@ -4719,9 +4719,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "India Passport",
-      "action_insight": "Review safety measures and improve india passport coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2054529223612649772",
@@ -4735,8 +4735,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "14",
@@ -4749,9 +4749,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "13",
@@ -4765,8 +4765,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Maintain high standards for stalls & food experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2052040648811778283",
@@ -4779,9 +4779,9 @@
       "city": "Birmingham",
       "isUpcoming": true,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2049023928253755893",
@@ -4794,9 +4794,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2047366454060728685",
@@ -4811,7 +4811,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2046522101038039448",
@@ -4824,9 +4824,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "5",
@@ -4839,9 +4839,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
-      "category_tag": "Safety & Crowd",
-      "action_insight": "Review safety measures and improve safety & crowd coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "4",
@@ -4855,8 +4855,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Maintain high standards for stalls & food experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2043505095678046471",
@@ -4869,9 +4869,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2042670926920122506",
@@ -4886,7 +4886,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2042507827848122805",
@@ -4899,9 +4899,9 @@
       "city": "Birmingham",
       "isUpcoming": true,
       "parent_id": null,
-      "priority_score": 2,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2040535926774923382",
@@ -4914,9 +4914,9 @@
       "city": "Birmingham",
       "isUpcoming": true,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2039778857251725333",
@@ -4929,9 +4929,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2039497110177890336",
@@ -4945,8 +4945,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Transport",
-      "action_insight": "Monitor feedback regarding transport details."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2038548616793424197",
@@ -4959,9 +4959,9 @@
       "city": "Birmingham",
       "isUpcoming": true,
       "parent_id": null,
-      "priority_score": 2,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2037988443771310240",
@@ -4974,9 +4974,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2037490412944830806",
@@ -4989,9 +4989,9 @@
       "city": "Birmingham",
       "isUpcoming": true,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "3",
@@ -5004,9 +5004,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
-      "category_tag": "Transport",
-      "action_insight": "Monitor feedback regarding transport details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "2",
@@ -5019,9 +5019,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
-      "category_tag": "Ticketing",
-      "action_insight": "Review safety measures and improve ticketing coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "1",
@@ -5035,8 +5035,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Culture & Music",
-      "action_insight": "Maintain high standards for culture & music experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2022437360806563923",
@@ -5049,9 +5049,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2021253506951242186",
@@ -5065,8 +5065,8 @@
       "isUpcoming": true,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Transport",
-      "action_insight": "Maintain high standards for transport experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2014831615596224519",
@@ -5079,9 +5079,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 4,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2012660887094440113",
@@ -5094,9 +5094,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2012482678948233614",
@@ -5109,9 +5109,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Review safety measures and improve stalls & food coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2012264182603829690",
@@ -5124,9 +5124,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 5,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Review safety measures and improve stalls & food coordination."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_2003410489401881012",
@@ -5139,9 +5139,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_1996142425136382418",
@@ -5156,7 +5156,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_1990107046641869246",
@@ -5171,7 +5171,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_1988171462059192364",
@@ -5184,9 +5184,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 3,
+      "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Review safety measures and improve general coordination."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_1986861388426297400",
@@ -5201,7 +5201,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_1985992210572018131",
@@ -5216,7 +5216,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_1985966053050946023",
@@ -5231,7 +5231,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_1985960610266337499",
@@ -5246,7 +5246,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Monitor feedback regarding general details."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_1985370671531032626",
@@ -5259,9 +5259,9 @@
       "city": "Birmingham",
       "isUpcoming": false,
       "parent_id": null,
-      "priority_score": 2,
-      "category_tag": "Stalls & Food",
-      "action_insight": "Monitor feedback regarding stalls & food details."
+      "priority_score": 1,
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_1982781577689014624",
@@ -5276,7 +5276,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_1981711698261319966",
@@ -5291,7 +5291,7 @@
       "parent_id": null,
       "priority_score": 1,
       "category_tag": "General",
-      "action_insight": "Maintain high standards for general experiences."
+      "action_insight": "No recommendation."
     },
     {
       "id": "twitter_1977690005305753792",
@@ -5305,8 +5305,8 @@
       "isUpcoming": false,
       "parent_id": null,
       "priority_score": 1,
-      "category_tag": "Transport",
-      "action_insight": "Maintain high standards for transport experiences."
+      "category_tag": "General",
+      "action_insight": "No recommendation."
     }
   ]
 }

@@ -746,14 +746,14 @@ function App() {
             <div className="dashboard-insights-grid" style={{ marginTop: "24px" }}>
               <section className="metrics-card insights-card" style={{ flex: 1.2 }}>
                 <h3>
-                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: "#dc2626", marginRight: "8px" }}>
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: "var(--color-negative)", marginRight: "8px" }}>
                     <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
                     <line x1="12" y1="9" x2="12" y2="13" />
                     <line x1="12" y1="17" x2="12.01" y2="17" />
                   </svg>
                   Priority Indicators
                 </h3>
-                <p style={{ margin: 0, fontSize: "0.75rem", color: "#6b7280", fontStyle: "italic" }}>
+                <p style={{ margin: 0, fontSize: "0.75rem", color: "var(--text-muted)", fontStyle: "italic" }}>
                   *Star priority scores are AI-generated based on sentiment analysis (not actual user ratings).
                 </p>
                 <div style={{ display: "flex", flexDirection: "column", gap: "12px", marginTop: "12px", maxHeight: "350px", overflowY: "auto" }}>
@@ -761,15 +761,15 @@ function App() {
                     <div key={item.id} style={{
                       padding: "10px 14px",
                       borderRadius: "8px",
-                      backgroundColor: "rgba(239, 68, 68, 0.05)",
-                      border: "1px solid rgba(239, 68, 68, 0.15)",
-                      borderLeft: "4px solid #ef4444"
+                      backgroundColor: "rgba(239, 68, 68, 0.08)",
+                      border: "1px solid rgba(239, 68, 68, 0.18)",
+                      borderLeft: "4px solid var(--color-negative)"
                     }}>
                       <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "4px", fontSize: "0.8rem" }}>
-                        <strong style={{ color: "#b91c1c" }}>{item.author} ({item.platform})</strong>
-                        <span style={{ color: "#dc2626", fontWeight: "bold" }}>{"★".repeat(item.priority_score)}</span>
+                        <strong style={{ color: "var(--text-primary)" }}>{item.author} ({item.platform})</strong>
+                        <span style={{ color: "var(--color-negative)", fontWeight: "bold" }}>{"★".repeat(item.priority_score)}</span>
                       </div>
-                      <p style={{ margin: 0, fontSize: "0.85rem", color: "#374151" }}>{item.text}</p>
+                      <p style={{ margin: 0, fontSize: "0.85rem", color: "var(--text-secondary)" }}>{item.text}</p>
                     </div>
                   ))}
                 </div>
@@ -777,7 +777,7 @@ function App() {
 
               <section className="metrics-card insights-card" style={{ flex: 1 }}>
                 <h3>
-                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: "#10b981", marginRight: "8px" }}>
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: "var(--color-positive)", marginRight: "8px" }}>
                     <circle cx="12" cy="12" r="10" />
                     <line x1="12" y1="16" x2="12" y2="12" />
                     <line x1="12" y1="8" x2="12.01" y2="8" />
@@ -789,15 +789,15 @@ function App() {
                     <div key={item.id} style={{
                       padding: "10px 14px",
                       borderRadius: "8px",
-                      backgroundColor: "rgba(16, 185, 129, 0.05)",
-                      border: "1px solid rgba(16, 185, 129, 0.15)",
-                      borderLeft: "4px solid #10b981"
+                      backgroundColor: "rgba(16, 185, 129, 0.08)",
+                      border: "1px solid rgba(16, 185, 129, 0.18)",
+                      borderLeft: "4px solid var(--color-positive)"
                     }}>
                       <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "4px", fontSize: "0.8rem" }}>
-                        <span style={{ fontWeight: "600", color: "#065f46" }}>Theme: {item.category_tag}</span>
-                        <span style={{ color: "#6b7280" }}>{item.city}</span>
+                        <span style={{ fontWeight: "600", color: "var(--text-primary)" }}>Theme: {item.category_tag}</span>
+                        <span style={{ color: "var(--text-muted)" }}>{item.city}</span>
                       </div>
-                      <p style={{ margin: 0, fontSize: "0.85rem", fontStyle: "italic", color: "#047857" }}>
+                      <p style={{ margin: 0, fontSize: "0.85rem", fontStyle: "italic", color: "var(--text-secondary)" }}>
                         "{item.action_insight}"
                       </p>
                     </div>
@@ -1014,11 +1014,11 @@ function App() {
                             fontSize: "0.7rem",
                             fontWeight: "bold",
                             borderRadius: "4px",
-                            backgroundColor: "rgba(100, 116, 139, 0.15)",
-                            color: "#64748b",
-                            border: "1px solid rgba(100, 116, 139, 0.3)"
+                            backgroundColor: item.parent_id.startsWith("@") ? "rgba(29, 155, 240, 0.15)" : "rgba(100, 116, 139, 0.15)",
+                            color: item.parent_id.startsWith("@") ? "#1d9bf0" : "#64748b",
+                            border: item.parent_id.startsWith("@") ? "1px solid rgba(29, 155, 240, 0.3)" : "1px solid rgba(100, 116, 139, 0.3)"
                           }}>
-                            COMMENT
+                            {item.parent_id.startsWith("@") ? `TAGGED: ${item.parent_id}` : "COMMENT"}
                           </span>
                         )}
                       </div>
